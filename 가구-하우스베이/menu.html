@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서브2-음료메뉴</title>
+
+    <!-- html에서 css연동 -->
+
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/bottom.css">
+
+    <!-- 파비콘 연동 -->
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- 폰트어썸 연동 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- top고정 바 -->
+    <div class="top_box" id="top_box">
+        <p>TOP</p>
+    </div>
+
+    <script>
+        const top_box = document.getElementById('top_box');
+
+        top_box.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+    </script>
+
+    <!-- 공통상단 로고 -->
+    <div id="wrap_top">
+        <div id="top">
+            <ul class="logo">
+                <li><a href="mega.html"><img src="images/mega_logo.png"></a></li>
+            </ul>
+            <ul class="menu">
+
+                <li><a href="story.html">메가 스토리</a>
+                    <div class="sub">
+                        <p><a href="story.html">브랜드</a></p>
+                        <p><a href="#a">BI</a></p>
+                        <p><a href="#a">오시는길</a></p>
+                    </div>
+                </li>
+                <li><a href="menu.html">메뉴소개</a>
+                    <div class="sub">
+                        <p><a href="menu.html">음료</a></p>
+                        <p><a href="#a">푸드</a></p>
+                        <p><a href="#a">상품</a></p>
+                    </div>
+                </li>
+                <li><a href="store.html">매장</a>
+                    <div class="sub">
+                        <p><a href="store.html">매장찾기</a></p>
+
+                    </div>
+                </li>
+                <li><a href="franchise.html">창업안내</a>
+                    <div class="sub">
+                        <p><a href="franchise.html">개설비용</a></p>
+                        <p><a href="#a">인테리어</a></p>
+                        <p><a href="#a">창업문의</a></p>
+                        <p><a href="#a">가맹점인수</a></p>
+                        <p><a href="#a">창업뉴스</a></p>
+                    </div>
+                </li>
+                <li><a href="news.html">메가소식</a>
+                    <div class="sub">
+                        <p><a href="news.html">공지사항</a></p>
+                        <p><a href="#a">이벤트</a></p>
+                        <p><a href="#a">FAQ</a></p>
+                        <p><a href="#a">고객의소리</a></p>
+                    </div>
+                </li>
+                <li><a href="interview.html">채용</a>
+                    <div class="sub">
+                        <p><a href="interview.html">채용안내</a></p>
+
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="icon">
+
+                <li><img src="images/Untitled-4.png" usemap="#Untitled-4.png">
+                    <map name="Untitled-4.png">
+                        <area shape="rect" coords="14,9,36,36" href="https://blog.naver.com/ekddusekddus">
+                        <area shape="rect" coords="61,10,86,38"
+                            href="https://www.facebook.com/mega.mgc.coffee.official">
+                        <area shape="rect" coords="115,9,139,35"
+                            href="https://www.instagram.com/mega.mgc.coffee_official/">
+                        <area shape="rect" coords="162,9,189,36" href="https://smartstore.naver.com/megamgccoffee">
+                    </map>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- 서브공통 사진 글씨 들어간 메인베너 -->
+
+    <div id="sub_top">
+        <h3>MEGA MGC MENU</h3>
+        <h1>MEGA MENU</h1>
+        <h6>*메뉴 이미지는 연출컷이라 실물과 다를 수 있습니다.</h6>
+
+    </div>
+
+    <div id="wrap_top2">
+        <div id="sub_top2">
+            <p></p>
+        </div>
+    </div>
+
+    <!-- 서브공통 사진 글씨 들어간 메인베너 끝! 밑에부터 지우기-->
+
+    <!-- 메뉴영역 시작 -->
+    <!-- 메뉴 선택바 -->
+    <div id="menu_txt">
+        <p><a href="menu.html">신메뉴</a> <span></span> <a href="menu_coffee_sub.html">커피</a> <span></span><a
+                href="beverage.html">음료</a> <span></span> <a href="juice.html">주스/차</a> <span></span> <a
+                href="smoothie.html">스무디</a> <span></span> <a href="ade.html">에이드</a> <span></span> <a
+                href="cake.html">디저트</a> <span></span> <a href="md.html">MD상품</a></p>
+
+        <h1>NEW</h1>
+    </div>
+
+    <!-- 신메뉴 메인영역 -->
+
+    <div id="newmenu_main">
+        <ul>
+            <li>
+                <div class="box_r">
+                    <ol>
+                        <p class="hover_txt1">지구멜론 스무디<br><span>Melon Smoothie</span>
+
+                        </p>
+                        <p class="hover_line"></p>
+                        <p class="hover_txt2">
+                            20oz<br>
+                            1회 제공량 446.2kcal<br><br>
+                            제철 과일 멜론과 달콤한 연유가 어우러져 지구를 형상화한 부드럽고 진한 여름시즌 한정 스무디<br><br>
+                            <span>알레르기 성분 : 우유</span>
+                        </p>
+                        <p class="hover_txt3">
+                            <b>포화지방 6.1g<span></span>당류 61.7g<br></b>
+
+                            나트륨 275.4mg<span></span>카페인 0g<br>단백질 7.0g<br>
+
+                            <span class="bottom_r"></span>
+                        </p>
+                      
+
+                    </ol>
+
+                </div>
+
+                <p class="img"><img src="images/menu_new1_r.png"></p>
+                <p class="txt_box"><span class="t1">지구멜론 스무디</span>
+                    <span class="line"></span>
+                    <span class="t2">
+                        Melon Smoothie<br><br>
+                        제철 과일 멜론과 달콤한 연유가 어우러져 지구를 형상화한 부드럽고 진한 여름시즌 한정 스무디
+
+                    </span>
+                </p>
+                <p class="ice_box">ICE</p>
+
+
+            </li>
+            
+            <li>
+                <div class="box_r">
+                    <ol>
+                        <p class="hover_txt1">라이트 바닐라 아몬드라떼
+                            <br><span>Light vanilla almond latte</span>
+
+                        </p>
+                        <p class="hover_line"></p>
+                        <p class="hover_txt2">
+                            20oz<br>
+                            1회 제공량 75.3kcal<br><br>
+                            비건 음료 아몬드브리즈와 칼로리를 낮춘 라이트 바닐라 시럽이 만나 가볍지만 부드러워진 여름시즌 한정 라떼<br><br>
+                            <span>알레르기 성분 : 우유</span><br>
+                            <span>고카페인함유</span>
+                            
+                        </p>
+                        <p class="hover_txt3">
+                            <b>포화지방 0.2g<span></span>당류 3.1g<br></b>
+
+                            나트륨 119g<span></span>카페인 206.2mg<br>단백질 2.1g<br>
+                            <span class="bottom_r"></span>
+
+
+                        </p>
+
+                    </ol>
+
+                </div>
+
+                <p class="img"><img src="images/menu_new2_r.jpg"></p>
+                <p class="txt_box"><span class="t1">라이트 바닐라 아몬드 라떼</span>
+                    <span class="line"></span>
+                    <span class="t2">
+                        Light vanilla almond latte<br><br>
+                        비건 음료 아몬드브리즈와 칼로리를 낮춘 라이트 바닐라 시럽이 만나 가볍지만 부드~러워진 여름시즌 한정 라떼
+
+                    </span>
+                </p>
+                <p class="ice_box">ICE</p>
+
+
+            </li>
+
+            <li>
+                <div class="box_r">
+                    <ol>
+                        <p class="hover_txt1">달달 골드키위주스<br><span>Gold Kiwi juice</span>
+
+                        </p>
+                        <p class="hover_line"></p>
+                        <p class="hover_txt2">
+                            20oz<br>
+                            1회 제공량 202.8kcal<br><br>
+                            상큼달콤한 프리미엄 골드키위에 밀크씨슬을 더해 일상의 활력을 선사하는 건강한 여름시즌 한정 블렌딩 주스<br><br>
+                            <span>알레르기 성분 : </span>
+                        </p>
+                        <p class="hover_txt3">
+                            <b>포화지방 0.6g<span></span>당류 43.1g<br></b>
+
+                            나트륨 15g<span></span>카페인 0g<br>단백질 1.2g<br>
+                            <span class="bottom_r"></span>
+
+
+                        </p>
+
+                    </ol>
+
+                </div>
+
+                <p class="img"><img src="images/menu_new3_r.jpg"></p>
+                <p class="txt_box"><span class="t1">달달 골드키위주스</span>
+                    <span class="line"></span>
+                    <span class="t2">
+                        Gold Kiwi juice<br><br>
+                        상큼달콤한 프리미엄 골드키위에 밀크씨슬을 더해 일상의 활력을 선사하는 건강한 여름시즌 한정 블렌딩 주스
+
+                    </span>
+                </p>
+                <p class="ice_box">ICE</p>
+
+
+            </li>
+
+            <li>
+                <div class="box_r">
+                    <ol>
+                        <p class="hover_txt1">써니 자몽 스무디<br><span>Sunny grapefruit smoothie</span>
+
+                        </p>
+                        <p class="hover_line"></p>
+                        <p class="hover_txt2">
+                            20oz<br>
+                            1회 제공량 234.5kcal<br><br>
+                            비타민C를 가득 머금은 시트러스 계열의 자몽, 하귤, 유자, 레몬에 레몬머틀티를 블렌딩하여 새콤달콤 시원하게 즐길 수 있는 여름시즌 한정 스무디<br><br>
+                            <span>알레르기 성분 : </span>
+                        </p>
+                        <p class="hover_txt3">
+                            <b>포화지방 1.6g<span></span>당류 53.2g<br></b>
+
+                            나트륨 161.2mg<span></span>카페인 0g<br>단백질 1.1g<br>
+                            <span class="bottom_r"></span>
+
+
+                        </p>
+
+                    </ol>
+
+                </div>
+
+                <p class="img"><img src="images/menu_new4_r.jpg"></p>
+                <p class="txt_box"><span class="t1">써니 자몽 스무디</span>
+                    <span class="line"></span>
+                    <span class="t2">
+                        Sunny grapefruit smoothie<br><br>
+                        비타민C를 가득 머금은 시트러스 계열의 자몽, 하귤, 유자, 레몬에 레몬머틀티를 블렌딩하여 새콤달콤 시원하게 즐길 수 있는 여름시즌 한정 스무디
+
+                    </span>
+                </p>
+                <p class="ice_box">ICE</p>
+
+
+            </li>
+        </ul>
+        <!-- 첫번째줄 끝 -->
+        
+        <ul>
+            
+            <li>
+                <div class="box_r">
+                    <ol>
+                        <p class="hover_txt1">방랑자! 하이볼 에이드랑 함 날아?<br><span>Hey Wanderer! Down to Fly with Highball Ade?</span>
+
+                        </p>
+                        <p class="hover_line"></p>
+                        <p class="hover_txt2">
+                            20oz<br>
+                            1회 제공량 228.5kcal<br><br>
+                            이게 월클이 느끼는 무게의 맛인가.. 자꾸 생각나는 초특급 시원함의 무알콜 하이볼 에이드! 달콤 씁쓸 강렬한 원신 한정판 음료<br><br>
+                            <span>알레르기 성분 : </span>
+                        </p>
+                        <p class="hover_txt3">
+                            <b>포화지방 0.1g<span></span>당류 52.2g<br></b>
+
+                            나트륨 13.7mg<span></span>카페인 0g<br>단백질 0.2g<br>
+                            <span class="bottom_r"></span>
+
+                        </p>
+
+                    </ol>
+
+                </div>
+
+                <p class="img"><img src="images/menu_new5_r.jpg"></p>
+                <p class="txt_box"><span class="t1">방랑자! 하이볼 에이드랑 함 날아?</span>
+                    <span class="line"></span>
+                    <span class="t2">
+                        Hey Wanderer! Down to Fly with Highball Ade?<br><br>
+                        이게 월클이 느끼는 무게의 맛인가.. 자꾸 생각나는 초특급 시원함의 무알콜 하이볼 에이드! 달콤 씁쓸 강렬한 원신 한정판 음료
+
+                    </span>
+                </p>
+                <p class="ice_box">ICE</p>
+
+
+            </li>
+
+            
+            <li>
+                <div class="box_r">
+                    <ol>
+                        <p class="hover_txt1">온 세상이 수메르! 초코젤라또 녹차라떼<br><span>Sumeru unlocked! Choco-gelato Green Tea Latte</span>
+
+                        </p>
+                        <p class="hover_line"></p>
+                        <p class="hover_txt2">
+                            20oz<br>
+                            1회 제공량 351.1kcal<br><br>
+                            온 세상이 원신! 지혜의 숲 수메르에서 만나는 녹차라떼! 제주산 고품질 녹차와 달콤쫀득한 초코젤라또, 쌉싸름한 블렌딩 커피가 어우러진 원신 한정판 음료<br><br>
+                            <span>알레르기 성분 : 우유</span>
+                        </p>
+                        <p class="hover_txt3">
+                            <b>포화지방 6.1g<span></span>당류 61.7g<br></b>
+
+                            나트륨 275.4mg<span></span>카페인 0g<br>단백질 7.0g<br>
+                            <span class="bottom_r"></span>
+
+
+                        </p>
+
+                    </ol>
+
+                </div>
+
+                <p class="img"><img src="images/menu_new6_r.jpg"></p>
+                <p class="txt_box"><span class="t1">온 세상이 수메르! 초코젤라또 녹차라떼</span>
+                    <span class="line"></span>
+                    <span class="t2">
+                        Sumeru unlocked! Choco-gelato Green Tea Latte<br><br>
+                        온 세상이 원신! 지혜의 숲 수메르에서 만나는 녹차라떼! 제주산 고품질 녹차와 달콤쫀득한 초코젤라또, 쌉싸름한 블렌딩 커피가 어우러진 원신 한정판 음료
+
+                    </span>
+                </p>
+                <p class="ice_box">ICE</p>
+
+
+            </li>
+
+            
+            <li>
+                <div class="box_r">
+                    <ol>
+                        <p class="hover_txt1">수박 주스<br><span>Watermelon Juice</span>
+
+                        </p>
+                        <p class="hover_line"></p>
+                        <p class="hover_txt2">
+                            20oz<br>
+                            1회 제공량 124.8kcal<br><br>
+                            돌아온 여름시즌 베스트셀러! 달달하고 시원한 메가MGC커피 만의 수박주스<br><br>
+                            <span>알레르기 성분 : </span>
+                        </p>
+                        <p class="hover_txt3">
+                            <b>포화지방 0.0g<span></span>당류 22.9g<br></b>
+
+                            나트륨 3.9mg<span></span>카페인 0g<br>단백질 1.5g<br>
+                            <span class="bottom_r"></span>
+
+
+                        </p>
+
+                    </ol>
+
+                </div>
+
+                <p class="img"><img src="images/menu_new7_r.jpg"></p>
+                <p class="txt_box"><span class="t1">수박 주스</span>
+                    <span class="line"></span>
+                    <span class="t2">
+                        Watermelon Juice<br><br>
+                        돌아온 여름시즌 베스트셀러! 달달하고 시원한 메가MGC커피 만의 수박주스
+
+                    </span>
+                </p>
+                <p class="ice_box">ICE</p>
+
+
+            </li>
+
+            
+            <li>
+                <div class="box_r">
+                    <ol>
+                        <p class="hover_txt1">오이오이 라임 오히또<br><span>Cucumber-Lime Mojito</span>
+
+                        </p>
+                        <p class="hover_line"></p>
+                        <p class="hover_txt2">
+                            20oz<br>
+                            1회 제공량 55.4kcal<br><br>
+                            청량한 오이의 향과 상큼한 라임, 애플민트가 어우러진 수분 충전! 대체당을 이용한 저칼로리 여름시즌 한정 메뉴<br><br>
+                            <span>알레르기 성분 : </span>
+                        </p>
+                        <p class="hover_txt3">
+                            <b>포화지방 0.1g<span></span>당류 7.6g<br></b>
+
+                            나트륨 69.1mg<span></span>카페인 0g<br>단백질 0.2g<br>
+                            <span class="bottom_r"></span>
+
+
+                        </p>
+
+                    </ol>
+
+                </div>
+
+                <p class="img"><img src="images/menu_new8_r.jpg"></p>
+                <p class="txt_box"><span class="t1">오이오이 라임 오히또
+                </span>
+                    <span class="line"></span>
+                    <span class="t2">
+                        Cucumber-Lime Mojito<br><br>
+                        제철 과일 멜론과 달콤한 연유가 어우러져 지구를 형상화한 부드럽고 진한 여름시즌 한정 스무디
+
+                    </span>
+                </p>
+                <p class="ice_box">ICE</p>
+
+
+            </li>
+        </ul>
+
+        
+       
+    </div>
+
+    <div id="bottom_bar">
+    <ol>
+        <li><i class="fa-solid fa-caret-left"></i></li>
+        <li>1</li>
+        <li><i class="fa-solid fa-caret-right"></i></li>
+    </ol>
+</div>
+
+   
+
+
+
+
+    <!-- 공통 카피라이트 -->
+    <div id="Copyright">
+        <div id="down_bg1"></div>
+        <div id="down_bg2">
+            <ul>
+                <li><a href="#a" onclick="document.getElementById('pop1').style.display='block'">이용약관</a></li>
+                <li><a href="#a" onclick="document.getElementById('pop2').style.display='block'">개인정보처리방침</a></li>
+            </ul>
+        </div>
+
+        <!-- 카피라이트 -->
+        <div id="wrap_footer">
+            <div id="footer">
+                <p class="logo"><a href="mega.html"><img src="images/logo.jpg"></a></p>
+
+                <p class="adress">
+
+                    <span>주식회사 앤하우스</span>
+                    대표자 김대영
+                    창업상담 1588-0656
+                    고객센터 1588-8298<br>
+                    FAX 02-325-5199
+                    사업자등록번호 105-87-51367<br>
+                    서울특별시 강남구 강남대로 518 11층, 13층 (주)앤하우스<br>
+                    개인정보보호 책임자 이종원
+
+                </p>
+
+                <p class="copy">COPYRIGHT(C) 2023 MEGA COFFEE ALL RIGHT RESERVED.</p>
+
+                <ul>
+                    <li><span>메가스토리</span><br><br>
+                        <a href="story.html">브랜드</a><br>
+                        <a href="#a">BI</a><br>
+                        <a href="#a">오시는 길</a><br>
+
+                    </li>
+
+                    <li><span>메뉴소개</span><br><br>
+                        <a href="menu.html">음료</a><br>
+                        <a href="#a">푸드</a><br>
+                        <a href="#a">상품</a><br>
+
+                    </li>
+
+                    <li><span>매장</span><br><br>
+                        <a href="store.html">매장찾기</a><br>
+
+                    </li>
+
+                    <li><span>창업안내</span><br><br>
+                        <a href="franchise.html">개설비용</a><br>
+                        <a href="#a">인테리어</a><br>
+                        <a href="#a">창업문의</a><br>
+                        <a href="#a">창업뉴스</a><br>
+
+                    </li>
+
+                    <li><span>메가소식</span><br><br>
+                        <a href="news.html">공지사항</a><br>
+                        <a href="#a">이벤트</a><br>
+                        <a href="#a">FAQ</a><br>
+                        <a href="#a">고객의 소리</a><br>
+
+                    </li>
+
+                    <li><span>제휴문의</span><br><br>
+                        <a href="#a">상품제안</a><br>
+                        <a href="#a">마케팅제휴</a><br>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 이용약관 -->
+        <div id="pop1">
+            <div class="box">
+                <h2>이용안내 <span><i class="fa-solid fa-xmark"
+                            onclick="document.getElementById('pop1').style.display='none'"></i></span></h2>
+
+                <pre>
+개인정보수집 범위 : 이름, 연락처
+개인정보수집 및 이용목적 : 온라인 문의 및 상담 자료와 결과 회신
+* 매장과 관련된 CS의 경우, 해결 과정 안내 혹은 결과 회신을 위해 매장 관리자(슈퍼바이저,매장점주), 
+본사 유관부서가 연락을 드릴 수 있습니다.
+
+개인정보수집 및 보유기간 : 개인정보 수집 및 이용에 대한 목적이 달성되면 지체없이 파기하며 최대 
+보유기간은 1년을 넘기지 아니한다.
+            </pre>
+
+                <p class="btn" onclick="document.getElementById('pop1').style.display='none'">취소</p>
+
+            </div>
+        </div>
+
+
+        <!-- 개인정보취급방침 -->
+        <div id="pop2">
+            <div class="box">
+                <h2>개인정보취급방침 <span><i class="fa-solid fa-xmark"
+                            onclick="document.getElementById('pop2').style.display='none'"></i></span></h2>
+
+                <pre>
+개인정보수집 범위 : 이름, 연락처
+개인정보수집 및 이용목적 : 온라인 문의 및 상담 자료와 결과 회신
+* 매장과 관련된 CS의 경우, 해결 과정 안내 혹은 결과 회신을 위해 매장 관리자(슈퍼바이저,매장점주), 
+본사 유관부서가 연락을 드릴 수 있습니다.
+
+개인정보수집 및 보유기간 : 개인정보 수집 및 이용에 대한 목적이 달성되면 
+지체없이 파기하며 최대 보유기간은 1년을 넘기지 아니한다.
+            </pre>
+
+                <p class="btn" onclick="document.getElementById('pop2').style.display='none'">취소</p>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,481 @@
+
+
+/* 브랜드스토리 */
+
+#wrap_bedroom {
+    width: 100%;
+    height: 800px;
+    background-image: url(../images/main_visual.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+#bedroom p {
+    padding-top: 230px;
+    padding-left: 190px;
+    color: #090281;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#bedroom h4 {
+    text-align: left;
+    padding-left: 190px;
+    padding-top: 10px;
+    font-size: 18px;
+    letter-spacing: -1px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* 브랜드 스토리&연혁 선택바 */
+
+#wrap_histroy {
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+
+   
+}
+
+
+#histroy ul {
+    width: 500px;
+    height: 50px;
+    /* background: tan; */
+    margin: 0 auto;
+    
+}
+
+#histroy ul li {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+ 
+}
+
+#histroy ul li p {
+ line-height: 80px;
+ font-size: 25px;
+ letter-spacing: -1px;
+ font-weight: bold;
+ color: #333;
+ 
+}
+
+#histroy ul li p a {
+    color: #333;
+}
+
+#histroy ul li p:hover a{
+    color: #090281;
+    cursor: pointer;
+}
+
+#histroy ul li p.line {
+    width: 2px;
+    height: 25px;
+    background: #333;
+    vertical-align: middle;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+
+
+/* 메인이미지 */
+
+#main {
+    width: 1600px;
+    height: 3800px;
+    /* background: palegoldenrod; */
+    margin: 0px auto;
+    color: #333;
+}
+
+#main > ul > li {
+    width: 1600px;
+    height: 754px;
+    /* background: palegreen; */
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+
+}
+
+#main > ul > li > p {
+    margin: 0 15px;
+}
+
+#main > ul > li > p:nth-of-type(1) {
+    width: 500px;
+    height: 400px;
+    /* background: palevioletred; */
+    
+}
+
+#main > ul > li > p:nth-of-type(2) {
+    width: 922px;
+    height: 754px;
+    /* background: paleturquoise; */
+    text-align: center;
+    
+}
+
+#main > ul > li > p:nth-of-type(1) > span.txt1 {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+#main > ul > li > p:nth-of-type(1) > span.txt2 {
+    font-size: 70px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+#main > ul > li > p:nth-of-type(1) > span.txt3 {
+    padding-top: 30px;
+    font-size: 20px;
+    font-family: '나눔바른고딕';
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+#main > ul > li > p:nth-of-type(1) > span {
+    display: block;
+    letter-spacing: -1px;
+    color: #333;
+    
+}
+
+#main > ul > li > span {
+    display: block;
+    width: 25px;
+    height: 120px;
+    background: #090281;
+    top: 0;
+    left: 579px;
+    position: absolute;
+}
+
+/* 2번째 li */
+
+#main > ul > li:nth-child(2) {
+    width: 1500px;
+    height: 419px;
+    /* background: palevioletred; */
+    justify-content: flex-start;
+    position: relative;
+}
+
+#main > ul > li:nth-child(2) p:nth-of-type(1) {
+    width: 470px;
+    height: 419px;
+  
+}
+
+#main > ul > li:nth-child(2) p:nth-of-type(2) {
+    width: 500px;
+    height: 419px;
+    
+    text-align: left;
+    color: #333;
+    
+}
+
+#main > ul > li:nth-child(2) p:nth-of-type(3) {
+    width: 300px;
+    height: 5px;
+    background: #090281;
+    top: 410px;
+    right: 0;
+    position: absolute;
+    
+}
+
+#main > ul > li > p:nth-of-type(2) > span {
+    display: block;
+}
+
+#main > ul > li > p:nth-of-type(2) > span.txt1 {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+#main > ul > li > p:nth-of-type(2) > span.txt2 {
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+#main > ul > li > p:nth-of-type(2) > span.txt3 {
+    padding-top: 30px;
+    font-size: 20px;
+    font-family: '나눔바른고딕';
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+/* 3번째 li */
+
+#main > ul > li:nth-child(3) {
+    width: 1600px;
+    height: 420px;
+    
+   
+}
+
+#main > ul > li:nth-child(3) > p {
+    margin: 0 15px;
+}
+
+#main > ul > li:nth-child(3) > p:nth-of-type(1) {
+    width: 577px;
+    height: 420px;
+   
+    
+}
+
+#main > ul > li:nth-child(3) > p:nth-of-type(2) {
+    width: 500px;
+    height: 420px;
+   
+    text-align: left;
+    
+}
+
+#main > ul > li:nth-child(3) > p:nth-of-type(1) > span.txt1 {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+#main > ul > li:nth-child(3) > p:nth-of-type(1) > span.txt2 {
+    font-size: 70px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+#main > ul > li:nth-child(3) > p:nth-of-type(1) > span.txt3 {
+    padding-top: 30px;
+    font-size: 20px;
+    font-family: '나눔바른고딕';
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+#main > ul > li:nth-child(3) > p:nth-of-type(1) > span {
+    display: block;
+    letter-spacing: -1px;
+    color: #333;
+    
+}
+
+#main > ul > li:nth-child(3) > span {
+    display: block;
+    width: 25px;
+    height: 120px;
+    background: #090281;
+    top: 297px;
+    left: 221px;
+    position: absolute;
+}
+
+/* 4번째 li */
+#main > ul > li:nth-child(4) {
+    width: 1500px;
+    height: 419px;
+    flex-direction: row-reverse;
+    justify-content: right;
+    position: relative;
+}
+
+#main > ul > li:nth-child(4) p:nth-of-type(1) {
+    width: 500px;
+    height: 419px;
+    
+}
+
+#main > ul > li:nth-child(4) p:nth-of-type(2) {
+    width: 530px;
+    height: 419px;
+   
+    text-align: left;
+    color: #333;
+    
+}
+
+#main > ul > li:nth-child(4) p:nth-of-type(3) {
+    display: block;
+    width: 15px;
+    height: 50px;
+    background: #090281;
+    top: 320px;
+    left: 910px;
+    position: absolute;
+    
+}
+
+#main > ul > li > p:nth-of-type(4) > span {
+    display: block;
+}
+
+#main > ul > li > p:nth-of-type(4) > span.txt1 {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+#main > ul > li > p:nth-of-type(4) > span.txt2 {
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+#main > ul > li > p:nth-of-type(4) > span.txt3 {
+    padding-top: 30px;
+    font-size: 20px;
+    font-family: '나눔바른고딕';
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+/* 5번째 li */
+#main > ul > li:nth-child(5) {
+    width: 1500px;
+    height: 521px;
+   
+    justify-content: left;
+    position: relative;
+}
+
+#main > ul > li:nth-child(5) p:nth-of-type(1) {
+    width: 845px;
+    height: 521px;
+    
+}
+
+#main > ul > li:nth-child(5) p:nth-of-type(2) {
+    width: 530px;
+    height: 521px;
+   
+    text-align: left;
+    color: #333;
+    
+}
+
+#main > ul > li:nth-child(5) p:nth-of-type(3) {
+    display: block;
+    width: 5px;
+    height: 170px;
+    background: #090281;
+    top: 349px;
+    right: 60px;
+    position: absolute;
+    
+}
+
+#main > ul > li > p:nth-of-type(5) > span {
+    display: block;
+}
+
+#main > ul > li > p:nth-of-type(5) > span.txt1 {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+#main > ul > li > p:nth-of-type(5) > span.txt2 {
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+#main > ul > li > p:nth-of-type(5) > span.txt3 {
+    padding-top: 30px;
+    font-size: 20px;
+    font-family: '나눔바른고딕';
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+/* 6번째 li */
+#main > ul > li:nth-child(6) {
+    width: 1600px;
+    height: 754px;
+    
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+
+}
+
+#main > ul > li > p {
+    margin: 0 15px;
+}
+
+#main > ul > li > p:nth-of-type(1) {
+    width: 500px;
+    height: 600px;
+   
+    
+}
+
+#main > ul > li:nth-child(6) > p:nth-of-type(2) {
+    width: 922px;
+    height: 754px;
+   
+    text-align: center;
+    
+}
+
+#main > ul > li:nth-child(6) > p:nth-of-type(2) img {
+    width: 100%;
+    height: 100%;
+}
+
+#main > ul > li > p:nth-of-type(1) > span.txt1 {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+#main > ul > li > p:nth-of-type(1) > span.txt2 {
+    font-size: 70px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+#main > ul > li > p:nth-of-type(1) > span.txt3 {
+    padding-top: 30px;
+    font-size: 20px;
+    font-family: '나눔바른고딕';
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+#main > ul > li > p:nth-of-type(1) > span {
+    display: block;
+    letter-spacing: -1px;
+    color: #333;
+    
+}
+
+#main > ul > li > span {
+    display: block;
+    width: 25px;
+    height: 120px;
+    background: #090281;
+    top: 0;
+    left: 579px;
+    position: absolute;
+}

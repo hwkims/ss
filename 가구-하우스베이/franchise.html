@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서브4-프랜차이즈</title>
+
+    <!-- html에서 css연동 -->
+
+    <link rel="stylesheet" href="css/franchise.css">
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/bottom.css">
+
+    <!-- 파비콘 연동 -->
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- 폰트어썸 연동 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- top고정 바 -->
+    <div class="top_box" id="top_box">
+        <p>TOP</p>
+    </div>
+
+    <script>
+        const top_box = document.getElementById('top_box');
+
+        top_box.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+    </script>
+
+    <!-- 공통상단 로고 -->
+    <div id="wrap_top">
+        <div id="top">
+            <ul class="logo">
+                <li><a href="mega.html"><img src="images/mega_logo.png"></a></li>
+            </ul>
+            <ul class="menu">
+
+                <li><a href="story.html">메가 스토리</a>
+                    <div class="sub">
+                        <p><a href="story.html">브랜드</a></p>
+                        <p><a href="#a">BI</a></p>
+                        <p><a href="#a">오시는길</a></p>
+                    </div>
+                </li>
+                <li><a href="menu.html">메뉴소개</a>
+                    <div class="sub">
+                        <p><a href="menu.html">음료</a></p>
+                        <p><a href="#a">푸드</a></p>
+                        <p><a href="#a">상품</a></p>
+                    </div>
+                </li>
+                <li><a href="store.html">매장</a>
+                    <div class="sub">
+                        <p><a href="store.html">매장찾기</a></p>
+
+                    </div>
+                </li>
+                <li><a href="franchise.html">창업안내</a>
+                    <div class="sub">
+                        <p><a href="franchise.html">개설비용</a></p>
+                        <p><a href="#a">인테리어</a></p>
+                        <p><a href="#a">창업문의</a></p>
+                        <p><a href="#a">가맹점인수</a></p>
+                        <p><a href="#a">창업뉴스</a></p>
+                    </div>
+                </li>
+                <li><a href="news.html">메가소식</a>
+                    <div class="sub">
+                        <p><a href="news.html">공지사항</a></p>
+                        <p><a href="#a">이벤트</a></p>
+                        <p><a href="#a">FAQ</a></p>
+                        <p><a href="#a">고객의소리</a></p>
+                    </div>
+                </li>
+                <li><a href="interview.html">채용</a>
+                    <div class="sub">
+                        <p><a href="interview.html">채용안내</a></p>
+
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="icon">
+
+                <li><img src="images/Untitled-4.png" usemap="#Untitled-4.png">
+                    <map name="Untitled-4.png">
+                        <area shape="rect" coords="14,9,36,36" href="https://blog.naver.com/ekddusekddus">
+                        <area shape="rect" coords="61,10,86,38"
+                            href="https://www.facebook.com/mega.mgc.coffee.official">
+                        <area shape="rect" coords="115,9,139,35"
+                            href="https://www.instagram.com/mega.mgc.coffee_official/">
+                        <area shape="rect" coords="162,9,189,36" href="https://smartstore.naver.com/megamgccoffee">
+                    </map>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- 서브공통 사진 글씨 들어간 메인베너 -->
+
+    <div id="sub_top">
+        <h3>MEGA MGC FRANCHISE</h3>
+        <h1>MEGA FRANCHISE</h1>
+
+    </div>
+
+    <div id="wrap_top2">
+        <div id="sub_top2">
+            <p></p>
+        </div>
+    </div>
+
+    <!-- 서브공통 사진 글씨 들어간 메인베너 끝! 밑에부터 지우기-->
+
+   
+    <!-- 프랜차이즈 영역 -->
+    <div id="franchise_main">
+        <h2>개설비용</h2>
+
+        <p class="line"></p>
+
+         <!-- 테이블 표 -->
+         <table>
+            <caption>10평기준<small>(33m²기준)</small> <span>&lt;단위 : 원&gt;</span></caption>
+
+            <tr>
+                <th>항목</th>
+                <th>내용</th>
+                <th>금액</th>
+                <th>비고</th>
+            </tr>
+
+            <tr>
+                <td class="s1">가맹비</td>
+                <td>상표 사용권 부여, 상권조사 및 영업권 보장</td>
+                <td><span>8,000,000</span></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td class="s1">교육비</td>
+                <td>유니폼, 매뉴얼 교육 및 점포 운영에 관한 교육, 현장 실습비</td>
+                <td><b>4,000,000</b></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td class="s1">주방기기/기물</td>
+                <td>
+                    고급 커피머신, 자동그라인더, 대용량제빙기, 믹서기, 디지털 냉장고<br>
+                    (2EA), 테이블 탱동고, 핫워터, 온수기, 오븐레인지, 쇼케이스, 디저트<br>
+                    모형, 아이스빈, 작업대, 컵디스펜서, 선반, 서랍형 넉박스, 주방집기<br>
+                    포함
+                </td>
+                <td><b>31,876,100</b></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td rowspan="2" class="s1">인테리어</td>
+                <td>목공사, 전기, 조명공사, 도장, 타일, 유리, 금속, 설비 공사 외</td>
+                <td><b>14,000,000</b></td>
+                <td>추가 평당 130만원</td>
+            </tr>
+
+            <tr>
+                <td>설계 및 도면 디자인</td>
+                <td><b>2,500,000</b></td>
+                <td>추가 평당 25만원</td>
+            </tr>
+
+            <tr>
+                <td class="s1">가구</td>
+                <td>
+                    테이블 및 의자, 붙박이 쇼파
+                </td>
+                <td></td>
+                <td>별도</td>
+            </tr>
+
+            <tr>
+                <td class="s1">간판 내·외부<br>사인물</td>
+                <td>
+                    외부 전면 잔넬 텍스트 간판, DID<br>
+                    메뉴보드 및 내부 사인물 일체
+                </td>
+                <td><b>4,400,000</b></td>
+                <td>1면 4m 기준</td>
+            </tr>
+
+            <tr>
+                <td class="s1">홍보물/비품</td>
+                <td>
+                    유니폼, 홍보물, 배너, 전단, 쿠폰, 명함, 음료모형 외
+                </td>
+                <td><b>1,360,000</b></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td class="s1">DID메뉴보드</td>
+                <td>
+                    모니터(3EA), 브라켓, 셋탑박스, 허브, 마우스, 멀티탭, 프로그램개발(CMS)
+                </td>
+                <td><b>3,210,000</b></td>
+                <td></td>
+            </tr>
+
+        </table>
+
+        <p class="total">TOTAL \ <span>69,346,100</span> (VAT 별도)</p>
+        
+        <p class="etc">
+            ※ 별도사항 : 전기증설, 냉난방, 철거, 외관공사(건물전면), 테라스, 어닝, 아이스크림장비, 이행보증금, POS&키오스크
+        </p>
+
+        <p class="down_txt">
+            ※ 위 사항은 예측된 수치로서 세부사항은 변동될 수 있습니다. (모든 비용은 VAT 별도 금액입니다.)<br>
+            ※ 위 조건은 점포상황(전기증설, 급/배수, 어닝, 테라스 공사 등)에 따라 건젹이 상이할 수 있습니다.<br>
+        </p>
+      
+
+        <p class="line"></p>
+
+
+         <!-- 테이블 표 -->
+         <table>
+            <caption>15평기준<small>(49.5m²기준)</small> <span>&lt;단위 : 원&gt;</span></caption>
+
+            <tr>
+                <th>항목</th>
+                <th>내용</th>
+                <th>금액</th>
+                <th>비고</th>
+            </tr>
+
+            <tr>
+                <td class="s1">가맹비</td>
+                <td>상표 사용권 부여, 상권조사 및 영업권 보장</td>
+                <td><span>8,000,000</span></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td class="s1">교육비</td>
+                <td>유니폼, 매뉴얼 교육 및 점포 운영에 관한 교육, 현장 실습비</td>
+                <td><b>4,000,000</b></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td class="s1">주방기기/기물</td>
+                <td>
+                    고급 커피머신, 자동그라인더, 대용량제빙기, 믹서기, 디지털 냉장고<br>
+                    (2EA), 테이블 탱동고, 핫워터, 온수기, 오븐레인지, 쇼케이스, 디저트<br>
+                    모형, 아이스빈, 작업대, 컵디스펜서, 선반, 서랍형 넉박스, 주방집기<br>
+                    포함
+                </td>
+                <td><b>31,876,100</b></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td rowspan="2" class="s1">인테리어</td>
+                <td>목공사, 전기, 조명공사, 도장, 타일, 유리, 금속, 설비 공사 외</td>
+                <td><b>16,500,000</b></td>
+                <td>추가 평당 130만원</td>
+            </tr>
+
+            <tr>
+                <td>설계 및 도면 디자인</td>
+                <td><b>3,000,000</b></td>
+                <td>추가 평당 25만원</td>
+            </tr>
+
+            <tr>
+                <td class="s1">가구</td>
+                <td>
+                    테이블 및 의자, 붙박이 쇼파
+                </td>
+                <td></td>
+                <td>별도</td>
+            </tr>
+
+            <tr>
+                <td class="s1">간판 내·외부<br>사인물</td>
+                <td>
+                    외부 전면 잔넬 텍스트 간판, DID<br>
+                    메뉴보드 및 내부 사인물 일체
+                </td>
+                <td><b>5,000,000</b></td>
+                <td>1면 4m 기준</td>
+            </tr>
+
+            <tr>
+                <td class="s1">홍보물/비품</td>
+                <td>
+                    유니폼, 홍보물, 배너, 전단, 쿠폰, 명함, 음료모형 외
+                </td>
+                <td><b>2,400,000</b></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td class="s1">DID메뉴보드</td>
+                <td>
+                    모니터(3EA), 브라켓, 셋탑박스, 허브, 마우스, 멀티탭, 프로그램개발(CMS)
+                </td>
+                <td><b>3,210,000</b></td>
+                <td></td>
+            </tr>
+
+        </table>
+
+        <p class="total">TOTAL \ <span>77,096,100</span> (VAT 별도)</p>
+        
+        <p class="etc">
+            ※ 별도사항 : 전기증설, 냉난방, 철거, 외관공사(건물전면), 테라스, 어닝, 아이스크림장비, 이행보증금, POS&키오스크
+        </p>
+
+        <p class="down_txt">
+            ※ 위 사항은 예측된 수치로서 세부사항은 변동될 수 있습니다. (모든 비용은 VAT 별도 금액입니다.)<br>
+            ※ 위 조건은 점포상황(전기증설, 급/배수, 어닝, 테라스 공사 등)에 따라 건젹이 상이할 수 있습니다.<br>
+        </p>
+
+
+    </div>
+
+   
+
+
+
+
+    <!-- 공통 카피라이트 -->
+    <div id="Copyright">
+        <div id="down_bg1"></div>
+        <div id="down_bg2">
+            <ul>
+                <li><a href="#a" onclick="document.getElementById('pop1').style.display='block'">이용약관</a></li>
+                <li><a href="#a" onclick="document.getElementById('pop2').style.display='block'">개인정보처리방침</a></li>
+            </ul>
+        </div>
+
+        <!-- 카피라이트 -->
+        <div id="wrap_footer">
+            <div id="footer">
+                <p class="logo"><a href="mega.html"><img src="images/logo.jpg"></a></p>
+
+                <p class="adress">
+
+                    <span>주식회사 앤하우스</span>
+                    대표자 김대영
+                    창업상담 1588-0656
+                    고객센터 1588-8298<br>
+                    FAX 02-325-5199
+                    사업자등록번호 105-87-51367<br>
+                    서울특별시 강남구 강남대로 518 11층, 13층 (주)앤하우스<br>
+                    개인정보보호 책임자 이종원
+
+                </p>
+
+                <p class="copy">COPYRIGHT(C) 2023 MEGA COFFEE ALL RIGHT RESERVED.</p>
+
+                <ul>
+                    <li><span>메가스토리</span><br><br>
+                        <a href="story.html">브랜드</a><br>
+                        <a href="#a">BI</a><br>
+                        <a href="#a">오시는 길</a><br>
+
+                    </li>
+
+                    <li><span>메뉴소개</span><br><br>
+                        <a href="menu.html">음료</a><br>
+                        <a href="#a">푸드</a><br>
+                        <a href="#a">상품</a><br>
+
+                    </li>
+
+                    <li><span>매장</span><br><br>
+                        <a href="#a">매장찾기</a><br>
+
+                    </li>
+
+                    <li><span>창업안내</span><br><br>
+                        <a href="franchise.html">개설비용</a><br>
+                        <a href="#a">인테리어</a><br>
+                        <a href="#a">창업문의</a><br>
+                        <a href="#a">창업뉴스</a><br>
+
+                    </li>
+
+                    <li><span>메가소식</span><br><br>
+                        <a href="news.html">공지사항</a><br>
+                        <a href="#a">이벤트</a><br>
+                        <a href="#a">FAQ</a><br>
+                        <a href="#a">고객의 소리</a><br>
+
+                    </li>
+
+                    <li><span>제휴문의</span><br><br>
+                        <a href="#a">상품제안</a><br>
+                        <a href="#a">마케팅제휴</a><br>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 이용약관 -->
+        <div id="pop1">
+            <div class="box">
+                <h2>이용안내 <span><i class="fa-solid fa-xmark"
+                            onclick="document.getElementById('pop1').style.display='none'"></i></span></h2>
+
+                <pre>
+개인정보수집 범위 : 이름, 연락처
+개인정보수집 및 이용목적 : 온라인 문의 및 상담 자료와 결과 회신
+* 매장과 관련된 CS의 경우, 해결 과정 안내 혹은 결과 회신을 위해 매장 관리자(슈퍼바이저,매장점주), 
+본사 유관부서가 연락을 드릴 수 있습니다.
+
+개인정보수집 및 보유기간 : 개인정보 수집 및 이용에 대한 목적이 달성되면 지체없이 파기하며 최대 
+보유기간은 1년을 넘기지 아니한다.
+            </pre>
+
+                <p class="btn" onclick="document.getElementById('pop1').style.display='none'">취소</p>
+
+            </div>
+        </div>
+
+
+        <!-- 개인정보취급방침 -->
+        <div id="pop2">
+            <div class="box">
+                <h2>개인정보취급방침 <span><i class="fa-solid fa-xmark"
+                            onclick="document.getElementById('pop2').style.display='none'"></i></span></h2>
+
+                <pre>
+개인정보수집 범위 : 이름, 연락처
+개인정보수집 및 이용목적 : 온라인 문의 및 상담 자료와 결과 회신
+* 매장과 관련된 CS의 경우, 해결 과정 안내 혹은 결과 회신을 위해 매장 관리자(슈퍼바이저,매장점주), 
+본사 유관부서가 연락을 드릴 수 있습니다.
+
+개인정보수집 및 보유기간 : 개인정보 수집 및 이용에 대한 목적이 달성되면 
+지체없이 파기하며 최대 보유기간은 1년을 넘기지 아니한다.
+            </pre>
+
+                <p class="btn" onclick="document.getElementById('pop2').style.display='none'">취소</p>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

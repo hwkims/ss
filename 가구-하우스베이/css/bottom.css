@@ -1,0 +1,164 @@
+
+/* 공통하단 */
+
+#wrap_Copyright {
+    width: 100%;
+    height: 350px;
+    background: #f2f2f2;
+}
+
+#Copyright {
+    width: 1700px;
+    height: 300px;
+    
+    margin: 0 auto;
+    margin-top: 150px;
+    color: #333;
+    
+}
+
+#Copyright ul {
+    width: 1700px;
+    height: 300px;
+    /* background: palegoldenrod; */
+    margin: 0 auto;
+    position: relative;
+}
+
+#Copyright ul li p:nth-of-type(1) {
+    width: 180px;
+    height: 150px;
+    /* background: palegreen; */
+    
+}
+
+#Copyright ul li:nth-child(1) p:nth-of-type(1) {
+    width: 180px;
+    height: 150px;
+    /* background: palegreen; */
+    padding-top: 30px;
+    
+}
+
+
+#Copyright ul li p:nth-of-type(2),#Copyright ul li p:nth-of-type(3),#Copyright ul li p:nth-of-type(4) {
+    font-size: 18px;
+    padding: 10px 10px 0px 0px;
+}
+
+#Copyright ul li p b {
+    padding-left: 10px;
+}
+
+#Copyright ul li:nth-child(2) {
+    width: 700px;
+    height: 300px;
+    /* background: peachpuff; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    
+}
+
+#Copyright ul li:nth-child(2) p:nth-of-type(1) {
+    width: 700px;
+    height: 150px;
+    line-height: 150px;
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: #090281;
+}
+
+#Copyright ul li:nth-child(2) p span {
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #666;
+    border-radius: 10px;
+    padding: 8px;
+    color: #333;
+    cursor: pointer;
+} 
+
+/*--------태블릿버전--------*/
+@media all and (max-width:1024px) {
+    #wrap_Copyright {
+        /* background: palegoldenrod; */
+        width: 100%;
+        height: 300px;
+        position: relative;
+        
+    }
+
+    
+
+    #Copyright ul li:nth-child(1) {
+        /* background: palegreen; */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1000px;
+        text-align: center;
+    }
+
+    #Copyright ul li:nth-child(1) p:nth-of-type(1){
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #Copyright ul li:nth-child(2) {
+        /* background: peachpuff; */
+       display: none;
+    }
+
+    #Copyright ul li p:nth-of-type(2),#Copyright ul li p:nth-of-type(3),#Copyright ul li p:nth-of-type(4) {
+        font-size: 18px;
+        padding: 10px 10px 0px 20px;
+    
+    }
+    
+}
+
+/*--------모바일버전--------*/
+@media all and (max-width:768px) {
+    #wrap_Copyright {
+        /* background: palegoldenrod; */
+        width: 100%;
+        height: 350px;
+        position: relative;
+        
+    }
+
+    
+
+    #Copyright ul li:nth-child(1) {
+        /* background: palegreen; */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 768px;
+        text-align: center;
+    }
+
+    #Copyright ul li:nth-child(1) p:nth-of-type(1){
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #Copyright ul li:nth-child(2) {
+        /* background: peachpuff; */
+       display: none;
+    }
+
+    #Copyright ul li p:nth-of-type(2),#Copyright ul li p:nth-of-type(3),#Copyright ul li p:nth-of-type(4) {
+        font-size: 18px;
+        padding: 10px 10px 0px 20px;
+    
+    }
+}
+
+
+
+
+

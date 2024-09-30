@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인-메가</title>
+
+    <!-- html에서 css연동 -->
+
+ <link rel="stylesheet" href="css/mega.css">
+ <link rel="stylesheet" href="css/top.css">
+ <link rel="stylesheet" href="css/bottom.css">
+
+ <!-- 파비콘 연동 -->
+     <link rel="shortcut icon" href="images/favicon.png">
+ 
+ <!-- 폰트어썸 연동 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- top고정 바 -->
+     <div class="top_box" id="top_box">
+        <p>TOP</p>
+     </div>
+
+     <script>
+        const top_box = document.getElementById('top_box');
+
+        top_box.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior:'smooth'
+            });
+        });
+        
+     </script>
+
+    <!-- 공통상단 로고 -->
+    <div id="wrap_top">
+    <div id="top">
+        <ul class="logo">
+            <li><a href="mega.html"><img src="images/mega_logo.png"></a></li>
+        </ul>
+        <ul class="menu">
+           
+            <li><a href="story.html">메가 스토리</a>
+                <div class="sub">
+                    <p><a href="#a">브랜드</a></p>
+                    <p><a href="#a">BI</a></p>
+                    <p><a href="#a">오시는길</a></p>
+                </div>
+            </li>
+            <li><a href="menu.html">메뉴소개</a>
+                <div class="sub">
+                    <p><a href="menu.html">음료</a></p>
+                    <p><a href="#a">푸드</a></p>
+                    <p><a href="#a">상품</a></p>
+                </div>
+            </li>
+            <li><a href="store.html">매장</a>
+                <div class="sub">
+                    <p><a href="store.html">매장찾기</a></p>
+                    
+                </div>
+            </li>
+            <li><a href="franchise.html">창업안내</a>
+                <div class="sub">
+                    <p><a href="franchise.html">개설비용</a></p>
+                    <p><a href="#a">인테리어</a></p>
+                    <p><a href="#a">창업문의</a></p>
+                    <p><a href="#a">가맹점인수</a></p>
+                    <p><a href="#a">창업뉴스</a></p>
+                </div>
+            </li>
+            <li><a href="news.html">메가소식</a>
+                <div class="sub">
+                    <p><a href="news.html">공지사항</a></p>
+                    <p><a href="#a">이벤트</a></p>
+                    <p><a href="#a">FAQ</a></p>
+                    <p><a href="#a">고객의소리</a></p>
+                </div>
+            </li>
+            <li><a href="interview.html">채용</a>
+                <div class="sub">
+                    <p><a href="interview.html">채용안내</a></p>
+                    
+                </div>
+            </li>
+        </ul>
+
+        <ul class="icon">
+          
+            <li><img src="images/Untitled-4.png" usemap="#Untitled-4.png">
+            <map name="Untitled-4.png">
+                <area shape="rect" coords="14,9,36,36" href="https://blog.naver.com/ekddusekddus">
+                <area shape="rect" coords="61,10,86,38" href="https://www.facebook.com/mega.mgc.coffee.official">
+                <area shape="rect" coords="115,9,139,35" href="https://www.instagram.com/mega.mgc.coffee_official/">
+                <area shape="rect" coords="162,9,189,36" href="https://smartstore.naver.com/megamgccoffee">
+            </map>
+            </li>
+             
+        </ul>
+     </div>
+    </div>
+
+    <!-- 메인베너 -->
+
+    <div id="main_banner">
+        <p><img src="images/main_banner1_ade.jpg"></p>
+    </div>
+
+    <!-- 신메뉴 소개 -->
+     <div id="new">
+        <h1>NEW</h1>
+        <ul class="box1">
+            <li><img src="images/new_img1_r.png"></li>
+            <h2>지구멜론 스무디</h2>
+            <h3>제철 과일 멜론과  달콤한 연유가<br>
+                어우러져 지구를 형상화한 부드럽고<br>
+                진한 여름시즌<br><br><br> 
+                <span>한정 스무디</span></h3>
+                <pre>·</pre> 
+                <pre>·</pre>
+           
+        </ul>
+
+       
+
+        <p class="prev"><i class="fa-solid fa-chevron-left" ></i></p>
+        <p class="next"><i class="fa-solid fa-chevron-right"></i></p>
+
+        
+     </div>
+
+     <!-- 프렌차이즈 -->
+
+     <div id="franchise">
+        <h1>FRANCHISE</h1>
+        <ul>
+            <p class="center"><img src="images/franchise_img.png"></p>
+            <h3>
+                (24.7.25누적)<br>
+                <span>3,143호</span><br>
+                <b>돌파!</b>
+    
+            </h3>
+            <h4>
+                메가커피만의 차별화된<br>
+                <span>경쟁력</span>
+            </h4>
+        </ul>
+       </div>
+
+       <div id="box">
+        <ul>
+            <li>
+                <ol class="left">
+                <h5>창업문의</h5>
+                <p class="btn"><a href="https://www.mega-mgccoffee.com/customer/?db_category=2">창업문의 바로가기 <span><i class="fa-solid fa-chevron-right fa-fade"></i></span></a></p>
+                <p class="txt">#창업  #메가커피 창업하는법  #쉽다쉬워</p>
+                <img src="images/franchise_icon1.png">
+                </ol>
+               
+            </li>
+
+            <li>
+                <ol class="left">
+                <h5>창업설명회 신청</h5>
+                <p class="btn"><a href="https://www.mega-mgccoffee.com/bbs/?bbs_category=7">창업설명회 신청하기 <span><i class="fa-solid fa-chevron-right fa-fade"></i></span></a></p>
+                <p class="txt">#창업설명회  #마감임박  #참석만해도 풍성한 경품지급!</p>
+                <img src="images/franchise_icon2.png">
+                </ol>
+               
+            </li>
+        </ul>
+       </div>
+
+       <!-- 메가 이벤트 -->
+
+       <div id="event">
+        <h1>EVENT</h1>
+        <img src="images/Untitled-8.png">
+        <marquee scrollamount="13" behavior="alternate" onmouseover="stop()" onmouseout="start()">
+        <ul>
+        <p><a href="#a"><img src="images/event_img1.jpg"></a></p>
+        <p><a href="#a"><img src="images/event_img2.jpg"></p></a>
+        <p><a href="#a"><img src="images/event_img3.jpg"></p></a>
+        <p><a href="#a"><img src="images/event_img4.jpg"></p></a>
+        <p><a href="#a"><img src="images/event_img5.jpg"></p></a>
+        <p><a href="#a"><img src="images/event_img6.jpg"></p></a>
+        <p><a href="#a"><img src="images/event_img7.jpg"></p></a>
+        <p><a href="#a"><img src="images/event_img8.jpg"></p></a>
+        <p><a href="#a"><img src="images/event_img9.jpg"></p></a>
+        <p><a href="#a"><img src="images/event_img10.jpg"></p></a>
+    </ul>
+        </marquee>
+        <h5><a href="https://mega-mgccoffee.com/bbs/?bbs_category=3">이벤트 더보기 <span>〉</span></a></h5>
+       </div>
+
+       <!-- 메가 멤버십 -->
+       <h1>MEMBERSHIP</h1>
+       <div id="membership">
+        <p><img src="images/membership_phone1.png"></p>
+        <h4>app으로 주문하고 바로 받으세요!</h4>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <h2>메가 오더</h2>
+        <h5>메가MGC커피 app은 고객분들을 위한  다양한 <br>
+            기능과 혜택이 가득 담긴 공식 모바일 앱 서비스 입니다.
+            </h5>
+        <div class="box_top">
+            <h3>메가 MGC커피 멤버십 APP 다운로드</h3>
+            <ol>
+                <li><a href="https://play.google.com/store/search?q=%EB%A9%94%EA%B0%80%EC%BB%A4%ED%94%BC&c=apps&hl=ko&gl=KR"><img src="images/membership_google.png"><span>Google play</span></a></li>
+                <li><a href="https://apps.apple.com/kr/app/%EB%A9%94%EA%B0%80mgc%EC%BB%A4%ED%94%BC/id1473428031"><img src="images/membership_apple.png"><span>app store</span></a></li>
+              
+            </ol>
+        </div>
+        <div class="box_right">
+            
+        </div>
+       </div>
+
+       <!-- 지도 -->
+     
+       <div id="map">
+        <h1>SEARCH</h1>
+        <ul>
+            <li><i class="fa-solid fa-location-dot" style="color: #fff;"></i></li>
+            <p class="txt1">매장찾기</p>
+            <p class="txt2"></p>
+            <p class="txt3">가까운 메가커피 매장을<br>확인해보세요!</p>
+            <p class="icon"><input type="search" placeholder="FIND A STORE"><i class="fa-solid fa-magnifying-glass"></i></p>
+        </ul>
+
+        <ul class="right">
+            <li><i class="fa-solid fa-file-lines"></i></li>
+            <p class="txt1">NEWS</p>
+            <p class="txt2"></p>
+            <p class="txt3"><a href="#a">[뉴시스] 메가MGC커피, 공주 알밤 활용 가을 신메뉴 만든다
+                <span>2024.07.18</span>
+            </a></p>
+            <p class="txt3"><a href="#a">[헤럴드경제] 김수현이 메가MGC커피에서 사랑을 외친 사연 <span>2024.07.18</span></a></p>
+            <p class="txt3"><a href="#a">[뉴스1] 메가MGC커피, '노티드' 손 잡았다…콜라보 도넛 출시 <span>2024.07.18</span></a></p>
+            <p class="arrow"><a href="#a">
+                더보기 >
+            </a></p>
+            
+        </ul>
+       </div>
+
+       <!-- 공통 카피라이트 -->
+        <div id="Copyright">
+            <div id="down_bg1"></div>
+    <div id="down_bg2">
+        <ul>
+            <li><a href="#a" onclick="document.getElementById('pop1').style.display='block'">이용약관</a></li>
+            <li><a href="#a" onclick="document.getElementById('pop2').style.display='block'">개인정보처리방침</a></li>
+        </ul>
+    </div>
+
+    <!-- 카피라이트 -->
+    <div id="wrap_footer">
+        <div id="footer">
+            <p class="logo"><a href="mega.html"><img src="images/logo.jpg"></a></p>
+
+            <p class="adress">
+              
+                <span>주식회사 앤하우스</span>
+                대표자 김대영
+                창업상담 1588-0656
+                고객센터 1588-8298<br>
+                FAX 02-325-5199
+                사업자등록번호 105-87-51367<br>
+                서울특별시 강남구 강남대로 518 11층, 13층 (주)앤하우스<br>
+                개인정보보호 책임자 이종원
+           
+            </p>
+
+            <p class="copy">COPYRIGHT(C) 2023 MEGA COFFEE ALL RIGHT RESERVED.</p>
+
+            <ul>
+                <li><span>메가스토리</span><br><br>
+                    <a href="#a">브랜드</a><br>
+                    <a href="#a">BI</a><br>
+                    <a href="#a">오시는 길</a><br>
+
+                </li>
+
+                <li><span>메뉴소개</span><br><br>
+                    <a href="menu.html">음료</a><br>
+                    <a href="#a">푸드</a><br>
+                    <a href="#a">상품</a><br>
+
+                </li>
+
+                <li><span>매장</span><br><br>
+                    <a href="store.html">매장찾기</a><br>
+
+                </li>
+
+                <li><span>창업안내</span><br><br>
+                    <a href="franchise.html">개설비용</a><br>
+                    <a href="#a">인테리어</a><br>
+                    <a href="#a">창업문의</a><br>
+                    <a href="#a">창업뉴스</a><br>
+
+                </li>
+
+                <li><span>메가소식</span><br><br>
+                    <a href="news.html">공지사항</a><br>
+                    <a href="#a">이벤트</a><br>
+                    <a href="#a">FAQ</a><br>
+                    <a href="#a">고객의 소리</a><br>
+
+                </li>
+
+                <li><span>제휴문의</span><br><br>
+                    <a href="#a">상품제안</a><br>
+                    <a href="#a">마케팅제휴</a><br>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+
+     <!-- 이용약관 -->
+     <div id="pop1">
+        <div class="box">
+            <h2>이용안내 <span><i class="fa-solid fa-xmark" onclick="document.getElementById('pop1').style.display='none'"></i></span></h2>
+
+            <pre>
+개인정보수집 범위 : 이름, 연락처
+개인정보수집 및 이용목적 : 온라인 문의 및 상담 자료와 결과 회신
+* 매장과 관련된 CS의 경우, 해결 과정 안내 혹은 결과 회신을 위해 매장 관리자(슈퍼바이저,매장점주), 
+본사 유관부서가 연락을 드릴 수 있습니다.
+
+개인정보수집 및 보유기간 : 개인정보 수집 및 이용에 대한 목적이 달성되면 지체없이 파기하며 최대 
+보유기간은 1년을 넘기지 아니한다.
+            </pre>
+
+            <p class="btn" onclick="document.getElementById('pop1').style.display='none'">취소</p>
+
+        </div>
+    </div>
+
+
+    <!-- 개인정보취급방침 -->
+    <div id="pop2">
+        <div class="box">
+            <h2>개인정보취급방침 <span><i class="fa-solid fa-xmark" onclick="document.getElementById('pop2').style.display='none'"></i></span></h2>
+
+            <pre>
+개인정보수집 범위 : 이름, 연락처
+개인정보수집 및 이용목적 : 온라인 문의 및 상담 자료와 결과 회신
+* 매장과 관련된 CS의 경우, 해결 과정 안내 혹은 결과 회신을 위해 매장 관리자(슈퍼바이저,매장점주), 
+본사 유관부서가 연락을 드릴 수 있습니다.
+
+개인정보수집 및 보유기간 : 개인정보 수집 및 이용에 대한 목적이 달성되면 
+지체없이 파기하며 최대 보유기간은 1년을 넘기지 아니한다.
+            </pre>
+
+            <p class="btn" onclick="document.getElementById('pop2').style.display='none'">취소</p>
+
+        </div>
+    </div>
+        </div>
+       
+</body>
+</html>

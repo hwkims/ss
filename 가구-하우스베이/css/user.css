@@ -1,0 +1,189 @@
+
+input {
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+
+
+#join {
+    width: 930px;
+    background: rgba(255,255,255,0.9);
+    margin: 30px auto;
+    text-align: center;
+    padding-bottom: 30px;
+    
+}
+
+#join h2 {
+    padding-top: 50px;
+    color: #090281;
+    font-size: 40px;
+    letter-spacing: -2px;
+}
+
+#join p.txt1 {
+    padding-top: 20px;
+    color: #777;
+    font-size: 16px;
+    letter-spacing: -1px;
+}
+
+#join h4 {
+    text-align: left;
+    padding: 20px 0 0 15px;
+    color: #333;
+    font-size: 18px;
+    letter-spacing: -1px;
+}
+
+#join p.line {
+    width: 900px;
+    height: 1px;
+    background: #aaa;
+    margin: 10px auto;
+}
+
+#join p.txt2 {
+    text-align: left;
+    padding-left: 15px;
+    color: #333;
+    font-size: 16px;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+#join p.txt2 input {
+    margin-left: 60px;
+    margin-right: 5px;
+}
+
+#join p.txt2 span {
+    color: #777;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+#join p.txt3 {
+    text-align: left;
+    padding: 10px 0 0 140px;
+    color: #333;
+    font-size: 14px;
+    letter-spacing: -1px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+
+            #join fieldset {
+                width: 900px;
+                margin: 0 auto;
+                text-align: left;
+                border: 0;
+            }
+
+            #join fieldset ul li label.title {
+                display: inline-block;
+
+                width: 160px;
+                height: 50px;
+                line-height: 50px;
+                
+                box-sizing: border-box;
+                margin-left: 20px;
+                background: #f2f2f2;
+                font-weight: bold;
+            }
+
+            #join fieldset ul li {
+                font-weight: bold;
+            }
+
+            #join input[type="text"] {
+                width: 155px;
+                height: 40px;
+                border: 1px solid #ddd;
+            }
+
+            #join input[type="radio"] {
+                margin: 0 5px;
+            }
+
+            #join small {
+                color: #888;
+                font-size: 13px;
+                letter-spacing: -1px;
+                font-weight: normal;
+            }
+
+            #join fieldset ul li:nth-child(4) {
+                color: 333#888;
+                letter-spacing: -1px;
+            }
+
+            #join select {
+                width: 150px;
+                height: 35px;
+                border: 1px solid #ddd;
+                color: #666;
+                font-size: 14px;
+                letter-spacing: -1px;
+            }
+
+            #join input[type="tel"] {
+                width: 150px;
+                height: 35px;
+                border: 1px solid #ddd;
+            }
+
+            #join input[type="button"] {
+                width: 60px;
+                height: 35px;
+                background: #090281;
+                border: 0;
+
+                color: #fff;
+                font-size: 14px;
+                letter-spacing: -1px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            #join p.down_txt {
+                color: #777;
+                font-size: 13px;
+                letter-spacing: -1px;
+                font-weight: bold;
+                padding-left: 170px;
+            }
+
+            #join p.line1 {
+                width: 860px;
+                height: 1px;
+                background: #aaa;
+                margin: 10px auto;
+                margin-left: 40px;
+            }
+
+            #join p.txt4 {
+                padding-left: 40px;
+                color: #888;
+                font-size: 14px;
+                letter-spacing: -1px;
+            }
+
+            #join textarea {
+                width: 900px; height: 335px; 
+                margin: 50px 0 0;
+
+                font-family: '맑은 고딕';
+                color: #777;
+                font-size: 14px;
+                letter-spacing: -1px;
+
+                border: 1px solid #ccc;
+                padding: 10px;
+                box-sizing: border-box;
+                outline: 0;
+            }
+   

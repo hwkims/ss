@@ -1,0 +1,199 @@
+/* 리뷰소개 */
+
+/* 리뷰 서브-포토리뷰 소개 */
+
+#main_txt {
+    width: 1500px;
+    height: 3200px;
+    /* background: tan; */
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+#main_txt > h2 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: normal; 
+     font-family: 'ChosunBg';
+    color: #090281;
+    padding-top: 50px;
+    
+
+}
+
+#main_txt ul {
+    width: 1500px;
+    height: 150px;
+    background: #f2f2f2;
+    margin: 30px auto;
+    text-align: center;
+}
+
+#main_txt ul li {
+    line-height: 2;
+    letter-spacing: -1px;
+}
+
+#main_txt ul li:nth-child(1) {
+    font-size: 25px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+#main_txt ol li{
+    font-size: 20px;
+    letter-spacing: -1px;
+    font-family: '나눔바른고딕';
+}
+
+#main_txt ol li:nth-child(1) {
+    width: 1500px;
+    height: 120px;
+     /* background: palegoldenrod; */
+    line-height: 1.8;
+    margin-top: 50px;
+}
+
+#main_txt ol li.img {
+    width: 1500px;
+    height: 1000px;
+    /* background: paleturquoise; */
+    margin: 50px auto;
+}
+
+#main_txt ol li.img img {
+    width: 100%;
+    height: 100%;
+}
+
+#main_txt ol li:nth-child(3) {
+    width: 1500px;
+    height: 240px;
+    /* background: palegoldenrod; */
+    line-height: 1.8;
+}
+
+#main_txt ol li:nth-child(5) {
+    width: 1500px;
+    height: 350px;
+    /* background: palegoldenrod; */
+    line-height: 1.8;
+}
+
+/* 같은제품보러가기 */
+
+#best {
+    width: 1500px;
+    height: 650px;
+    /* background: #f2f2f2; */
+    
+    margin: 0 auto;
+}
+
+#best {
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+#best h2 {
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: -1px;
+    font-weight: bold; 
+    color: #333;
+    padding-top: 50px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    
+
+}
+
+#best ul {
+    width: 1000px;
+    height: 500px;
+    /* background: paleturquoise; */
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#best ul li {
+    width: 300px;
+    height: 430px;
+    /* background: palegoldenrod; */
+    margin: 0 20px;
+    text-align: left;
+    cursor: pointer;
+}
+
+#best ul li p:nth-of-type(1) {
+    width: 300px;
+    height: 300px;
+    /* background: palegreen; */
+}
+
+#best ul li p:nth-of-type(1) img {
+    width: 100%;
+    height: 100%;
+}
+
+#best ul li p {
+    text-align: left;
+}
+
+#best ul li p:nth-of-type(2) {
+    text-align: left;
+    font-size: 20px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+#best ul li p:nth-of-type(3) {
+    display: inline-block;
+    background: #6b9de8;
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+    margin: 15px 0px 15px 0px;
+    
+}
+
+#best ul li p:nth-of-type(4) i{
+    padding-right: 5px;
+}
+
+/* 로케이션 하단바 */
+
+#location_bottom {
+    width: 1500px;
+    height: 160px;
+    /* background: palegoldenrod; */
+    margin: 30px auto;
+}
+
+#location_bottom li a{
+    width: 1500px;
+    height: 80px;
+    /* background: palegreen; */
+    line-height: 80px;
+    color: #333;
+    display: flex;
+}
+
+#location_bottom li:first-child {
+    border-bottom: 1px solid #ddd;
+}
+
+
+#location_bottom li p:nth-of-type(1) {
+    width: 100px;
+}
+
+#location_bottom li p:nth-of-type(2) {
+    width: 1300px;
+}
+
+

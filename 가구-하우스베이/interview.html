@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서브6-채용안내</title>
+
+    <!-- html에서 css연동 -->
+
+    <link rel="stylesheet" href="css/interview.css">
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/bottom.css">
+
+    <!-- 파비콘 연동 -->
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- 폰트어썸 연동 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- top고정 바 -->
+    <div class="top_box" id="top_box">
+        <p>TOP</p>
+    </div>
+
+    <script>
+        const top_box = document.getElementById('top_box');
+
+        top_box.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+    </script>
+
+    <!-- 공통상단 로고 -->
+    <div id="wrap_top">
+        <div id="top">
+            <ul class="logo">
+                <li><a href="mega.html"><img src="images/mega_logo.png"></a></li>
+            </ul>
+            <ul class="menu">
+
+                <li><a href="story.html">메가 스토리</a>
+                    <div class="sub">
+                        <p><a href="story.html">브랜드</a></p>
+                        <p><a href="bi.html">BI</a></p>
+                        <p><a href="#a">오시는길</a></p>
+                    </div>
+    
+                </li>
+                <li><a href="menu.html">메뉴소개</a>
+                    <div class="sub">
+                        <p><a href="menu.html">음료</a></p>
+                        <p><a href="#a">푸드</a></p>
+                        <p><a href="#a">상품</a></p>
+                    </div>
+                </li>
+                <li><a href="store.html">매장</a>
+                    <div class="sub">
+                        <p><a href="store.html">매장찾기</a></p>
+
+                    </div>
+                </li>
+                <li><a href="franchise.html">창업안내</a>
+                    <div class="sub">
+                        <p><a href="franchise.html">개설비용</a></p>
+                        <p><a href="#a">인테리어</a></p>
+                        <p><a href="#a">창업문의</a></p>
+                        <p><a href="#a">가맹점인수</a></p>
+                        <p><a href="#a">창업뉴스</a></p>
+                    </div>
+                </li>
+                <li><a href="news.html">메가소식</a>
+                    <div class="sub">
+                        <p><a href="news.html">공지사항</a></p>
+                        <p><a href="#a">이벤트</a></p>
+                        <p><a href="#a">FAQ</a></p>
+                        <p><a href="#a">고객의소리</a></p>
+                    </div>
+                </li>
+                <li><a href="interview.html">채용</a>
+                    <div class="sub">
+                        <p><a href="interview.html">채용안내</a></p>
+
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="icon">
+
+                <li><img src="images/Untitled-4.png" usemap="#Untitled-4.png">
+                    <map name="Untitled-4.png">
+                        <area shape="rect" coords="14,9,36,36" href="https://blog.naver.com/ekddusekddus">
+                        <area shape="rect" coords="61,10,86,38"
+                            href="https://www.facebook.com/mega.mgc.coffee.official">
+                        <area shape="rect" coords="115,9,139,35"
+                            href="https://www.instagram.com/mega.mgc.coffee_official/">
+                        <area shape="rect" coords="162,9,189,36" href="https://smartstore.naver.com/megamgccoffee">
+                    </map>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- 서브공통 사진 글씨 들어간 메인베너 -->
+
+    <div id="sub_top">
+        <h3>MEGA MGC NEWS</h3>
+        <h1>MEGA NEWS</h1>
+
+    </div>
+
+    <div id="wrap_top2">
+        <div id="sub_top2">
+            <p></p>
+        </div>
+    </div>
+
+    <!-- 서브공통 사진 글씨 들어간 메인베너 끝! 밑에부터 지우기-->
+
+   <!-- 공지사항 글씨 -->
+    <div id="main_txt">
+        <h1>채용안내</h1>
+        <h3>메가MGC커피와 함께 꿈을 펼쳐갈
+            지원자를 위해 상시채용을 하고 있습니다.</h3>
+    </div>
+
+    <!-- 입사지원하기 클릭상자 -->
+
+    <div id="main_top">
+        <h2><a href="#a">입사지원하기</a></h2>
+    </div>
+
+    <!-- 메인사진 4개 -->
+
+    <div id="main">
+      <ul>
+        <li>
+            <p class="top"><img src="images/interview_main1.jpg"></p>
+            <h2><span>Creativity</span><br>창의</h2>
+            <h4>창의력을 바탕으로 창의적인 사고와 다양성을<br> 존중하고 상호협력하에 창의적으로 선도하는 <br>인재</h4>
+        </li>
+        <li>
+            <p class="top"><img src="images/interview_main3.jpg"></p>
+            <h2><span>Ownership</span><br>오너십</h2>
+            <h4>맡은 일을 끝까지 책임지고 모든 과정에 최선을 다하고 충실히 수행하는 인재</h4>
+        </li>
+        <li>
+            <p class="top"><img src="images/interview_main2.jpg"></p>
+            <h2><span>Challenge</span><br>도전</h2>
+            <h4>두려움을 갖지않고 도전적인 목표설정과 끈기있는 도전할 수 있는 인재</h4>
+        </li>
+        <li>
+            <p class="top"><img src="images/interview_main4.jpg"></p>
+            <h2><span>Action</span><br>실천</h2>
+            <h4>아이디어에서 멈추지 않고 결정한 내용은 즉시 행동으로 옮기는 추진력을 발휘하는 인재</h4>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 복리후생 -->
+
+    <div id="gift">
+        <h1>복지혜택<span>메가MGC커피만의 풍부한 복리후생을 소개합니다.</span></h1>
+        <ul>
+            <li>
+                <p><i class="fa-solid fa-hand-holding-dollar"></i></p>
+                <p>일하는 만큼 가져가세요!<br><span>인센티브</span></p>
+            </li>
+
+            <li>
+                <p><i class="fa-solid fa-hotel"></i></p>
+                <p>열심히 일한자 떠나라!<br><span>레저시설 지원</span></p>
+            </li>
+
+            <li>
+                <p><i class="fa-solid fa-people-robbery"></i></p>
+                <p>인재를 추천하면 보상을 드려요!<br><span>인력추천 포상</span></p>
+            </li>
+
+            <li>
+                <p><i class="fa-solid fa-ticket"></i></p>
+                <p>신메뉴는 당연히 직원부터 먹어봐야죠!<br><span>신메뉴 쿠폰</span></p>
+            </li>
+
+            <li>
+                <p><i class="fa-solid fa-mug-hot"></i></p>
+                <p>모든 자사음료 아낌없이 제공!<br><span>자사음료 제공</span></p>
+            </li>
+
+            
+            <li>
+                <p><i class="fa-solid fa-gift"></i></p>
+                <p>생일 축하드려요!<br><span>생일자 선물</span></p>
+            </li>
+
+            <li>
+                <p><i class="fa-solid fa-baby"></i></p>
+                <p>직원의 경사는 우리의 행복!<br><span>경조사 지원</span></p>
+            </li>
+
+            <li>
+                <p><i class="fa-solid fa-shirt"></i></p>
+                <p>근무복 지급!<br><span>근무복 제공</span></p>
+            </li>
+
+            <li>
+                <p><i class="fa-solid fa-coins"></i></p>
+                <p>풍족한 명절 보내세요!<br><span>명절선물 제공</span></p>
+            </li>
+
+            <li>
+                <p><i class="fa-solid fa-sack-dollar"></i></p>
+                <p>그동안 감사했습니다!<br><span>퇴직금 지급</span></p>
+            </li>
+
+            <li>
+                <p><i class="fa-solid fa-file-circle-check"></i></p>
+                <p>4대보험 가입도 당연하죠!<br><span>4대보험</span></p>
+            </li>
+
+            <li>
+                <p><i class="fa-solid fa-calendar-days"></i></p>
+                <p>묻지도 따지지도 않습니다!<br><span>연차부여</span></p>
+            </li>
+
+
+        </ul>
+    </div>
+
+    <!-- 채용절차 -->
+
+    <div id="step">
+        <h1>채용절차<span>메가MGC커피의 채용절차는 3단계로 나뉘어 있습니다.</span></h1>
+        <ul>
+            <li>
+                <p>01. 서류전형</p>
+                <p>온라인으로 이력서를 첨부하여 등록해주세요.</p>
+            </li>
+
+            <h2><i class="fa-solid fa-caret-right"></i></h2>
+
+            <li>
+                <p>02. 면접전형</p>
+                <p>서류심사에서 합격 후, <br>면접일정을 전달드립니다.</p>
+            </li>
+
+            <h2><i class="fa-solid fa-caret-right"></i></h2>
+
+            <li>
+                <p>03. 최종합격</p>
+                <p>면접결과는 영업일 기준 10일이내, <br>합격여부를 문자 혹은 메일로 안내드립니다.</p>
+            </li>
+        </ul>
+    </div>
+
+    
+
+    <!-- 공통 카피라이트 -->
+    <div id="Copyright">
+        <div id="down_bg1"></div>
+        <div id="down_bg2">
+            <ul>
+                <li><a href="#a" onclick="document.getElementById('pop1').style.display='block'">이용약관</a></li>
+                <li><a href="#a" onclick="document.getElementById('pop2').style.display='block'">개인정보처리방침</a></li>
+            </ul>
+        </div>
+
+        <!-- 카피라이트 -->
+        <div id="wrap_footer">
+            <div id="footer">
+                <p class="logo"><a href="mega.html"><img src="images/logo.jpg"></a></p>
+
+                <p class="adress">
+
+                    <span>주식회사 앤하우스</span>
+                    대표자 김대영
+                    창업상담 1588-0656
+                    고객센터 1588-8298<br>
+                    FAX 02-325-5199
+                    사업자등록번호 105-87-51367<br>
+                    서울특별시 강남구 강남대로 518 11층, 13층 (주)앤하우스<br>
+                    개인정보보호 책임자 이종원
+
+                </p>
+
+                <p class="copy">COPYRIGHT(C) 2023 MEGA COFFEE ALL RIGHT RESERVED.</p>
+
+                <ul>
+                    <li><span>메가스토리</span><br><br>
+                        <a href="story.html">브랜드</a><br>
+                        <a href="#a">BI</a><br>
+                        <a href="#a">오시는 길</a><br>
+
+                    </li>
+
+                    <li><span>메뉴소개</span><br><br>
+                        <a href="menu.html">음료</a><br>
+                        <a href="#a">푸드</a><br>
+                        <a href="#a">상품</a><br>
+
+                    </li>
+
+                    <li><span>매장</span><br><br>
+                        <a href="#a">매장찾기</a><br>
+
+                    </li>
+
+                    <li><span>창업안내</span><br><br>
+                        <a href="franchise.html">개설비용</a><br>
+                        <a href="#a">인테리어</a><br>
+                        <a href="#a">창업문의</a><br>
+                        <a href="#a">창업뉴스</a><br>
+
+                    </li>
+
+                    <li><span>메가소식</span><br><br>
+                        <a href="news.html">공지사항</a><br>
+                        <a href="#a">이벤트</a><br>
+                        <a href="#a">FAQ</a><br>
+                        <a href="#a">고객의 소리</a><br>
+
+                    </li>
+
+                    <li><span>제휴문의</span><br><br>
+                        <a href="#a">상품제안</a><br>
+                        <a href="#a">마케팅제휴</a><br>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 이용약관 -->
+        <div id="pop1">
+            <div class="box">
+                <h2>이용안내 <span><i class="fa-solid fa-xmark"
+                            onclick="document.getElementById('pop1').style.display='none'"></i></span></h2>
+
+                <pre>
+개인정보수집 범위 : 이름, 연락처
+개인정보수집 및 이용목적 : 온라인 문의 및 상담 자료와 결과 회신
+* 매장과 관련된 CS의 경우, 해결 과정 안내 혹은 결과 회신을 위해 매장 관리자(슈퍼바이저,매장점주), 
+본사 유관부서가 연락을 드릴 수 있습니다.
+
+개인정보수집 및 보유기간 : 개인정보 수집 및 이용에 대한 목적이 달성되면 지체없이 파기하며 최대 
+보유기간은 1년을 넘기지 아니한다.
+            </pre>
+
+                <p class="btn" onclick="document.getElementById('pop1').style.display='none'">취소</p>
+
+            </div>
+        </div>
+
+
+        <!-- 개인정보취급방침 -->
+        <div id="pop2">
+            <div class="box">
+                <h2>개인정보취급방침 <span><i class="fa-solid fa-xmark"
+                            onclick="document.getElementById('pop2').style.display='none'"></i></span></h2>
+
+                <pre>
+개인정보수집 범위 : 이름, 연락처
+개인정보수집 및 이용목적 : 온라인 문의 및 상담 자료와 결과 회신
+* 매장과 관련된 CS의 경우, 해결 과정 안내 혹은 결과 회신을 위해 매장 관리자(슈퍼바이저,매장점주), 
+본사 유관부서가 연락을 드릴 수 있습니다.
+
+개인정보수집 및 보유기간 : 개인정보 수집 및 이용에 대한 목적이 달성되면 
+지체없이 파기하며 최대 보유기간은 1년을 넘기지 아니한다.
+            </pre>
+
+                <p class="btn" onclick="document.getElementById('pop2').style.display='none'">취소</p>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,306 @@
+/*초기설정*/
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* 폰트 */
+
+/* 웰컴체 */
+@font-face {
+    font-family: 'OTWelcomeRA';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 평창평화체 */
+@font-face {
+    font-family: 'PyeongChangPeace-Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* 배민 도현체 */
+@font-face {
+    font-family: 'BMDOHYEON';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 속초바다 돋움체 */
+@font-face {
+    font-family: 'SokchoBadaDotum';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/SokchoBadaDotum.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 서브2-음료메뉴 시작 */
+
+/* 음료메뉴 메인베너 */
+/* 공통 노란색 표시줄 */
+
+
+#sub_top {
+    width: 100%;
+    height: 275px;
+    background: url(../images/story_top1.jpg) no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+#sub_top h3 {
+    font-size: 28px;
+    color: #fad000;
+    font-weight: normal;
+    padding-top: 60px;
+}
+
+#sub_top h1 {
+    font-size: 50px;
+    color: #fad000;
+    font-weight: bold;
+    padding-top: 40px;
+}
+
+#sub_top h6 {
+    font-size: 15px;
+    padding-top: 20px;
+    color: #fad000;
+    font-weight: normal;
+}
+
+#sub_top2 {
+    width: 1500px;
+    height: 100px;
+    background: #fad000;
+    margin: 0 auto;
+    position: relative;
+}
+
+#wrap_top2 {
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    background: #fad000;
+    position: relative;
+    -webkit-animation: slide-bottom 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-bottom 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    position: absolute;
+    top: 275px;
+    left: 0;
+}
+
+@-webkit-keyframes slide-bottom {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
+    }
+}
+
+@keyframes slide-bottom {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
+    }
+}
+
+
+#sub_top2 p {
+    width: 0;
+    height: 0;
+    border-top: 100px solid #fad000;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    position: absolute;
+    top: 90px;
+    left: 690px;
+}
+
+/* 공통 노란색 표시줄 끝 밑에부터 지우기*/
+
+/*프랜차이즈 영역*/
+#franchise_main {
+    width: 1280px;
+    margin: 160px auto 50px;
+    text-align: center;
+
+    animation-name: moveshow;
+    animation-duration: 2s;
+}
+
+@keyframes moveshow {
+    0% {
+        transform: translateY(150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#franchise_main h2 {
+    padding-top: 90px;
+
+    color: #ffd437;
+    font-size: 45px;
+    letter-spacing: -3px;
+}
+
+#franchise_main p.line {
+    width: 1050px;
+    height: 1px;
+    background: #ccc;
+    margin: 30px auto;
+}
+
+#franchise_main table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+#franchise_main table td,
+#franchise_main table th {
+    border: 1px solid #ddd;
+    height: 40px;
+
+    color:#555; font-size: 14px;
+    letter-spacing: -1px;
+}
+
+#franchise_main table th:nth-child(1) {
+    width: 130px;
+}
+#franchise_main table th:nth-child(2) {
+    width: 435px;
+}
+#franchise_main table th:nth-child(3) {
+    width: 135px;
+}
+#franchise_main table th:nth-child(4) {
+    width: 195px;
+}
+#franchise_main table th {
+    background: #222;
+    color:#fff;
+}
+#franchise_main table td.s1 {
+    background: #f1f1f1;
+    text-align: left;
+    padding-left: 15px;
+}
+
+#franchise_main table td span {
+    color:#333;
+    font-weight: bold;
+}
+
+#franchise_main table caption {
+    text-align: left;
+
+    color:#333;
+    font-size: 24px; letter-spacing: -2px;
+    font-weight: bold;
+
+    padding-bottom: 15px;
+}
+
+#franchise_main table caption small {
+    font-size: 14px; font-weight: normal;
+    padding-left: 60px;
+    letter-spacing: -1px;
+}
+
+#franchise_main table caption span {
+    font-size: 14px; font-weight: normal;
+    padding-left: 600px;
+    letter-spacing: -1px;
+}
+
+#franchise_main table tr:nth-child(4) td {
+    height: 100px;
+}
+
+#franchise_main p.total {
+    width: 900px; height: 50px;
+    line-height: 45px;
+    background: #ffd437;
+    margin: 20px auto;
+    text-align: right;
+    padding-right: 10px;
+    box-sizing: border-box;
+    border-bottom: 4px solid #333;
+
+    color:#333;
+    font-size: 14px; letter-spacing: -1px;
+}
+
+#franchise_main p.total span {
+    font-size: 18px; font-weight: bold;
+}
+
+
+#franchise_main p.etc {
+    width: 900px; height: 40px;
+    line-height: 40px;
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    margin: 15px auto;
+    text-align: left;
+
+    color:#333;
+    font-size: 14px; letter-spacing: -1px;
+
+    text-indent: 10px; /*글자 들여쓰기*/
+}
+
+#franchise_main p.down_txt {
+    width: 900px;    
+    margin: 15px auto;
+    text-align: left;
+
+    color:#333;
+    font-size: 14px; letter-spacing: -1px;
+
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+/*하단배경*/
+#down_bg1 {
+    width: 100%;
+    height: 60px;
+    background: #3c2418;
+}
+
+#down_bg2 {
+    width: 100%;
+    height: 60px;
+    background: #ffd437;
+}

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자주묻는질문</title>
+    <link rel="stylesheet" href="css/qna.css">
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/bottom.css">
+    <link rel="shortcut icon" href="images/housebay_fabicon2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+</head>
+
+<body>
+    <!-- 공통상단 시작 -->
+
+    <!-- top고정 바 -->
+    <div class="top_box" id="top_box">
+        <p><i class="fa-solid fa-sort-up"></i></p>
+    </div>
+
+    <script>
+        // 상단으로 스크롤
+        const top_box = document.getElementById('top_box');
+        top_box.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+
+    </script>
+
+      <!-- 로고,로그인 영역 -->
+   <div id="wrap_mainlogo">
+    <div id="main_logo">
+        <ul>
+            <li><a href="bay_main.html"><img src="images/main_logo2.png"></a></li>
+            <li><input type="search" placeholder="여름시즌오프 특가할인"></li>
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            <li class="icon">
+                <p><a href="login.html"><i class="fa-solid fa-lock"></i><br>로그인</a></p>
+                <p><a href="user.html"><i class="fa-solid fa-user"></i><br>회원가입</a></p>
+                <p><a href="map.html"><i class="fa-solid fa-location-dot"></i><br>매장찾기</a></p>
+               
+            </li>
+        </ul>
+    </div>
+</div>
+
+    <!-- 메뉴 -->
+    <div id="menu">
+        <ul>
+            <li class="top"><a href="#a"><i class="fa-solid fa-list-ul"></i> 카테고리</a>
+                <div class="sub_box">
+                    <ul>
+                        <h2></h2>
+                        <li><span>침대</span>
+                            <p><img src="images/1673590930_0316_64m07L2U7KeA7Lmo64yA_7Yyo67iM66at_thumb.jpg"></p>
+                            <p><img src="images/interior-8618459_1920.jpg"></p>
+                        </li>
+                        <li><span>소파</span>
+                            <p><img src="images/sofa-5055005_640.jpg"></p>
+                            <p><img src="images/living-room-8323852_640.jpg"></p>
+                        </li>
+                        <li><span>테이블</span>
+                            <p><img src="images/living-room-8539153_640.jpg"></p>
+                            <p><img src="images/64W467iM7ZmU7J207Yq46rGw7Iuk7J6l_thumb01.jpg"></p>
+                        </li>
+                        <li><span>식탁</span>
+                            <p><img src="images/dining-area-8403094_640.jpg"></p>
+                            <p><img src="images/artizan_6_thumb_1000_1.jpg"></p>
+                        </li>
+                        <li><span>옷장·수납</span>
+                            <p><img src="images/1521447268000_l.jpg"></p>
+                            <p><img src="images/7IWA67CU7Jik7YGs_thumb.jpg"></p>
+                        </li>
+                        <li><span>펫과함께</span>
+                            <p><img src="images/S600_c410a20e-aa9e-4ce8-ae1c-98713a2303c2 (1).jpg"></p>
+                            <p><img src="images/S600_8aea9471-480b-4fd8-817b-7f30628207d9.jpg"></p>
+                        </li>
+                        <li><span>자녀가구</span>
+                            <p><img src="images/7JWE7J2064iE66as7KSR7Lmo64yA_thumb01.jpg"></p>
+                            <p><img src="images/inuri_desk_1400_01.jpg"></p>
+                        </li>
+                    </ul>
+                </div>
+            <li><a href="best.html">BEST&NEW</a></li>
+            <li><a href="event.html">이벤트</a></li>
+            <li><a href="story.html">브랜드스토리</a></li>
+            <li><a href="review.html">포토리뷰</a></li>
+            <li><a href="cs.html">고객센터</a></li>
+        </ul>
+    </div>
+
+    <div id="wrap_line">
+    </div>
+
+    <!-- 공통상단 끝 여기부터 지우기 -->
+    <!-- 고객센터 시작 -->
+
+    <!-- 고객센터 텍스트 -->
+     <div id="main_txt">
+        <h2>고객센터</h2>
+        <p><img src="images/qna_img1.jpg"></p>
+        <h4>
+            고객님들께서 자주 묻는 질문입니다.<br>
+정확한 문의는 고객센터, 문의내용작성 하기를 참고해주세요.<br>
+        </h4>
+     </div>
+
+     <!-- 고객센터 메인 창 -->
+      <div id="main_banner">
+        <ul>
+            <li class="btn">
+                <p><a href="cs.html">문의내용작성</a></p>
+                <p><a href="qna.html">자주묻는질문</a></p>
+            </li>
+           
+        </ul>
+      </div>
+
+      <!-- 자주묻는 질문 -->
+
+      <div id="faq">
+
+        <ul class="box">
+            <li class="que"><p><span>1.</span>A/S 규정이 어떻게 되나요?</p> <i class="fa-solid fa-plus"></i></li>
+            <li class="ans"><h4>출장 방문 서비스는 무상 2년으로 진행되고 있습니다.<br>
+
+                (단, 취급 및 사용자의 하자로 인해 교체/교환은 제외입니다.)</h4></li>
+
+                <li class="que"><p><span>2.</span>침대에서 삐그덕 거리는 소음이 발생합니다.</p> <i class="fa-solid fa-plus"></i></li>
+                <li class="ans"><h4>침대에서 소리가나는경우는 크게2가지입니다.<br>
+
+                    수평고정이 되어있지않을경우 또는 정확하게 조립이 되지않았을경우입니다.<br>
+                    
+                    고정이 되어있지않을경우에는 한쪽구석을 눌렀을때 들리는쪽에 종이등을 받쳐주시면 됩니다.<br>
+                    
+                    조립이 정확하게되지않았을경우에는 침대 재조립이 필요합니다. 이 경우 기사님방문하여 처리해드리고
+                    
+                    있으며 이 외에도 소음발생시에 AS접수 가능합니다.
+                </h4></li>
+
+                    <li class="que"><p><span>3.</span>가구 냄새를 빨리 빼는 방법이 있나요?</p> <i class="fa-solid fa-plus"></i></li>
+            <li class="ans"><h4>(1)입주 전 가구가 있는 경우 서랍 및 도어를 모두 열고 창문을 닫아주세요.<br>
+
+                (2)실내 온도를 35~40도로 올려 6~10시간 유지 후 문과 창문을 모두 열어 1~2시간 환기를 시켜주세요.<br>
+
+                (3)이와 같이 난방과 환기를 3~5번 번갈아 해주시는것을 추천드립니다.</h4></li>
+
+                <li class="que"><p><span>4.</span>구매 후(배송전) 취소가 가능한가요??</p> <i class="fa-solid fa-plus"></i></li>
+            <li class="ans"><h4>계약서 작성 후 취소시에는 위약금이 발생 됩니다.</h4></li>
+
+                <li class="que"><p><span>5.</span>전도 방지 시공은 꼭 해야 하나요?</p> <i class="fa-solid fa-plus"></i></li>
+            <li class="ans"><h4>전도방지는 안전 상 필수로 시공을해야합니다.<br>
+
+                (다만, 고객님 요청에 의해 시공을 거부하실 경우 배송기사 안내서에 싸인 후 시공을 하지 않을 수 있습니다.)
+
+                </h4></li>
+
+                <li class="que"><p><span>6.</span>패브릭 소파 커버는 세탁할 수 있나요?</p> <i class="fa-solid fa-plus"></i></li>
+            <li class="ans"><h4>커버가 분리 가능한 소파는 세탁이 가능합니다.</h4></li>
+
+                <li class="que"><p><span>7.</span>가죽 소파 수명은 몇년인가요?</p> <i class="fa-solid fa-plus"></i></li>
+            <li class="ans"><h4>가죽소파는 관리 방법에 따라 수명 기간이 달라질 수 있습니다.<br>
+
+                관리만 잘 해주신다면 7~8년 이상 사용 가능합니다.</h4></li>
+
+                <li class="que"><p><span>8.</span>이전설치 접수는 어떻게 하나요?</p> <i class="fa-solid fa-plus"></i></li>
+                <li class="ans"><h4>문의내용 작성하기 또는 고객센터로 연락주시면 신속하게 처리해드리겠습니다.<br>
+    
+                   - 고객센터 1566-6600<br>
+                   - 고객센터 전화문의(평일)9:30~18:00
+                </h4></li>
+
+                <li class="que"><p><span>9.</span>가구자재 등급이 어떻게 되나요?</p> <i class="fa-solid fa-plus"></i></li>
+            <li class="ans"><h4>하우스베이의 모든 제품의 자재등급은 친환경EO등급입니다.<br>
+
+                (단, 취급 및 사용자의 하자로 인해 교체/교환은 제외입니다.)</h4></li>
+
+                <li class="que"><p><span>10.</span>문의사항 접수 후 진행상황은 어떻게 확인할수있나요?</p> <i class="fa-solid fa-plus"></i></li>
+            <li class="ans"><h4>접수 후 담당부서에서 1~2일이내 유선안내드리고있습니다.</h4></li>
+
+
+
+
+        </ul>
+
+    </div>
+
+    
+    <script>
+        $(function(){
+
+            $("ul li.que").click(function(){
+                $(this).next().slideToggle().siblings(".ans").hide();
+
+                var srcVal = $(this).find("i").attr("class");
+                console.log(srcVal);
+
+                if(srcVal == "fa-solid fa-plus"){
+                    $(this).find("i").attr({"class":srcVal.replace("plus","minus")})
+                }else{
+                    $(this).find("i").attr({"class":srcVal.replace("minus","plus")})
+                }
+
+                $(this).siblings().find("i").attr({"class":srcVal.replace("minus","plus")})
+
+            });
+
+        });
+    </script>
+
+    <!-- 하단 숫자 -->
+    <div id="store_bottom">
+        <ol>
+            <li><i class="fa-solid fa-caret-left"></i></li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li><i class="fa-solid fa-caret-right"></i></li>
+        </ol>
+    </div>
+
+
+     
+    
+
+    <!-- 공통하단 -->
+    <div id="wrap_Copyright">
+        <div id="Copyright">
+            <ul>
+                <li>
+                    <p><img src="images/main_logo3.png"></p>
+                    <p>제휴/제안문의 <b></b>대리점 개설 문의 <b></b> 이용약관 <b></b> 개인정보취급방침 <b></b> 고객센터</p>
+                    <p>상호명:하우스베이<b></b> 대표:박주영 <b></b>주소:인천광역시 남동구 논현고잔로 47 <b></b>e-mail: juyoung0360@housbay.co.kr</p>
+                    <p>사업자등록번호:139-81-32740 <b></b> 통신판매업신고번호:2007-인천남동구-0164</p>
+                </li>
+                <li>
+                    <p>1566-6600</p>
+                    <p>고객센터 전화문의(평일)<b></b>9:30~18:00</p>
+                    <p>빠른 상담문의 <span>챗봇상담</span></p>
+                    <p>서비스 문의 및 신청 <span>서비스센터 바로가기</span></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

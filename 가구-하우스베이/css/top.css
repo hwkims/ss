@@ -1,0 +1,472 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* 폰트 */
+
+/* 웰컴체 */
+@font-face {
+    font-family: 'OTWelcomeRA';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 넥슨LV1.고딕체 */
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 조선견고딕-베너제목 */
+@font-face {
+    font-family: 'ChosunBg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunBg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 공통상단 시작 */
+
+/* top고정 바 */
+#top_box {
+   text-align: center;
+    display: none;
+    line-height: 60px;
+    font-size: 40px;
+    font-weight: normal;
+    color: #333;
+   position: fixed;
+    z-index: 99999999;
+
+    left:97%;
+    top:95%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    
+    
+}
+
+#top_box p i {
+    color: #999;
+}
+
+#top_box p {
+    padding-top: 5px;
+}
+
+
+
+/* 로고,로그인영역 */
+
+
+/* 로고 */
+
+#wrap_mainlogo {
+    width: 100%;
+    height: 100px;
+    
+    border: 0px;
+}
+
+#main_logo {
+
+    
+    margin: 0 auto;
+    position: relative;
+
+}
+
+#main_logo>ul>span {
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    left: 1160px;
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+}
+
+#main_logo>ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#main_logo>ul>li {
+    width: 300px;
+    height: 100px;
+    /* background: paleturquoise; */
+    text-align: center;
+
+}
+
+#main_logo>ul>li.icon>p:hover i {
+    color: #090281;;
+    cursor: pointer;
+}
+
+#main_logo>ul>li:nth-child(2) {
+    width: 400px;
+}
+
+
+
+
+input[type="search"] {
+    width: 400px;
+    height: 45px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #f2f2f2;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+input[type="search"]:focus {
+    border-bottom: 2px solid #090281;
+}
+
+#main_logo>ul>li>p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#main_logo>ul>li>p {
+    width: 70px;
+    height: 100px;
+    /* background: palevioletred; */
+
+}
+
+#main_logo ul li p a {
+    margin-top: 25px;
+    display: inline-block;
+    color: #666;
+}
+
+#main_logo ul li p i {
+    padding: 5px;
+}
+
+
+
+
+
+
+/* 메뉴 */
+#wrap_menu {
+    width: 100%;
+    position: sticky;
+    z-index: 99999;
+    top: 0;
+    background: #fff;
+    height: 60px;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+ box-sizing: border-box;
+    
+    
+}
+
+#menu {
+    width: 1000px;
+    height: 45px;
+    background: #fff;
+    margin: 10px auto;
+    box-sizing: border-box;
+    
+
+}
+
+#menu ul {
+    width: 1000px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    letter-spacing: -1px;
+    line-height: 40px;
+
+}
+
+#menu ul li a {
+    color: #333;
+    letter-spacing: -1px;
+    font-family: 'NEXON Lv1 Gothic OTF';
+    font-weight: normal;
+  
+}
+
+
+#menu ul li {
+    width: 120px;
+    height: 40px;
+    text-align: center;
+}
+
+#menu ul li i {
+    font-size: 15px;
+    margin: 0 5px;
+}
+
+#menu ul li:hover a {
+    /* color: #ed1c24; */
+    color: #090281;
+}
+
+
+#menu ul li div.sub_box {
+    width: 900px;
+    height: 400px;
+    background: #fff;
+    border: 1px solid #ddd;
+    position: relative;
+    display: none;
+    border-radius: 20px;
+
+
+}
+
+
+#menu ul li div.sub_box ul li p {
+    display: none;
+}
+
+
+#menu ul li div.sub_box ul li:hover {
+    font-weight: bold;
+}
+
+#menu ul li div.sub_box ul {
+    width: 200px;
+    height: 400px;
+    /* background: palegoldenrod; */
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#menu ul li div.sub_box ul h2 {
+    width: 1px;
+    height: 400px;
+    display: block;
+    position: absolute;
+    background: #ddd;
+    top: 0px;
+    left: 150px;
+
+}
+
+#menu ul li div.sub_box ul li {
+    width: 130px;
+    height: 40px;
+    /* background: palevioletred; */
+    letter-spacing: -1px;
+    color: #333;
+    text-align: center;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 10px;
+
+
+}
+
+#menu ul li div.sub_box ul li a {
+    color: #333;
+    font-weight: normal;
+    letter-spacing: -1px;
+}
+
+#menu ul li div.sub_box ul li:hover a {
+    font-weight: bold;
+}
+
+
+#menu ul li div.sub_box ul li i {
+    padding-left: 100px;
+
+}
+
+#menu ul li div.sub_box ul li p {
+    width: 300px;
+    height: 350px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background: peachpuff;
+    position: absolute;
+    top: 30px;
+    left: 200px;
+}
+
+#menu ul li div.sub_box ul li p:nth-of-type(2) {
+    top: 30px;
+    left: 550px;
+}
+
+#menu ul li div.sub_box ul li p img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* 공통상단 끝 여기부터 지우기 */
+/*--------태블릿버전--------*/
+@media all and (max-width:1024px) {
+    #top_box {
+        text-align: center;
+         display: none;
+         line-height: 60px;
+         font-size: 50px;
+         font-weight: normal;
+         color: #333;
+        position: fixed;
+         z-index: 99999999;
+         left:95%;
+         top:95%;
+         transform: translate(-50%,-50%);
+         cursor: pointer;
+         
+         
+     }
+
+    #main_logo>ul>span {
+        position: absolute;
+        top: 43px;
+        left: 680px;
+    }
+
+    #menu ul {
+        width: 800px;
+        height: 40px;
+        /* background: palegreen; */
+        margin: 0 auto;
+    }
+
+    #menu ul li div.sub_box {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        display: none;
+        width: 850px;
+    }
+
+    #menu ul li div.sub_box ul  {
+        position: absolute;
+        top: 0;
+        left: 10px;
+    }
+
+    #menu ul li div.sub_box ul li p {
+        width: 300px;
+        height: 350px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        background: peachpuff;
+        position: absolute;
+        top: 30px;
+        left: 200px;
+}
+ #menu ul li div.sub_box ul li p:nth-of-type(2) {
+    width: 300px;
+    height: 350px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background: peachpuff;
+    position: absolute;
+    top: 30px;
+    left: 530px;
+ } 
+}
+
+/*--------모바일버전--------*/
+@media all and (max-width:768px) {
+    #wrap_mainlogo {
+        width: 768px;
+        /* background: palegoldenrod; */
+    }
+
+    #wrap_mainlogo ul li:nth-child(1) {
+        /* background: paleturquoise; */
+        width: 200px;
+        height: 100px;
+        
+    }
+
+    #wrap_mainlogo ul li:nth-child(2) {
+        
+        margin-left: 20px;
+    }
+
+    #wrap_mainlogo ul li:nth-child(1) img {
+        width: 100%;
+        
+    }
+
+    input[type="search"] {
+        width: 300px;
+        
+    }
+
+    #main_logo>ul>span {
+        display: none;
+    }
+
+    #wrap_mainlogo ul li.icon {
+        /* background: paleturquoise; */
+        width: 300px;
+    }
+
+    #main_logo>ul>li>p {
+        width: 70px;
+    }
+    
+    #menu {
+        width: 600px;
+        
+    }
+
+    #menu ul li div.sub_box {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        display: none;
+        width: 550px;
+      
+    }
+
+    #menu ul li div.sub_box ul  {
+        position: absolute;
+        top: 0;
+        left: 10px;
+    }
+
+    #menu ul li div.sub_box ul li p {
+        width: 300px;
+        height: 350px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        background: peachpuff;
+        position: absolute;
+        top: 30px;
+        left: 200px;
+}
+ #menu ul li div.sub_box ul li p:nth-of-type(2) {
+    opacity: 0;
+ } 
+}

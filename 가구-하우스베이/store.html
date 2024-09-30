@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서브3-매장찾기</title>
+
+    <!-- html에서 css연동 -->
+
+    <link rel="stylesheet" href="css/store.css">
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/bottom.css">
+
+    <!-- 파비콘 연동 -->
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- 폰트어썸 연동 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- top고정 바 -->
+    <div class="top_box" id="top_box">
+        <p>TOP</p>
+    </div>
+
+    <script>
+        const top_box = document.getElementById('top_box');
+
+        top_box.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+    </script>
+
+    <!-- 공통상단 로고 -->
+    <div id="wrap_top">
+        <div id="top">
+            <ul class="logo">
+                <li><a href="mega.html"><img src="images/mega_logo.png"></a></li>
+            </ul>
+            <ul class="menu">
+
+                <li><a href="story.html">메가 스토리</a>
+                    <div class="sub">
+                        <p><a href="story.html">브랜드</a></p>
+                        <p><a href="#a">BI</a></p>
+                        <p><a href="#a">오시는길</a></p>
+                    </div>
+                </li>
+                <li><a href="menu.html">메뉴소개</a>
+                    <div class="sub">
+                        <p><a href="menu.html">음료</a></p>
+                        <p><a href="#a">푸드</a></p>
+                        <p><a href="#a">상품</a></p>
+                    </div>
+                </li>
+                <li><a href="store.html">매장</a>
+                    <div class="sub">
+                        <p><a href="store.html">매장찾기</a></p>
+
+                    </div>
+                </li>
+                <li><a href="franchise.html">창업안내</a>
+                    <div class="sub">
+                        <p><a href="franchise.html">개설비용</a></p>
+                        <p><a href="#a">인테리어</a></p>
+                        <p><a href="#a">창업문의</a></p>
+                        <p><a href="#a">가맹점인수</a></p>
+                        <p><a href="#a">창업뉴스</a></p>
+                    </div>
+                </li>
+                <li><a href="news.html">메가소식</a>
+                    <div class="sub">
+                        <p><a href="news.html">공지사항</a></p>
+                        <p><a href="#a">이벤트</a></p>
+                        <p><a href="#a">FAQ</a></p>
+                        <p><a href="#a">고객의소리</a></p>
+                    </div>
+                </li>
+                <li><a href="interview.html">채용</a>
+                    <div class="sub">
+                        <p><a href="interview.html">채용안내</a></p>
+
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="icon">
+
+                <li><img src="images/Untitled-4.png" usemap="#Untitled-4.png">
+                    <map name="Untitled-4.png">
+                        <area shape="rect" coords="14,9,36,36" href="https://blog.naver.com/ekddusekddus">
+                        <area shape="rect" coords="61,10,86,38"
+                            href="https://www.facebook.com/mega.mgc.coffee.official">
+                        <area shape="rect" coords="115,9,139,35"
+                            href="https://www.instagram.com/mega.mgc.coffee_official/">
+                        <area shape="rect" coords="162,9,189,36" href="https://smartstore.naver.com/megamgccoffee">
+                    </map>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- 서브공통 사진 글씨 들어간 메인베너 -->
+
+    <div id="sub_top">
+        <h3>MEGA MGC STORE</h3>
+        <h1>MEGA STORE</h1>
+
+    </div>
+
+    <div id="wrap_top2">
+        <div id="sub_top2">
+            <p></p>
+        </div>
+    </div>
+
+    <!-- 서브공통 사진 글씨 들어간 메인베너 끝! 밑에부터 지우기-->
+
+    <!-- 매장찾기 영역 시작 -->
+
+    <!-- 매장찾기 메인 -->
+     
+    <div id="search">
+       <ul>
+        <li><img src="images/store_main_logo1.jpg"><span>주차가능</span></li>
+        <li><img src="images/store_main_logo2.jpg"><span>신규매장</span></li>
+        <li><img src="images/store_main_logo3.jpg"><span>반려동물 동반</span></li>
+       </ul>
+
+       <ul class="btn">
+        <p><select>
+            <option>-시/도-</option>
+            <option>서울</option>
+            <option>경기도</option>
+            <option>인천</option>
+            <option>대구</option>
+            <option>대전</option>
+            <option>광주</option>
+            <option>부산</option>
+            <option>전남</option>
+            <option>전북</option>
+            <option>제주</option>
+            <option>울산</option>
+            <option>세종</option>
+            <option>강원</option>
+        </select></p>
+
+        <p class="box2"><select>
+            <option>-구/군-</option>
+            <option>강남구</option>
+            <option>강서구</option>
+            <option>강동구</option>
+            <option>강북구</option>
+            <option>동대문구</option>
+            <option>서대문구</option>
+            <option>남대문구</option>
+            <option>동작구</option>
+            <option>구로구</option>
+            <option>관악구</option>
+        </p></select>
+
+        <input type="text" placeholder="매장명을 입력하세요."><i class="fa-solid fa-magnifying-glass"></i>
+        
+       </ul>
+
+       
+       
+    </div>
+    <div id="wrap_map">
+    <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.459462232285!2d126.97859947295777!3d37.56779712406048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2ee810706f3%3A0x7b7847e98b3ab298!2z66mU6rCATUdD7Luk7ZS8IOyEnOyauOyLnOyyreygkA!5e0!3m2!1sko!2skr!4v1723433512835!5m2!1sko!2skr" width="1500px" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p><img src="images/Untitled-2.png"></p>
+    </div>
+</div>
+
+<!-- 신규오픈매장 -->
+
+<div id="new_store">
+    <h1>신규오픈매장</h1>
+    <p class="right"><i class="fa-solid fa-chevron-right"></i></p>
+    <p class="left"><i class="fa-solid fa-chevron-left"></i></p>
+    <ul>
+        <li>
+            <p><img src="images/store_main_img1.jpg"></p><br>
+            <p>서울시청역점<br><span>서울특별시 중구 다동길 34</span></p>
+        </li>
+
+        <li>
+            <p><img src="images/store_main_img2.jpg"></p><br>
+            <p>종로공평점<br><span>서울특별시 종로구 공평동 124번지 1층 </span></p>
+        </li>
+
+        <li>
+            <p><img src="images/store_main_img3.jpg"></p><br>
+            <p>서울풍납점점<br><span>서울특별시 송파구 풍납동 토성로 59 </span></p>
+        </li>
+
+
+        <li>
+            <p><img src="images/store_main_img4.jpg"></p><br>
+            <p>사당방배점<br><span>서울특별시 서초구 동작대로 44</span></p>
+        </li>
+
+
+    </ul>
+</div>
+
+<!-- 매장주소 표 -->
+
+<div id="store_bottom">
+    <ul>
+        <li class="txt1">
+            <p>매장명</p>
+            <p>메가MGC커피 강남대점</p>
+            <p>메가커피 용인기흥역점</p>
+            <p>메가커피 동백점</p>
+            <p>메가엠지씨커피동백역점</p>
+            <p>메가커피 기흥구청점</p>
+        </li>
+
+        <li class="txt2">
+            <p>매장주소</p>
+            <p>경기도 용인시 기흥구 구갈동 227-12</p>
+            <p>경기도 용인시 기흥구 구갈동 594-21</p>
+            <p>경기도 용인시 기흥구 동백동 동백중앙로</p>
+            <p>경기도 용인시 기흥구 구갈동 구갈로 70</p>
+            <p>경기도 용인시 기흥구 보라동 577번지 베스트프라자</p>
+        </li>
+
+        <li class="txt3">
+            <p>부가서비스</p>
+            <p><img src="images/store_main_logo1.jpg"></p>
+            <p><img src="images/store_main_logo1.jpg"></p>
+            <p><img src="images/store_main_logo1.jpg"></p>
+            <p></p>
+            <p><img src="images/store_main_logo1.jpg"></p>
+
+        </li>
+
+        <li class="txt4">
+            <p>상세보기</p>
+            <p><a href="#a" onclick="document.getElementById('txt4_pop').style.display='block'"><i class="fa-solid fa-mug-saucer"></i></a></p>
+            <p><i class="fa-solid fa-mug-saucer"></i></p>
+            <p><i class="fa-solid fa-mug-saucer"></i></p>
+            <p><i class="fa-solid fa-mug-saucer"></i></p>
+            <p><i class="fa-solid fa-mug-saucer"></i></p>
+        </li>
+
+        
+       
+    </ul>
+    <ol>
+        <li><i class="fa-solid fa-caret-left"></i></li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li><i class="fa-solid fa-caret-right"></i></li>
+    </ol>
+
+</div>
+
+<div id="txt4_pop">
+    <div class="txt4_box">
+        <p><img src="images/mega_r_logo.png"></p><i class="fa-solid fa-xmark"
+        onclick="document.getElementById('txt4_pop').style.display='none'"></i>
+        <p class="line"></p>
+        <ul>
+            <li><img src="images/store_main_img5.jpg"></li>
+            <li>
+                <p>용인강남대점<br><span>경기도 용인시 기흥구 구갈동 594-2</span></p>
+                <p></p>
+                <p class="bottom_box">
+                    <span>
+                        영업시간<br>
+                        상세주소<br>
+                        연락처
+                    </span>
+                    <span>
+                        08:00~22:00<br>
+                        경기도 용인시 기흥구 구갈동 594-2 1층 104호<br>
+                            031-286-5727
+                    </span>
+                </p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+   
+
+   
+
+
+
+
+    <!-- 공통 카피라이트 -->
+    <div id="Copyright">
+        <div id="down_bg1"></div>
+        <div id="down_bg2">
+            <ul>
+                <li><a href="#a" onclick="document.getElementById('pop1').style.display='block'">이용약관</a></li>
+                <li><a href="#a" onclick="document.getElementById('pop2').style.display='block'">개인정보처리방침</a></li>
+            </ul>
+        </div>
+
+        <!-- 카피라이트 -->
+        <div id="wrap_footer">
+            <div id="footer">
+                <p class="logo"><a href="mega.html"><img src="images/logo.jpg"></a></p>
+
+                <p class="adress">
+
+                    <span>주식회사 앤하우스</span>
+                    대표자 김대영
+                    창업상담 1588-0656
+                    고객센터 1588-8298<br>
+                    FAX 02-325-5199
+                    사업자등록번호 105-87-51367<br>
+                    서울특별시 강남구 강남대로 518 11층, 13층 (주)앤하우스<br>
+                    개인정보보호 책임자 이종원
+
+                </p>
+
+                <p class="copy">COPYRIGHT(C) 2023 MEGA COFFEE ALL RIGHT RESERVED.</p>
+
+                <ul>
+                    <li><span>메가스토리</span><br><br>
+                        <a href="story.html">브랜드</a><br>
+                        <a href="#a">BI</a><br>
+                        <a href="#a">오시는 길</a><br>
+
+                    </li>
+
+                    <li><span>메뉴소개</span><br><br>
+                        <a href="menu.html">음료</a><br>
+                        <a href="#a">푸드</a><br>
+                        <a href="#a">상품</a><br>
+
+                    </li>
+
+                    <li><span>매장</span><br><br>
+                        <a href="#a">매장찾기</a><br>
+
+                    </li>
+
+                    <li><span>창업안내</span><br><br>
+                        <a href="franchise.html">개설비용</a><br>
+                        <a href="#a">인테리어</a><br>
+                        <a href="#a">창업문의</a><br>
+                        <a href="#a">창업뉴스</a><br>
+
+                    </li>
+
+                    <li><span>메가소식</span><br><br>
+                        <a href="news.html">공지사항</a><br>
+                        <a href="#a">이벤트</a><br>
+                        <a href="#a">FAQ</a><br>
+                        <a href="#a">고객의 소리</a><br>
+
+                    </li>
+
+                    <li><span>제휴문의</span><br><br>
+                        <a href="#a">상품제안</a><br>
+                        <a href="#a">마케팅제휴</a><br>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 이용약관 -->
+        <div id="pop1">
+            <div class="box">
+                <h2>이용안내 <span><i class="fa-solid fa-xmark"
+                            onclick="document.getElementById('pop1').style.display='none'"></i></span></h2>
+
+                <pre>
+개인정보수집 범위 : 이름, 연락처
+개인정보수집 및 이용목적 : 온라인 문의 및 상담 자료와 결과 회신
+* 매장과 관련된 CS의 경우, 해결 과정 안내 혹은 결과 회신을 위해 매장 관리자(슈퍼바이저,매장점주), 
+본사 유관부서가 연락을 드릴 수 있습니다.
+
+개인정보수집 및 보유기간 : 개인정보 수집 및 이용에 대한 목적이 달성되면 지체없이 파기하며 최대 
+보유기간은 1년을 넘기지 아니한다.
+            </pre>
+
+                <p class="btn" onclick="document.getElementById('pop1').style.display='none'">취소</p>
+
+            </div>
+        </div>
+
+
+        <!-- 개인정보취급방침 -->
+        <div id="pop2">
+            <div class="box">
+                <h2>개인정보취급방침 <span><i class="fa-solid fa-xmark"
+                            onclick="document.getElementById('pop2').style.display='none'"></i></span></h2>
+
+                <pre>
+개인정보수집 범위 : 이름, 연락처
+개인정보수집 및 이용목적 : 온라인 문의 및 상담 자료와 결과 회신
+* 매장과 관련된 CS의 경우, 해결 과정 안내 혹은 결과 회신을 위해 매장 관리자(슈퍼바이저,매장점주), 
+본사 유관부서가 연락을 드릴 수 있습니다.
+
+개인정보수집 및 보유기간 : 개인정보 수집 및 이용에 대한 목적이 달성되면 
+지체없이 파기하며 최대 보유기간은 1년을 넘기지 아니한다.
+            </pre>
+
+                <p class="btn" onclick="document.getElementById('pop2').style.display='none'">취소</p>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

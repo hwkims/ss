@@ -1,0 +1,456 @@
+input {box-sizing: border-box; vertical-align: middle;}
+
+#main_txt {
+    width: 1500px;
+    height: 400px;
+     /* background: paleturquoise; */
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#main_txt h2 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: normal; 
+     font-family: 'ChosunBg';
+    color: #090281;
+    padding-top: 50px;
+    
+
+}
+
+#main_txt > p {
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+}
+
+#main_txt h4 {
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.3;
+    font-weight: normal;
+}
+
+/* 고객센터 메인 창 */
+
+#main_banner {
+    width: 1500px;
+    height: 50px;
+    /* background: palegreen; */
+    margin:  50px auto;
+}
+
+#main_banner ul {
+    width: 1500px;
+    height: 50px;
+    /* background: tan; */
+    margin: 0 auto;
+    
+}
+
+#main_banner ul li.btn {
+    width: 900px;
+    height: 50px;
+    /* background: paleturquoise; */
+    margin: 0 auto;
+}
+
+#main_banner ul li.btn p {
+    width: 400px;
+    height: 50px;
+    /* background: papayawhip; */
+    text-align: center;
+    line-height: 50px;
+    border: 2px solid #ddd;
+    font-size: 20px;
+    letter-spacing: -1px;
+    color: #333;
+}
+
+#main_banner ul li.btn p a {
+    color: #333;
+}
+
+#main_banner ul li.btn p:hover {
+    border: 2px solid #090281;
+}
+
+#main_banner ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#main_banner ul li.star {
+    width: 1500px;
+    height: 30px;
+    text-align: right;
+    background: palegoldenrod;
+    line-height: 30px;
+    border-bottom: 2px solid #ddd;
+    justify-content: right;
+}
+
+#main_banner ul li.star span {
+    color: #090281;
+    font-size: 20px;
+}
+
+#main_banner ul li p.span {
+    color: #090281;
+    font-size: 20px;
+}
+
+#main_banner ul li.click {
+    width: 1500px;
+    height: 50px;
+    background: palevioletred;
+    margin: 15px auto;
+    line-height: 50px;
+
+}
+
+#main_banner ul li.click p.left {
+    font-size: 20px;
+    letter-spacing: -1px;
+    font-weight: bold;
+    width: 150px;
+    
+}
+
+#main_banner ul li.click p.line {
+    width: 2px;
+    height: 40px;
+    background: rebeccapurple;
+}
+
+#main_banner ul li.click p.right {
+    width: 1300px;
+    height: 50px;
+    background: palegreen;
+}
+
+/* 가입폼 */
+#join {
+    width: 1600px; border: 1px solid #ddd;
+    margin: 0 auto;
+    text-align: center;
+
+    
+}
+
+#join > h2 {
+    padding-top: 80px;
+font-size: 30px; 
+letter-spacing: -1px;
+
+color: #333;
+}
+
+
+/*폼시작*/
+#join fieldset {
+    width: 1500px;
+    margin: 30px auto;
+    border: 0;
+
+    /* background: pink; */
+    text-align: left;
+}
+#join fieldset h4 {
+    width: 298px;
+    font-size: 20px;
+    height: 60px;
+    /* background: palegoldenrod; */
+    margin-left: 10px;
+    color:#333; 
+    letter-spacing: -1px;
+    line-height: 60px;
+    display: inline-block;
+    vertical-align: middle;
+   
+}
+#join fieldset p.check {
+    display: inline-block;
+    vertical-align: middle;
+
+    height: 60px;
+    line-height: 60px;
+    /* background: yellow; */
+    
+
+    color:#333; font-size: 20px;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+/*라디오버튼 변경 방법*/
+/*기존 모양 제거후 아래 CSS로 새롭게 디자인*/
+
+input[type="radio"] {
+    appearance: none; 
+    /*기존 모양 제거*/
+
+    width: 27px; height: 27px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/*라디오 버튼 체크 했을때*/
+input[type="radio"]:checked {
+    background: #090281;
+    border:8px solid #fff;
+    outline: 1px solid #ccc;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+/*체크박스 전 디자인*/
+input[type="checkbox"] + label {
+    color:#ccc;
+    font-size: 25px;
+    vertical-align: middle;
+
+    margin-left: 20px;
+    margin-left: 5px
+}
+/*체크박스 후 디자인*/
+input[type="checkbox"]:checked + label {
+    color:#333;
+}
+
+
+#join fieldset.up ul li {
+    float: left;
+    margin: 10px 10px;
+    box-sizing: border-box;
+    
+    color:#333; font-size: 18px;
+    font-weight: bold; letter-spacing: -1px;
+
+    
+}
+
+#join fieldset.up ul li:nth-child(1) {
+    width: 300px;
+    height: 60px;
+    /* background: #ddd; */
+    line-height: 60px;
+
+    
+}
+#join fieldset.up ul li:nth-child(2) {
+    width: 900px;
+    /* height: 50px; */
+    
+}
+
+/*아이디*/
+#join fieldset.up ul.t1 li:nth-child(2) input {
+    width: 900px; height: 60px;
+    border: 1px solid #ddd;
+}
+#join fieldset ul.t1 li:nth-child(2) p {
+    color:#999; padding: 10px;
+}
+
+/*아이디*/
+#join fieldset.up ul.t1_1 li:nth-child(2) input {
+    width: 900px; height: 300px;
+    border: 1px solid #ddd;
+}
+#join fieldset ul.t1_1 li:nth-child(2) p {
+    color:#999; padding: 10px;
+}
+
+/*비밀번호*/
+#join fieldset.up ul.t2 li:nth-child(2) input {
+    width: 465px; height: 60px;
+    border: 1px solid #ddd;
+}
+#join fieldset.up ul.t2 li:nth-child(2) p {
+    color:#999; padding: 10px;
+}
+
+/*비밀번호확인*/
+#join fieldset.up ul.t3 li {
+    height: 90px;
+}
+#join fieldset.up ul.t3 li:nth-child(2) {
+    padding-top: 15px;
+}
+#join fieldset.up ul.t3 li:nth-child(2) input {
+    width: 465px; height: 60px;
+    border: 1px solid #ddd;
+}
+
+/*이름*/
+#join fieldset.up ul.t4 li {
+    height: 90px;
+}
+#join fieldset.up ul.t4 li:nth-child(2) {
+    padding-top: 15px;
+}
+#join fieldset.up ul.t4 li:nth-child(2) input {
+    width: 465px; height: 60px;
+    border: 1px solid #ddd;
+}
+
+/*주소*/
+#join fieldset.up ul.t5 li {
+    height: 270px;
+}
+
+#join fieldset.up ul.t5 li:nth-child(2) input[type="text"] {
+    width: 150px; height: 60px;
+    background: #eee;
+    border:1px solid #ddd;
+}
+#join fieldset.up ul.t5 li:nth-child(2) input[type="button"] {
+    width: 150px; height: 60px;
+    background: #2a2a2a;
+    border:0;
+
+    color:#fff; font-size: 18px;
+    font-weight: bold; letter-spacing: -1px;
+
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#join fieldset.up ul.t5 li:nth-child(2) p.input1 input {
+    width: 855px;
+    height: 60px;
+    margin: 10px 0;
+}
+
+#join fieldset.up ul.t5 li:nth-child(2) p.input2 input {
+    width: 855px;
+    height: 60px;
+    background: #fff;
+}
+
+#join fieldset.up ul.t5 li:nth-child(2) p.txt {
+    color:#999;
+    padding: 10px;
+}
+
+/*일반전화*/
+#join fieldset.up ul.t6 li {
+    height: 90px;
+}
+
+#join fieldset.up ul.t6 li:nth-child(2) select {
+    width: 120px; height: 60px;
+    border: 1px solid #ddd;
+
+    color:#333; font-size: 22px;
+    letter-spacing: -1px;
+
+    padding-left: 10px;
+    vertical-align: middle;
+
+}
+
+#join fieldset.up ul.t6 li:nth-child(2) input {
+    width: 120px; height: 60px;
+    border: 1px solid #ddd;
+
+    color:#333; font-size: 22px;
+    letter-spacing: -1px;
+
+    padding-left: 10px;
+
+}
+
+/*휴대전화*/
+#join fieldset.up ul.t7 li {
+    height: 90px;
+}
+
+#join fieldset.up ul.t7 li:nth-child(2) select {
+    width: 120px; height: 50px;
+    border: 1px solid #ddd;
+
+    color:#333; font-size: 22px;
+    letter-spacing: -1px;
+
+    padding-left: 10px;
+    vertical-align: middle;
+
+}
+
+#join fieldset.up ul.t7 li:nth-child(2) input {
+    width: 120px; height: 50px;
+    border: 1px solid #ddd;
+
+    color:#333; font-size: 22px;
+    letter-spacing: -1px;
+
+    padding-left: 10px;
+    
+
+}
+
+/*이메일*/
+#join fieldset.up ul.t8 li {
+    height: 90px;
+}
+
+#join fieldset.up ul.t8 li:nth-child(2) input {
+    width: 300px; height: 50px;
+    border: 1px solid #ddd;
+    
+}
+
+
+
+/*하단박스*/
+#join fieldset.down {
+    margin: 30px auto;
+    text-align: center;
+    
+}
+
+#join fieldset.down ul li {
+    width: 1400px; height: 150px;
+    background: #f2f2f2;
+    text-align: left;
+    border-top:0;
+}
+#join fieldset.down ul li:nth-child(1){
+    height: 90px; 
+    line-height: 90px;
+
+    color:#333; font-size: 18px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+#join fieldset.down ul li:nth-child(1) span {
+    color:#333;
+}
+
+#join fieldset.down ul li:nth-child(1) span b {
+    color: red;
+}
+
+#join fieldset.down ul input {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    background: #090281;
+    color: #fff;
+    cursor: pointer;
+   margin: 30px auto;
+}
+
+
+

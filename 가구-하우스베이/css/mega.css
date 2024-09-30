@@ -1,0 +1,963 @@
+/*초기설정*/
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* 폰트 */
+
+/* 웰컴체 */
+@font-face {
+    font-family: 'OTWelcomeRA';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 평창평화체 */
+@font-face {
+    font-family: 'PyeongChangPeace-Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* 배민 도현체 */
+@font-face {
+    font-family: 'BMDOHYEON';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+/* 메인베너 */
+
+#main_banner {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    
+
+
+}
+
+#main_banner p img {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* 신메뉴소개 */
+
+
+
+
+#new {
+    width: 1500px;
+    height: 700px;
+    /* background: palegreen; */
+    margin: 30px auto;
+    text-align: center;
+    position: relative;
+}
+
+#new h1 {
+    font-size: 50px;
+    font-family: 'OTWelcomeRA';
+    font-weight: bold;
+    padding: 30px;
+    color: #fad000;
+}
+
+#new>ul {
+    width: 940px;
+    height: 470px;
+    background: #f2f2f2;
+    margin: 0 auto;
+    margin-top: 40px;
+    position: relative;
+}
+
+#new>ul>li {
+    position: absolute;
+    top: -177px;
+    left: 350px;
+
+}
+
+#new ul li img {
+    width: 800px;
+
+
+}
+
+#new p:nth-of-type(1) {
+    position: absolute;
+    top: 370px;
+    left: 190px;
+    font-size: 40px;
+    color: #fad000;
+
+}
+
+#new p:nth-of-type(2) {
+    position: absolute;
+    top: 370px;
+    right: 190px;
+    font-size: 40px;
+    color: #fad000;
+
+}
+
+#new ul h2 {
+    text-align: left;
+    font-size: 50px;
+    font-family: 'PyeongChangPeace-Bold';
+    padding: 40px 35px;
+    background: linear-gradient(to bottom, #116a88, #bfda5e);
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+
+#new ul h3 {
+    text-align: left;
+    font-size: 30px;
+    padding: 40px 35px;
+    font-family: '나눔바른고딕';
+    font-weight: normal;
+    color: #333;
+}
+
+
+
+#new ul h3 span {
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-family: '맑은고딕';
+}
+
+#new ul pre:nth-of-type(1) {
+    position: absolute;
+    top: 305px;
+    left: 8px;
+    font-size: 80px;
+    color: #fdd000;
+}
+
+#new ul pre:nth-of-type(2) {
+    position: absolute;
+    top: 305px;
+    left: 40px;
+    font-size: 80px;
+    color: #fad000;
+}
+
+
+
+
+/* 프렌차이즈 */
+
+#franchise {
+    width: 1500px;
+    height: 1000px;
+    /* background: paleturquoise; */
+    margin: 0 auto;
+    text-align: center;
+
+
+}
+
+#franchise h1 {
+    font-size: 50px;
+    font-family: 'OTWelcomeRA';
+    font-weight: bold;
+    padding: 50px;
+    color: #fad000;
+    /* background: #1c6476; */
+    height: 50px;
+}
+
+#franchise ul {
+    width: 1500px;
+    height: 800px;
+    background: url(../images/franchise_img1.png);
+    margin: 0 auto;
+    position: relative;
+}
+
+#franchise ul p.center {
+    position: absolute;
+    left: 35%;
+    top: 50px;
+
+    animation-name: popup;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    /*무한반복*/
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes popup {
+    0% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#franchise ul h3 {
+    text-align: center;
+    font-family: 'OTWelcomeRA';
+    font-size: 40px;
+    padding-right: 1000px;
+    padding-top: 150px;
+    line-height: 2;
+}
+
+#franchise ul h3 span {
+    font-size: 110px;
+    font-weight: bold;
+}
+
+#franchise ul h3 b {
+    font-size: 70px;
+}
+
+#franchise ul h4 {
+    position: absolute;
+    top: 300px;
+    right: 100px;
+    color: #fad000;
+    font-size: 30px;
+}
+
+#franchise ul h4 span {
+    font-size: 140px;
+
+}
+
+/* 밑에 창업문의 박스 */
+
+#box {
+    width: 1500px;
+    height: 250px;
+    /* background: palegoldenrod; */
+    margin: 0px auto;
+
+
+}
+
+#box ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#box ul li {
+    width: 700px;
+    height: 250px;
+    background: #f8edd8;
+    display: flex;
+    border-radius: 0px 0px 30px 30px;
+    position: relative;
+
+}
+
+#box ul li img {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+
+#box ul li ol.left {
+    width: 700px;
+    height: 250px;
+    display: block;
+    box-sizing: border-box;
+
+}
+
+#box ul li:hover h5 {
+
+    color: #333;
+
+}
+
+#box ul li:hover ol.left {
+    background: #f8b32f;
+    border-radius: 0px 0px 30px 30px;
+
+}
+
+#box ul li ol.left:hover h5,
+#box ul li ol.left:hover p.txt {
+    color: #333;
+
+}
+
+#box ul li ol.left:hover p.btn a {
+    background: #333;
+    color: #f8b32f;
+}
+
+#box ul li ol.left h5 {
+    padding: 15px 20px;
+    font-size: 35px;
+    font-family: '나눔고딕';
+    color: #f8b32f;
+}
+
+#box ul li ol.left p.btn a {
+    padding: 20px;
+    margin: 30px 15px;
+    font-size: 20px;
+    font-family: '나눔고딕';
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 50px;
+    color: #fff;
+    background: #f8b32f;
+    cursor: pointer;
+
+
+}
+
+#box ul li ol.left p.txt {
+    padding-left: 20px;
+    color: #f8b32f;
+}
+
+/* 메가 이벤트  */
+
+#event {
+    width: 1500px;
+    height: 900px;
+    /* background: #bfda5e;   */
+    margin: 30px auto;
+
+}
+
+#event h1 {
+    font-size: 50px;
+    font-family: 'OTWelcomeRA';
+    font-weight: bold;
+    color: #fad000;
+    text-align: center;
+    padding: 60px;
+
+
+}
+
+#event ul p {
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+#event p {
+    width: 350px;
+    height: 500px;
+    border: 2px solid #f2f2f2;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 0 20px;
+    margin-top: 70px;
+
+}
+
+#event p img {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#event h5 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'OTWelcomeRA';
+    padding-top: 60px;
+
+}
+
+#event h5 a {
+    color: #f8b32f;
+    text-decoration: underline;
+    text-underline-offset: 9px;
+}
+
+#event h5 a:hover {
+    color: #333;
+}
+
+
+/* 메가 멤버십 */
+
+#membership {
+    width: 1500px;
+    height: 900px;
+    background: #241613;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'OTWelcomeRA';
+    font-weight: bold;
+    color: #fad000;
+    text-align: center;
+    padding: 60px;
+
+}
+
+#membership h4 {
+    font-family: 'OTWelcomeRA';
+    font-size: 30px;
+    padding-top: 150px;
+    padding-left: 90px;
+    color: #fdd000;
+    font-weight: bold;
+}
+
+#membership h2 {
+    font-family: 'OTWelcomeRA';
+    font-size: 130px;
+    padding-top: 20px;
+    padding-left: 80px;
+    color: #ffba36;
+    font-weight: bold;
+    background: linear-gradient(to right, #fdd000, #f78d03);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#membership ul {
+    width: 350px;
+    height: 30px;
+    /* background: tan; */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 20px 145px;
+    margin-top: 80px;
+}
+
+#membership ul li {
+    width: 20px;
+    height: 20px;
+    background: #fdd000;
+    
+
+}
+
+#membership h5 {
+    padding-top: 20px;
+    padding-left: 80px;
+    font-size: 25px;
+    font-family: '나눔바른고딕';
+    font-weight: normal;
+    color: #f2f2f2;
+}
+
+#membership div.box_top {
+    width: 600px;
+    height: 60px;
+    background: #fad000;
+    margin-top: 70px;
+    margin-left: 80px;
+}
+
+#membership div.box_top h3 {
+    line-height: 70px;
+    font-family: 'OTWelcomeRA';
+    font-size: 23px;
+    font-weight: bold;
+    color: #111;
+    padding-left: 10px;
+
+}
+
+#membership div.box_top ol {
+    width: 600px;
+    height: 60px;
+    /* background: palegoldenrod; */
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    
+    
+    
+}
+
+#membership div.box_top ol li {
+    width: 280px;
+    height: 65px;
+    line-height: 70px;
+    background:  #fad000;
+    font-size: 25px;
+    font-family: 'OTWelcomeRA';
+    font-weight: bold;
+    padding-left: 5px;
+    box-sizing: border-box;
+    color: #222;
+    cursor: pointer;
+    
+   
+  }
+
+  #membership div.box_top ol li span {
+    padding-left: 20px;
+  }
+
+  #membership div.box_top ol li a {
+    color: #222;
+  }
+
+  #membership div.box_top ol li a:hover {
+    color: #fff;
+  }
+
+#membership div.box_top ol li img {
+    vertical-align: middle;
+    
+}
+
+#membership p{
+    position: absolute;
+    top: 170px;
+    right:  150px;
+    
+   
+}
+  
+  
+
+/* 지도 */
+
+#map {
+    width: 1500px;
+    height: 700px;
+    /* background: palegoldenrod; */
+    margin: 30px auto;
+    
+}
+
+#map h1 {
+    font-size: 50px;
+    font-family: 'OTWelcomeRA';
+    font-weight: bold;
+    color: #f8b32f;
+    text-align: center;
+    padding: 50px 0;
+   
+
+}
+
+#map ul {
+    width: 300px;
+    height: 350px;
+    background: #333;
+    position: relative;
+    margin-left: 140px;
+    border-radius: 30px 30px 0px 0px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#map ul li i {
+    position: absolute;
+    top: 10px;
+    right:20px;
+    font-size: 80px;
+    color: #fff;
+}
+
+
+
+
+#map ul p.txt1 {
+    font-size: 30px;
+    padding-left: 20px;
+    padding-top: 30px;
+    font-family: '맑은고딕';
+    font-weight: bold;
+    color: #fff;
+
+}
+
+#map ul p.txt2 {
+    width: 80px;
+    height: 3px;
+    background: #fff;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#map ul p.txt3 {
+    font-size: 18px;
+    padding-left: 20px;
+    padding-top: 30px;
+    font-family: '맑은고딕';
+    font-weight: normal;
+    color: #fff;
+}
+
+input[type="search"] {
+    width: 230px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 30px;
+    padding-left: 10px;
+    color: #fdd000;
+    border: 3px solid #fff;
+}
+
+::placeholder {
+    color:  #241613;
+}
+
+#map ul p.icon i{
+    position: absolute;
+    top: 220px;
+    left: 220px;
+    color: #241613;
+}
+
+#map ul.right {
+    width: 900px;
+    height: 350px;
+    background: #f8b32f;
+    position: relative;
+    margin-left: 50px;
+    border-radius: 30px 30px 0px 0px;
+}
+
+#map ul.right p.txt3 a {
+    color: #fff;
+}
+
+
+#map ul p.txt3 span {
+    padding-left: 270px;
+   
+}
+
+#map ul p.txt3:hover a span {
+    text-decoration: none;
+   display: inline-block;
+}
+
+#map ul p.arrow {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 800px;
+    padding-top: 50px;
+    color: #fff;
+}
+
+#map ul p.arrow a {
+    color: #fff;
+}
+
+#map ul p.arrow a:hover  {
+    color: #333;
+}
+
+#map ul.right p.txt3:hover a{
+    color: #333;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+
+
+
+/*공통카피라이트*/
+
+#down_bg1 {
+    width: 100%;
+    height: 60px;
+    background: #3c2418;
+}
+
+#down_bg2 {
+    width: 100%;
+    height: 60px;
+    background: #ffd437;
+}
+#down_bg2 ul {
+    width: 1280px; height: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+}
+#down_bg2 ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+#down_bg2 ul li a {
+    color:#333; font-weight: bold;
+    font-size: 20px; letter-spacing: -1px;
+}
+
+/*이용약관*/
+#pop1 {
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+
+    position: fixed;
+    left:0; top:0;
+    z-index: 9999999;
+
+    display: none;
+
+    animation-name: anishow;
+    animation-duration: 1s;
+}
+
+@keyframes anishow {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+#pop1 div.box {
+    width: 720px; height: 310px;
+    background: #fff;
+
+    position: absolute;
+    left:50%; top:50%;
+
+    transform: translate(-50%, -50%);
+}
+
+#pop1 div.box h2 {
+    height: 65px; line-height: 65px;
+    border-bottom: 1px solid #ccc;
+
+    color:#2c2c2c; font-size: 16px;
+    letter-spacing: -1px;
+    font-weight: normal;
+
+    text-indent: 15px;
+}
+#pop1 div.box h2 span {
+    margin-left: 580px;
+    font-size: 24px;
+    cursor: pointer;
+}
+#pop1 div.box h2 span:hover i {
+    color: #ccc;
+    transition: 1s;
+}
+
+#pop1 div.box pre {
+    padding: 20px;
+    padding-bottom: 10px;
+
+    color:#666; font-size: 14px;
+    letter-spacing: -1px;
+    font-family: '맑은 고딕';
+}
+
+#pop1 div.box p.btn {
+    width: 100px; height: 35px;
+    line-height: 35px;
+    border: 1px solid #ccc;
+
+    color:#333; font-size: 14px;
+    letter-spacing: -1px;
+    font-weight: bold;
+    text-align: center;
+
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+
+
+/*개인정보취급방침*/
+#pop2 {
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+
+    position: fixed;
+    left:0; top:0;
+    z-index: 9999999;
+
+    display: none ;
+
+    animation-name: anishow;
+    animation-duration: 1s;
+}
+
+@keyframes anishow {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+#pop2 div.box {
+    width: 720px; height: 310px;
+    background: #fff;
+
+    position: absolute;
+    left:50%; top:50%;
+
+    transform: translate(-50%, -50%);
+}
+
+#pop2 div.box h2 {
+    height: 65px; line-height: 65px;
+    border-bottom: 1px solid #ccc;
+
+    color:#2c2c2c; font-size: 16px;
+    letter-spacing: -1px;
+    font-weight: normal;
+
+    text-indent: 15px;
+}
+#pop2 div.box h2 span {
+    margin-left: 520px;
+    font-size: 24px;
+    cursor: pointer;
+}
+#pop2 div.box h2 span:hover i {
+    color: #ccc;
+    transition: 1s;
+}
+
+#pop2 div.box pre {
+    padding: 20px;
+    padding-bottom: 10px;
+
+    color:#666; font-size: 14px;
+    letter-spacing: -1px;
+    font-family: '맑은 고딕';
+}
+
+#pop2 div.box p.btn {
+    width: 100px; height: 35px;
+    line-height: 35px;
+    border: 1px solid #ccc;
+
+    color:#333; font-size: 14px;
+    letter-spacing: -1px;
+    font-weight: bold;
+    text-align: center;
+
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+
+
+/*카피라이트*/
+#wrap_footer {
+    width: 100%;
+    height: 400px;
+    background: #363636;
+    position: relative;
+}
+
+#footer {
+    width: 1280px;
+    height: 190px;
+
+    margin: 0 auto;
+    text-align: center;
+}
+
+#footer p.logo {
+    text-align: left;
+    padding-top: 40px;
+    
+}
+
+#footer p.logo img {
+    width: 300px;
+}
+
+#footer p.adress {
+    width: 700px;
+    height: 150px;
+    /* background: tan; */
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: -1px;
+    text-align: left;
+    line-height: 2;
+    margin-top: 30px;
+}
+
+#footer p.adress span {
+    font-weight: bold;
+}
+
+#footer ul {
+    width: 800px;
+    height: 150px;
+    /* background: palegoldenrod; */
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 150px;
+    right:  50px;
+    font-family: 'OTWelcomeRA';
+    
+}
+
+#footer ul li {
+    font-size: 17px;
+    text-align: left;
+    line-height: 1.5;
+    
+}
+
+#footer ul li a:hover{
+    color: #fff;
+}
+
+#footer ul li span {
+    font-weight: bold;
+    color: #666;
+    font-size: 20px;
+}
+
+#footer ul li a {
+    color: #999;
+    font-family: '나눔바른고딕';
+    line-height: 1.8;
+}
+
+
+#footer p.copy {
+    padding-top: 40px;
+
+    color: #777;
+    font-size: 14px;
+    letter-spacing: -1px;
+    font-weight: bold;
+
+}
+
+
+

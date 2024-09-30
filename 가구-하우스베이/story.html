@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>브랜드스토리</title>
+    <link rel="stylesheet" href="css/story.css">
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/bottom.css">
+    <link rel="shortcut icon" href="images/housebay_fabicon2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+</head>
+
+<body>
+    <!-- 공통상단 시작 -->
+
+    <!-- top고정 바 -->
+    <div class="top_box" id="top_box">
+        <p><i class="fa-solid fa-sort-up"></i></p>
+    </div>
+
+    <script>
+        // 상단으로 스크롤
+        const top_box = document.getElementById('top_box');
+        top_box.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+
+    </script>
+
+       <!-- 로고,로그인 영역 -->
+       <div id="wrap_mainlogo">
+        <div id="main_logo">
+            <ul>
+                <li><a href="bay_main.html"><img src="images/main_logo2.png"></a></li>
+                <li><input type="search" placeholder="여름시즌오프 특가할인"></li>
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                <li class="icon">
+                    <p><a href="login.html"><i class="fa-solid fa-lock"></i><br>로그인</a></p>
+                    <p><a href="user.html"><i class="fa-solid fa-user"></i><br>회원가입</a></p>
+                    <p><a href="map.html"><i class="fa-solid fa-location-dot"></i><br>매장찾기</a></p>
+                   
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 메뉴 -->
+    <div id="menu">
+        <ul>
+            <li class="top"><a href="#a"><i class="fa-solid fa-list-ul"></i> 카테고리</a>
+                <div class="sub_box">
+                    <ul>
+                        <h2></h2>
+                        <li><span>침대</span>
+                            <p><img src="images/1673590930_0316_64m07L2U7KeA7Lmo64yA_7Yyo67iM66at_thumb.jpg"></p>
+                            <p><img src="images/interior-8618459_1920.jpg"></p>
+                        </li>
+                        <li><span>소파</span>
+                            <p><img src="images/sofa-5055005_640.jpg"></p>
+                            <p><img src="images/living-room-8323852_640.jpg"></p>
+                        </li>
+                        <li><span>테이블</span>
+                            <p><img src="images/living-room-8539153_640.jpg"></p>
+                            <p><img src="images/64W467iM7ZmU7J207Yq46rGw7Iuk7J6l_thumb01.jpg"></p>
+                        </li>
+                        <li><span>식탁</span>
+                            <p><img src="images/dining-area-8403094_640.jpg"></p>
+                            <p><img src="images/artizan_6_thumb_1000_1.jpg"></p>
+                        </li>
+                        <li><span>옷장·수납</span>
+                            <p><img src="images/1521447268000_l.jpg"></p>
+                            <p><img src="images/7IWA67CU7Jik7YGs_thumb.jpg"></p>
+                        </li>
+                        <li><span>펫과함께</span>
+                            <p><img src="images/S600_c410a20e-aa9e-4ce8-ae1c-98713a2303c2 (1).jpg"></p>
+                            <p><img src="images/S600_8aea9471-480b-4fd8-817b-7f30628207d9.jpg"></p>
+                        </li>
+                        <li><span>자녀가구</span>
+                            <p><img src="images/7JWE7J2064iE66as7KSR7Lmo64yA_thumb01.jpg"></p>
+                            <p><img src="images/inuri_desk_1400_01.jpg"></p>
+                        </li>
+                    </ul>
+                </div>
+            <li><a href="best.html">BEST&NEW</a></li>
+            <li><a href="event.html">이벤트</a></li>
+            <li><a href="story.html">브랜드스토리</a></li>
+            <li><a href="review.html">포토리뷰</a></li>
+            <li><a href="cs.html">고객센터</a></li>
+        </ul>
+    </div>
+
+    <div id="wrap_line">
+    </div>
+
+    <!-- 공통상단 끝 여기부터 지우기 -->
+
+    <!-- 베스트제품 -->
+    <div id="wrap_bedroom">
+        <div id="bedroom">
+            <p>BRAND STORY<br></p>
+            <h4> 하우스베이는 사람과 공간을 이어주는 제품과 서비스를 제공하여<br>
+                다양한 생활환경에서 보다 많은 사람들의 삶의 질 향상에 기여하고자 합니다.</h4>
+        </div>
+    </div>
+
+    <!-- 브랜드 스토리&연혁 선택바 -->
+     <div id="wrap_histroy">
+    <div id="histroy">
+        <ul>
+            <li>
+                <p><a href="story.html">회사소개</a></p>
+                <p class="line"></p>
+                <p><a href="story_histroy.html">회사연혁</a></p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+    <!-- 브랜드 스토리 메인 -->
+    <div id="main">
+        <ul>
+            <li>
+                <p>
+                    <span class="txt1">Management Philosophy</span>
+                    <span class="txt2">경영철학</span>
+                    <span class="txt3">하우스베이는 '미래형 디자인 창조', '제일주의 추구, <br>자연을 생각하는 기업'이라는 기업이념을 바탕으로<br> 자연 친화적 생활 공간을
+                        창조함으로써<br> 고객의 삶의 질을 향상시키고 소비자의 생활문화를<br> 창조하는 기업입니다.</span>
+                </p>
+                <p><img src="images/brand_img1.png">
+                </p>
+                <span></span>
+            </li>
+
+            <li>
+                <p><img src="images/brand_img2.png"></p>
+                <p>
+                    <span class="txt1">Corporate Philosophy 01</span>
+                    <span class="txt2">미래형 디자인 창조</span>
+                    <span class="txt3">하우스베이는 미래형 디자인 창조라는 기업이념을 바탕으로 연구 개발에 아낌없는 노력을 다하고 있으며, 가구문화의 트렌드를 선도 합니다.
+
+
+                </p>
+                <p></p>
+            </li>
+
+            <li>
+                <p><img src="images/brand_img3.png"></p>
+                <p>
+                    <span class="txt1">Corporate Philosophy 02</span>
+                    <span class="txt2">제일주의 추구</span>
+                    <span class="txt3">우수한 디자인과 품질을 바탕으로 질 높은 제품과 서비스를 제공하여 고객의 풍요로운 삶에 공헌을 실현하겠습니다.
+
+
+                </p>
+                <span></span>
+            </li>
+
+            <li>
+                <p><img src="images/brand_img4.png"></p>
+                <p>
+                    <span class="txt1">Corporate Philosophy 03</span>
+                    <span class="txt2">자연을 생각하는 기업</span>
+                    <span class="txt3">언제나 친환경 제품의 개발로 환경을 보호하고 그 환경의 혜택 속에서 보다 풍요롭게 살아갈 수 있도록 삶을 위해 노력하는 기업으로 성장해
+                        나가겠습니다.
+
+
+                </p>
+            </li>
+
+            <li>
+                <p><img src="images/brand_img5.jpg"></p>
+                <p>
+                    <span class="txt1">House Bay Mission</span>
+                    <span class="txt2">기업사명</span>
+                    <span class="txt3">최고의 제품과 최상의 서비스로 고객의 주거문화에 기여하며, 구성원의 꿈과 이상을 소중히 하는 일류기업
+
+
+                </p>
+                <p></p>
+            </li>
+
+            <li>
+                <p>
+                    <span class="txt1">정직/겸손/성실</span>
+                    <span class="txt2">업무수칙</span>
+                    <span class="txt3">
+                        1. 정직을 바탕으로 사심 없이 일하자.<br>
+                        2. 겸손 또 겸손하자.<br>
+                        3. 열정을 가지고 한 번 시작한 일은 끝장을 보자.<br>
+                        4. 최선보다는 제대로 하자.<br>
+                        5. 주거문화와 국가경제에 기여하는 사명감을 갖자.<br>
+                        6. 고객이 최우선임을 항상 명심하자.<br>
+                        7. 밝은 인사와 예절로 품위 있는 하우스베이 직원이 되자.<br>
+                        8. 신의를 바탕으로 소탐대실 하지 말자.<br>
+                        9. 내 직장은 내가 가꾸고 내가 지킨다.<br>
+                    </span>
+                </p>
+                <p><img src="images/brand_img6.jpg">
+                </p>
+                <span></span>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <!-- 공통하단 -->
+    <div id="wrap_Copyright">
+        <div id="Copyright">
+            <ul>
+                <li>
+                    <p><img src="images/main_logo3.png"></p>
+                    <p>제휴/제안문의 <b></b>대리점 개설 문의 <b></b> 이용약관 <b></b> 개인정보취급방침 <b></b> 고객센터</p>
+                    <p>상호명:하우스베이<b></b> 대표:박주영 <b></b>주소:인천광역시 남동구 논현고잔로 47 <b></b>e-mail: juyoung0360@housbay.co.kr</p>
+                    <p>사업자등록번호:139-81-32740 <b></b> 통신판매업신고번호:2007-인천남동구-0164</p>
+                </li>
+                <li>
+                    <p>1566-6600</p>
+                    <p>고객센터 전화문의(평일)<b></b>9:30~18:00</p>
+                    <p>빠른 상담문의 <span>챗봇상담</span></p>
+                    <p>서비스 문의 및 신청 <span>서비스센터 바로가기</span></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

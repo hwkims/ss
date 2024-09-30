@@ -1,0 +1,118 @@
+
+
+#login { 
+    width: 1000px; background: #fff; 
+     margin: 0 auto;
+    text-align: center;
+}
+#login h2 {
+    padding: 70px;
+    font-size: 50px;
+    color: #090281;
+}
+
+
+#login form fieldset {
+    width: 630px; 
+    margin: 0 auto;
+    border: 0;
+}
+#login form fieldset ul li {
+    margin: 10px 0;
+}
+input[type="text"], input[type="password"] {
+    width: 630px; height: 70px; border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    width: 630px; height: 85px; background: #090281;
+    border: 0; color:#fff; font-size: 20px; font-weight: bold; letter-spacing: -2px;
+    cursor: pointer;
+}
+input[type="checkbox"] {
+    width: 20px; height: 20px;
+    vertical-align: middle;
+} 
+#login form fieldset ul li:last-child {
+    text-align: left;
+    /* background: orange; */
+    color:#333; font-size: 18px; font-weight:normal; letter-spacing: -1px;
+}
+#login form fieldset ul li:last-child b {
+    padding-left: 350px;
+}
+#login form fieldset ul li:last-child b span {
+    color:#090281;
+}
+input[placeholder] {
+    padding-left: 10px;
+    font-size: 16px;
+    letter-spacing: -1px;
+}
+
+::placeholder {
+    color:#999;
+}
+
+#login p.user {
+    width: 630px;
+    height: 80px;
+    /* background: palegoldenrod; */
+    margin: 0px auto;
+    margin-top: 50px;
+}
+
+#login p.user span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 630px;
+    height: 40px;
+    /* background: palegreen; */
+    color: #333;
+}
+
+#login p.user span:nth-last-of-type(1) {
+    background: #090281;
+    line-height: 40px;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+#login p.user span:nth-last-of-type(1) a {
+    color: #fff;
+}
+
+#login p.user span b {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80px;
+    height: 1px;
+    background: #333;
+    margin: 0 10px;
+}
+
+#login p.down {
+    margin: 20px 0;
+}
+#login p.down a {
+    color:#666; font-size: 16px; letter-spacing: -1px;
+}
+#login p.down span {
+    display: inline-block;
+    width: 1px; height: 10px;
+    background: #333;
+    margin: 0 10px;
+}
+#login p.down a:hover {
+    color:#333;
+}
+#login p.banner {
+   margin: 100px 0;
+}
+
+#login p.banner img {
+    width: 510px;
+    height: 150px;
+    padding: 10px;
+}

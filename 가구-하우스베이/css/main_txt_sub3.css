@@ -1,0 +1,238 @@
+/* 베스트제품-서브1 뉴코지 패브릭침대 */
+/* 상세페이지 */
+
+#sub_main {
+    width: 1500px;
+    height: 900px;
+    /* background: palegoldenrod; */
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+
+#sub_main ul {
+    width: 700px;
+    height: 900px;
+    /* background: palegreen; */
+    margin: 0px 10px;
+    color: #333;
+
+
+}
+
+#sub_main ul img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#sub_main ul.left li {
+    width: 120px;
+    height: 120px;
+    /* background: paleturquoise; */
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 2px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+#sub_main ul.left li img {
+    border-radius: 20px;
+}
+
+#sub_main ul.left li.main-image {
+    width: 700px;
+    height: 700px;
+    margin: 0 auto;
+    
+}
+
+#sub_main ul.right li:nth-child(1) {
+    width: 700px;
+    height: 140px;
+    /* background: paleturquoise; */
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+}
+
+#sub_main ul.right li:nth-child(1) p:nth-of-type(1) {
+    display: inline-block;
+    background: #6b9de8;
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+    margin: 10px 0px 20px 0px;
+    
+}
+
+#sub_main ul.right li:nth-child(1) p:nth-of-type(2) {
+    font-size: 35px;
+    font-family: '나눔바른고딕';
+    letter-spacing: -1px;
+    color: #333;
+    font-weight: bold;
+
+}
+
+#sub_main ul.right li:nth-child(2) {
+    width: 700px;
+    height: 160px;
+    /* background: tan; */
+    border-bottom: 1px solid #ddd;
+}
+
+#sub_main ul.right li:nth-child(2) p b{
+    width: 80px;
+    height: 40px;
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 10px 0px 0px;
+    letter-spacing: -1px;
+    
+}
+
+#sub_main ul.right li:nth-child(3) {
+    width: 700px;
+    height: 150px;
+    /* background: teal; */
+    margin: 0 auto;
+    text-align: right;
+    border-bottom: 1px solid #ddd;
+}
+
+#sub_main ul.right li:nth-child(3) p:nth-of-type(1) {
+    font-size: 40px;
+    font-family: '나눔바른고딕';
+    letter-spacing: -1px;
+    font-weight: bold;
+    padding-top: 40px;
+    color: #090281;
+}
+
+#sub_main ul.right li:nth-child(4) {
+    width: 700px;
+    height: 240px;
+    /* background: thistle; */
+    border-bottom: 1px solid #ddd;
+}
+
+#sub_main ul.right li:nth-child(4) p {
+    cursor: pointer;
+}
+
+#sub_main ul.right li:nth-child(4) h4 {
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+#sub_main ul.right li:nth-child(4) p {
+    width: 700px;
+    height: 40px;
+    /* background: papayawhip; */
+    display: flex;
+    margin: 10px auto;
+}
+
+#sub_main ul.right li:nth-child(4) p select {
+    width: 300px;
+    padding-left: 5px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+
+#sub_main ul.right li:nth-child(4) p span {
+    width: 300px;
+    height: 40px;
+    background: #090281;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    letter-spacing: -1px;
+    font-family: '나눔바른고딕';
+    font-size: 18px;
+}
+
+/* 상세제품 카테고리 */
+
+#wrap_banner2 {
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#banner2 {
+ 
+    /* background: tan; */
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+#banner2 p {
+    font-size: 23px;
+    line-height: 80px;
+    vertical-align: middle;
+    display: inline-block;
+    font-family: '나눔바른고딕';
+    letter-spacing: -1px;
+}
+
+#banner2 p a{
+    color: #333;
+}
+
+#banner2 p span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1px;
+    height: 23px;
+    background: black;
+    margin: 0 10px;
+}
+
+#banner2_main_1 {
+    width: 1500px;
+    height: 2900px;
+    /* background: thistle; */
+    margin: 30px auto;
+}
+
+#banner2_main_2 {
+    width: 1500px;
+    height: 3300px;
+    /* background: thistle; */
+    margin: 0px auto;
+}
+
+#banner2_main_3 {
+    width: 1500px;
+    height: 2800px;
+    /* background: tan; */
+    margin: 0px auto;
+    text-align: center;
+}
+
+#banner2_main_4 {
+    width: 1500px;
+    height: 17000px;
+    /* background: tan; */
+    margin: 0px auto;
+    text-align: center;
+}
+
+
+#banner2_main_1 p,#banner2_main_2 p {
+    margin: 0px auto;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+}
+

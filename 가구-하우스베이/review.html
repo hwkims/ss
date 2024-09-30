@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리뷰</title>
+    <link rel="stylesheet" href="css/review.css">
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/bottom.css">
+    <link rel="shortcut icon" href="images/housebay_fabicon2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+</head>
+
+<body>
+    <!-- 공통상단 시작 -->
+
+    <!-- top고정 바 -->
+    <div class="top_box" id="top_box">
+        <p><i class="fa-solid fa-sort-up"></i></p>
+    </div>
+
+    <script>
+        // 상단으로 스크롤
+        const top_box = document.getElementById('top_box');
+        top_box.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+
+    </script>
+
+      <!-- 로고,로그인 영역 -->
+      <div id="wrap_mainlogo">
+        <div id="main_logo">
+            <ul>
+                <li><a href="bay_main.html"><img src="images/main_logo2.png"></a></li>
+                <li><input type="search" placeholder="여름시즌오프 특가할인"></li>
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                <li class="icon">
+                    <p><a href="login.html"><i class="fa-solid fa-lock"></i><br>로그인</a></p>
+                    <p><a href="user.html"><i class="fa-solid fa-user"></i><br>회원가입</a></p>
+                    <p><a href="map.html"><i class="fa-solid fa-location-dot"></i><br>매장찾기</a></p>
+                   
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 메뉴 -->
+    <div id="menu">
+        <ul>
+            <li class="top"><a href="#a"><i class="fa-solid fa-list-ul"></i> 카테고리</a>
+                <div class="sub_box">
+                    <ul>
+                        <h2></h2>
+                        <li><span>침대</span>
+                            <p><img src="images/1673590930_0316_64m07L2U7KeA7Lmo64yA_7Yyo67iM66at_thumb.jpg"></p>
+                            <p><img src="images/interior-8618459_1920.jpg"></p>
+                        </li>
+                        <li><span>소파</span>
+                            <p><img src="images/sofa-5055005_640.jpg"></p>
+                            <p><img src="images/living-room-8323852_640.jpg"></p>
+                        </li>
+                        <li><span>테이블</span>
+                            <p><img src="images/living-room-8539153_640.jpg"></p>
+                            <p><img src="images/64W467iM7ZmU7J207Yq46rGw7Iuk7J6l_thumb01.jpg"></p>
+                        </li>
+                        <li><span>식탁</span>
+                            <p><img src="images/dining-area-8403094_640.jpg"></p>
+                            <p><img src="images/artizan_6_thumb_1000_1.jpg"></p>
+                        </li>
+                        <li><span>옷장·수납</span>
+                            <p><img src="images/1521447268000_l.jpg"></p>
+                            <p><img src="images/7IWA67CU7Jik7YGs_thumb.jpg"></p>
+                        </li>
+                        <li><span>펫과함께</span>
+                            <p><img src="images/S600_c410a20e-aa9e-4ce8-ae1c-98713a2303c2 (1).jpg"></p>
+                            <p><img src="images/S600_8aea9471-480b-4fd8-817b-7f30628207d9.jpg"></p>
+                        </li>
+                        <li><span>자녀가구</span>
+                            <p><img src="images/7JWE7J2064iE66as7KSR7Lmo64yA_thumb01.jpg"></p>
+                            <p><img src="images/inuri_desk_1400_01.jpg"></p>
+                        </li>
+                    </ul>
+                </div>
+            <li><a href="best.html">BEST&NEW</a></li>
+            <li><a href="event.html">이벤트</a></li>
+            <li><a href="story.html">브랜드스토리</a></li>
+            <li><a href="review.html">포토리뷰</a></li>
+            <li><a href="cs.html">고객센터</a></li>
+        </ul>
+    </div>
+
+    <div id="wrap_line">
+    </div>
+
+    <!-- 공통상단 끝 여기부터 지우기 -->
+
+    <!-- 하우스베이 리뷰 -->
+     <div id="wrap_main_txt">
+    <div id="main_txt">
+        <h2>REVIEW</h2>
+        <h4>소중한 고객님의 후기를 소개합니다.</h4>
+        <ul>
+            <li><img src="images/review_main_img1.jpg"></li>
+            <li>
+                <h5>Home Interior with House</h5>
+                <h1>포토리뷰</h1>
+                <h3>하우스베이로 새로워진 고객님의 공간에 초대해주세요.</h3>
+                <p class="line"></p>
+                <p class="txt1">
+                    <span>이벤트 대상 :</span> 하우스베이 매장 & 온라인에서 제품 구매 후 포토리뷰를 작성하신 모든 고객<br>
+
+                    <span>이벤트 기간 :</span> 24년 1월 1일 ~ 12월 31일<br>
+
+                    <span>이벤트 발표 :</span> 매달 참여일 기준, 익월 15일 발표<br>
+                </p>
+                <p class="review_box">
+                    포토리뷰 작성하기
+                </p>
+                <p class="gift">
+                    <img src="images/review_main_img2.jpg">
+                </p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+    <div id="banner7">
+
+        <ul>
+            <li><a href="review_sub.html">
+                    
+                    <p><img src="images/review_sub_img2.jpg"></p>
+                    <p><img src="images/star_icon.jpg"></p>
+                    <p>꿀잠을 위한 최고의 선택 ···</p>
+                    <p>평소에 잠을 잘때 새벽에 꼭 깨는편인데 기존에 쓰던 매트리스가 ··· </p>
+                    <p>작성자: dld***</p>
+                    <p></p>
+                    <p>
+                        <span><img src="images/review_sub_img5.jpg"></span>
+                        <span>델라M 매트리스 [K]<br><b>1,790,000원</b></span>
+                    </p>
+                    <p class="best">BEST</p>
+                </a>
+            </li>
+
+            <li><a href="review_sub2.html">
+                <p><img src="images/review_sub2_img1.jpg"></p>
+                <p><img src="images/star_icon.jpg"></p>
+                <p>우리집에 편안함과 따뜻함을 선물 ···</p>
+                <p>안녕하세요.정신없던 입주기간이 어느정도 마무리 되어 이렇게 후기도 
+                    ··· </p>
+                <p>작성자: opo***</p>
+                <p></p>
+                <p>
+                    <span><img src="images/review_sub2_img4.jpg"></span>
+                    <span>컴포트 4인 패브릭 소파 [스툴 포함]<br><b>3,830,000원</b></span>
+                </p>
+                <p class="best">BEST</p>
+            </a>
+
+            </li>
+
+            <li><a href="review_sub3.html">
+                <p><img src="images/review_sub3_img1.jpg"></p>
+                <p><img src="images/star_icon.jpg"></p>
+                <p>신혼 2인 가구에게 강력 추천!  ···</p>
+                <p>안녕하세요 저희 부부가 선택한 최고의 쇼파, 하우스베이 ··· </p>
+                <p>작성자: kkk***</p>
+                <p></p>
+                <p>
+                    <span><img src="images/review_sub3_img3.jpg"></span>
+                    <span>컴포트 3인 패브릭 소파 <br><b>2,170,000원</b></span>
+                </p>
+                <p class="best">BEST</p>
+            </a>
+
+            </li>
+
+            <li><a href="review_sub4.html">
+                <p><img src="images/review_sub4_img1.jpg"></p>
+                <p><img src="images/star_icon.jpg"></p>
+                <p>막내딸을 위한 4인 쇼파 ···</p>
+                <p>신혼 때 구매한 2인 소파를 10년 넘게 사용했었습니다. ··· </p>
+                <p>작성자: dum***</p>
+                <p></p>
+                <p>
+                    <span><img src="images/review_sub4_img4.jpg"></span>
+                    <span>글로우 4인 가죽 소파 [L그레이]<br><b>1,690,000원</b></span>
+                </p>
+                <p class="best">BEST</p>
+            </a>
+            </li>
+
+            <!-- 1번째끝 -->
+
+            
+            <li>
+                <p><img src="images/review_main2_img1.jpg"></p>
+                <p><img src="images/star_icon.jpg"></p>
+                <p>탁월한선택 인것 같아요 ···</p>
+                <p>새집에 입주하면서 제일큰고민은 쇼파였어요 ··· </p>
+                <p>작성자: aut***</p>
+                <p></p>
+                <p>
+                    <span><img src="images/review_main2_img1-1.jpg"></span>
+                    <span>글로우 4인 가죽 소파 [L브라운]<br><b>1,690,000원</b></span>
+                </p>
+               
+
+            </li>
+
+            
+            <li>
+                <p><img src="images/review_main2_img2.jpg"></p>
+                <p><img src="images/star_icon.jpg"></p>
+                <p>2024년 새해를 하우스베이 가구와 함 ···</p>
+                <p>신주방에는 식탁하나 바꿨을 뿐인데 주방이 화사 ··· </p>
+                <p>작성자: sar***</p>
+                <p></p>
+                <p>
+                    <span><img src="images/review_main2_img2-1.jpg"></span>
+                    <span>포세린 가족 식탁<br><b>1,300,000원</b></span>
+                </p>
+               
+
+            </li>
+            
+            <li>
+                <p><img src="images/review_main_img3.jpg"></p>
+                <p><img src="images/star_icon.jpg"></p>
+                <p>7살 여아방 수납침대 강추합니다! ···</p>
+                <p>25평 아담한 우리집, 짐이 많아도 너~~~무 ··· </p>
+                <p>작성자: rrr***</p>
+                <p></p>
+                <p>
+                    <span><img src="images/review_main_img3-1.jpg"></span>
+                    <span>그로잉 2 매트리스<br><b>400,000원</b></span>
+                </p>
+              
+
+            </li>
+            <li>
+                <p><img src="images/review_main_img4.jpg"></p>
+                <p><img src="images/star_icon.jpg"></p>
+                <p>신혼때와 12년후 다시신혼으로 돌아간거 ···</p>
+                <p>다시 신혼기분을 내기위해 거실가구를 교체하려고 마음을 먹은후 ··· </p>
+                <p>작성자: sef***</p>
+                <p></p>
+                <p>
+                    <span><img src="images/review_main_img4-1.jpg"></span>
+                    <span>발렌타인 티테이블<br><b>920,000원</b></span>
+                </p>
+            
+            </li>
+
+            <li>
+                <p><img src="images/review_main_img5.jpg"></p>
+                <p><img src="images/star_icon.jpg"></p>
+                <p>가구만 기분이 좋아욧!!! ···</p>
+                <p>여러 가구매장 돌아다녀봤는데 찰떡같이 맘에 드는 가구를 찾을 ··· </p>
+                <p>작성자: dfd***</p>
+                <p></p>
+                <p>
+                    <span><img src="images/review_main_img5-1.jpg"></span>
+                    <span>모모 스툴 [라운드형 / 아이보리]<br><b>110,000원</b></span>
+                </p>
+              
+            </li>
+
+            <li>
+                <p><img src="images/review_main_img6.jpg"></p>
+                <p><img src="images/star_icon.jpg"></p>
+                <p>20년만에 가구 풀체인지했네요~~!! ···</p>
+                <p>20년 가까이 사용한 가구들을  한번에 풀체인지 해버렸어요 ··· </p>
+                <p>작성자: qyr***</p>
+                <p></p>
+                <p>
+                    <span><img src="images/review_main_img6-1.jpg"></span>
+                    <span>루이나 붙박이장 7문<br><b>2,920,000원</b></span>
+                </p>
+            
+
+            </li>
+
+            <li>
+                <p><img src="images/review_main_img7.jpg"></p>
+                <p><img src="images/star_icon.jpg"></p>
+                <p>아이가 좋아하네요 ···</p>
+                <p>설치기사분이 오셔서 친절히 설명도 해주시고  ··· </p>
+                <p>작성자: sed***</p>
+                <p></p>
+                <p>
+                    <span><img src="images/review_main_img7-1.jpg"></span>
+                    <span>아이누리 단독책상 세트<br><b>656,000원</b></span>
+                </p>
+              
+
+            </li>
+
+            <li>
+                <p><img src="images/review_main_img8.jpg"></p>
+                <p><img src="images/star_icon.jpg"></p>
+                <p>식탁 하나로 우리집 품격 상승!! ···</p>
+                <p>저희 부부는 이제 40대에 접어들어 가기 때문에 튼튼하고 오래 쓸수 있는 제품 ··· </p>
+                <p>작성자: tes***</p>
+                <p></p>
+                <p>
+                    <span><img src="images/review_main_img8-1.jpg"></span>
+                    <span>헤르만 2000 식탁<br><b>830,000원</b></span>
+                </p>
+             
+
+            </li>
+
+           
+
+            </li>
+
+
+            
+          
+        </ul>
+       
+   
+</div>
+
+ 
+<div id="btn">
+    전체보기
+</div>
+
+
+    <!-- 공통하단 -->
+    <div id="wrap_Copyright">
+        <div id="Copyright">
+            <ul>
+                <li>
+                    <p><img src="images/main_logo3.png"></p>
+                    <p>제휴/제안문의 <b></b>대리점 개설 문의 <b></b> 이용약관 <b></b> 개인정보취급방침 <b></b> 고객센터</p>
+                    <p>상호명:하우스베이<b></b> 대표:박주영 <b></b>주소:인천광역시 남동구 논현고잔로 47 <b></b>e-mail: juyoung0360@housbay.co.kr</p>
+                    <p>사업자등록번호:139-81-32740 <b></b> 통신판매업신고번호:2007-인천남동구-0164</p>
+                </li>
+                <li>
+                    <p>1566-6600</p>
+                    <p>고객센터 전화문의(평일)<b></b>9:30~18:00</p>
+                    <p>빠른 상담문의 <span>챗봇상담</span></p>
+                    <p>서비스 문의 및 신청 <span>서비스센터 바로가기</span></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
