@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Monarch</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <div id="title">
+            <h1 id="textTitle">Welcome<br>
+                <span id="titleTo">to</span><br>
+            Hamburger Monarch!</h1>
+        </div>
+        <div id="counter">
+            <div id="orderUp">
+                <h3 id="correct">Correct orders: 0</h3>
+            </div>
+        </div>
+        <div id="leftBar">
+            <div id="h2p"><h2>How to Play</h2></div>
+            <div id="rules"><p>Ingredients will fall from the four pipes at the top of the screen.</p>
+                 
+                <p>The customer's order is shown in the top right.</p>
+                 
+                <p>All you have to do is catch the ingredients in the correct order by moving your bun 
+                with the Left and Right arrow keys!</p>
+                
+                <p>Be careful, though -- the better you do, the harder your job will get,
+                and one mistake will cost you everything!</p>
+            </div>
+        </div>
+        <div id="preview">
+            <div id="previewBurger">
+                <div id="previewBottom"></div>
+                <div id="previewPatty"></div>
+                <div id="previewCheese"></div>
+                <div id="previewLettuce"></div>
+                <div id="previewTomato"></div>
+                <div id="previewTop"></div>
+            </div>
+            <!-- <img src="https://www.picsum.photos/150" /> -->
+        </div>
+        <div id="startDiv">
+            <button id="stButton">May I take your order?</button>
+        </div>
+        <div id="gameWindow">
+            <div class="pipes">
+                <div id="pipe-1">
+                    
+                </div>
+                <div id="pipe-2">
+                    
+                </div>
+                <div id="pipe-3">
+                    
+                </div>
+                <div id="pipe-4">
+                    
+                </div>
+            </div>
+            <div id="burger">
+                <div class="bun-bottom" id="bun-bottom"></div>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

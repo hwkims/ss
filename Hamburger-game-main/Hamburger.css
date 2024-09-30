@@ -1,0 +1,73 @@
+body{
+    background-color: #b9ffe8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #464d4d;
+}
+.container {
+    display: flex;
+    margin-top: 5%;
+  }
+  .item {
+    flex-basis: 100px;
+  }
+#top{
+    width: 450px;
+    height: 170px;
+    background-image: url("images/top.png");
+    background-repeat: no-repeat;
+}
+#bottom{
+    width: 450px;
+    height: 170px;
+    background-image: url("images/bottom.png");
+    background-repeat: no-repeat;
+    margin-top: 1.5%;
+}
+#meat{
+    width: 420px;
+    height: 70px;
+    background-color: #5c472b;
+    border-radius: 30px;
+}
+button{
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #51fac2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style:italic;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 20%;
+}
+#checkBtn{
+    width: 70px;
+    margin-top: 12%; 
+}
+#example{
+    background-image: url(images/Example2.png);
+    height: 385px;
+    width: 400px;
+    background-repeat: no-repeat;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+#buttons{
+    margin-left: 10%;
+    padding-top: 90%;
+}
+#Hamburger{
+    margin-left: 3%;
+    padding-right: 35%;
+}
+h1{
+    margin-left: 20%;
+    margin-top: 12%;
+}
+span{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
