@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0 ; padding: 0;}
+
+         /*가변크기 공식*/
+        /*가변 크기로 만들 박스의 가로 너비 / 가변크기로 만들 박스를 감싸고 있는 박스 가로 너비 ) x 100 = 가변 크기의 % 값*/
+
+
+        #wrap {
+            width: 90%; /*960*/
+            height: 500px;
+            margin: 0 auto;
+            border: 4px solid #000;
+        }
+
+        #wrap div {
+            width: 31.25%;
+
+            height: 100%;
+            background: yellow;
+
+            float: left;
+        }
+
+        #wrap div:first-child {
+            background: #1f518b;
+            margin-left: 37.5%;
+        }
+        #wrap div:first-child + div {
+            background: #f7e041;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="wrap">
+        <div></div>
+        <div></div>
+    </div>
+
+</body>
+</html>

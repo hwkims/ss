@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        //var user_ifo = new Array(1, "이박사", 35, "서울", "경기");
+
+        // var d = new Array();
+        // d[0] = 30;
+        // d[1] = "따르릉";
+        // d[2] = true;
+
+        // var d = new Array(30, "따르릉", true);
+
+        // var arr = [30, "따르릉", true, 50, 70, 80, 90];
+
+        // document.write("<h3>배열값 가져오기-1</h3>");
+
+        // document.write(arr[0],"<br>");
+        // document.write(arr[1],"<br>");
+        // document.write(arr[2],"<br>");
+
+        // document.write("<h3>배열값 가져오기-2</h3>");
+        
+        // for(i=0; i<arr.length; i++){
+        //     document.write(arr[i],"<br>");
+        // }
+
+
+        // var num = [1,2,3,4,5,6,7,8,9];
+
+        // for(i=0; i<num.length; i++) {
+        //     document.write("2x"+num[i]+"="+2*num[i],"<br>");
+        // }
+
+        var arr1 = ["사당","교대","방배","강남"];
+        var arr2 = ["신사","압구정","옥수"];
+
+        var result = arr1.join("-"); //배열에 저장된 값을 지정한 문자로 연결
+        document.write(result,"<br>");
+
+        result = arr1.concat(arr2); // 2개의 배열을 하나의 배열로 만들어 반환
+        document.write(result,"<br>");
+
+        result = arr1.slice(1,3); // 배열의 1번 인덱스 부터 3 인덱스 이전의 데이터 반환
+        document.write(result,"<br>");
+
+        result = arr1.sort(); //배열의 값을 오름차순으로 정렬합니다.
+        document.write(result,"<br>");
+
+        result = arr2.reverse(); // 배열 순서를 거꾸로 뒤집습니다.
+        document.write(result,"<br>");
+
+        var greenArr =["교대","방배","강남"];
+
+        var yellowArr = ["미금","정자","기흥"];
+
+        greenArr.splice(2,1,"서초","역삼"); //2번 인덱스부터 1개의 데이터를 삭제하고 서초, 역삼 삽입
+        document.write(greenArr,"<br>");
+
+        var data1 = yellowArr.pop(); // 배열 마지막 인덱스의 데이터를 불러오기
+        document.write(data1,"<br>"); //기흥
+
+        var data2 = yellowArr.shift(); //배열 가장 앞쪽 인덱스의 데이터를 불러오기
+        document.write(data2,"<br>"); //미금
+
+        yellowArr.push(data2); // 마지막 인덱스에 넣기
+        document.write(yellowArr,"<br>");
+
+        yellowArr.unshift(data1); //배열 가장 앞쪽 인덱스에 넣기
+        document.write(yellowArr,"<br>");
+
+        var result = greenArr.length; //배열에 저장된 총 데이터의 개수 반환
+        document.write(result,"<br>");
+
+
+
+    </script>
+    
+</body>
+</html>

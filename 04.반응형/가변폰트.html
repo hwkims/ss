@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #para {
+            font-size: 6em; /*96px*/
+        /*  }
+        #para p {
+            font-size: 0.6666666666666667em; /*64px*/
+        /*} */
+
+        p { font-size: 5em;}
+        p span { font-size: 3rem;}
+
+    </style>
+</head>
+<body>
+    <!-- <div id="para">
+        가변적인 폰트1
+        <p>가변적인 폰트2</p>
+    </div> -->
+
+    <!-- <p>
+        rem 단위!
+            <span>rem 단위!</span>
+    </p> -->
+    <style>
+            /*em 단위 1em = 16px 상속O */
+            /*rem으로 사용 상속X */
+
+            /*vw (단위를 적용할 글자 크기값 x 브라우저 너비값)/100 = 크기값
+            예시> 5vw (브라우저 너비값이 1280일경우) (5x1280)/100 = 64px*/
+            /*vw -가로, vh - 세로, vmin - 웹브라우저의 너비와 높이 중 짧은 쪽 기준 , vmax -웹브라우저의 너비와 높이 중 큰 쪽 기준*/
+
+        p { font-size: 5vw;}
+    </style>
+
+
+    <p>w단위!</p>
+</body>
+</html>

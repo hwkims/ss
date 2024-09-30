@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <style>
+        * { padding: 0; margin: 0;}
+        a { text-decoration: none;}
+        li { list-style: none;}
+
+        ul.slide {
+            width: 1200px; height: 400px; border: 3px solid blue;
+            margin: 50px auto; position: relative; overflow: hidden;
+        }
+        ul.slide li { position: absolute; left:0; top:0;}
+
+
+    </style>
+
+</head>
+<body>
+    
+    <script>
+        $(function(){
+
+            $("ul.slide li").eq(0).siblings().css("top","-400px"); //1번 그림을 제외한 2~3번을 왼쪽으로
+
+            var i = 0; //초기값 0으로 설정 인덱스번호
+
+           setInterval(function(){ //3초에 한번씩 반복 실행
+
+              if(i<2){
+                i++;
+              }else{
+                i=0;
+              }
+
+              $("ul.slide li").eq(i).animate({"top":"0"},200); // 다음그림을 중앙으로
+              $("ul.slide li").eq(i).siblings().animate({"top":"-400px"},200);
+
+           },3000);
+
+        });
+    </script>
+
+    <div id="main">
+
+        <ul class="slide">
+            <li><a href="#a"><img src="images/s_main1.jpg"></a></li>
+            <li><a href="#a"><img src="images/s_main2.jpg"></a></li>
+            <li><a href="#a"><img src="images/s_main3.jpg"></a></li>
+        </ul>
+
+    </div>
+
+
+</body>
+</html>

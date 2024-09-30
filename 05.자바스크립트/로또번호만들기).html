@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<body>
+    
+    <script>
+        var lotto = new Array(6);
+        var count = 0;
+        var mFlag =true;
+
+        while(count<6){
+            var number;
+            number=parseInt( Math.random()*45)+1;
+
+            for(var i=0;i<count;i++){
+                if(lotto[i]==number){
+                    mFlag=false;
+                }
+            }
+            if(mFlag==true){
+                lotto[count]=number;
+                count++;
+            }
+            mFlag=true;
+            
+        document.write(number,"<br>");
+           
+        }
+        
+    </script>
+
+</body>
+</html>

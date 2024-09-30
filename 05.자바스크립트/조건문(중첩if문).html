@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // if(조건식){
+        //     코드;
+        // }else if(조건식){
+        //     코드;
+        // }else if(조건식){
+        //     코드;
+        // }else if(조건식){
+        //     코드;
+        // }else {
+        //     코드;
+        // }
+
+        // var a = 93;
+        // var b = 82;
+        // var c = 71;
+
+        // var avg = (a+b+c)/3;
+
+        // if(avg>=90){
+        //     document.write("A학점");
+        // }else if(avg>=80){
+        //     document.write("B학점");
+        // }else if(avg>=70){
+        //     document.write("C학점");
+        // }else if(avg>=60){
+        //     document.write("D학점");
+        // }else{
+        //     document.write("F학점");
+        // }
+
+        // var mon = prompt("당신이 좋아하는 계절은 몇월 입니까?","0");
+
+        // if(mon>=3 && mon<=5){
+        //     document.write("햇살 가득한 봄");
+        // }else if(mon>=6 && mon<=8){
+        //     document.write("여행가기 좋은 여름");
+        // }else if(mon>=9 && mon<=11){
+        //     document.write("독서의 계절 가을");
+        // }else if(mon>=1 && mon<=2 || mon==12){
+        //     document.write("스키의 계절 겨울");
+        // }else {
+        //     alert('잘못입력했습니다. 1~12중에서 입력하세요');
+        //     location.reload(); //새로고침
+        // }
+
+        // if(조건식1){
+
+        //     if(조건식2){
+        //         로그인성공;
+        //     }else {
+        //         비번틀림
+        //     }
+
+        //     아디틀림;
+        // }
+
+        // var id = "admin"; //아이디
+        // var pw = "1234"; //비밀번호
+
+        // var userId = prompt("아이디는?","");
+        
+
+        // if(id==userId){
+            
+        //     var userPw = prompt("비밀번호는?","");
+            
+        //     if(pw==userPw){
+
+        //         document.write(userId+"님 환영합니다.");
+        //     }else{
+        //         alert("비밀번호가 일치하지 않습니다.");
+        //         location.reload();
+        //     }
+        // }else{
+        //     alert("아이디가 일치하지 않습니다.");
+        //         location.reload();
+        // }
+
+       
+    </script>
+
+
+    <style>
+        .box {
+            width: 500px; height: 100px; border: 1px solid #ccc;
+            margin: 50px auto; padding: 10px;
+            font-size: 22px; font-weight: bold;
+            text-align: center; display: flex; justify-content: center; align-items: center;
+        }
+    </style>
+
+    
+
+    <div class="box">
+        
+    </div>
+
+    <script>
+        var displayArea = document.querySelector(".box");
+
+        var userName = prompt("이름을 입력하세요","홍길동");
+        var userYear = prompt("몇년생이세요?(두자리입력)","");
+
+        if(userYear%2==0){
+            displayArea.innerHTML = "이름:" + userName + "<br>몇년생:" +  userYear + "<br>짝수";
+        }else{
+            displayArea.innerHTML = "이름:" + userName + "<br>몇년생:" +  userYear + "<br>홀수";
+        }
+
+        
+
+    </script>
+
+    <script>
+        // var userNumber = prompt("숫자를 입력하세요.","");
+        // var displayArea = document.querySelector('.box');
+
+        // if (userNumber!=null){
+
+        //    if(userNumber % 3 == 0){
+        //     displayArea.innerHTML = userNumber + "은 3의 배수 입니다.";
+        //    }else{
+        //     displayArea.innerHTML = userNumber + "은 3의 배수가 아닙니다.";
+        //    } 
+
+        // }else{
+        //     alert("다시 입력하세요.");
+        //     location.reload();
+        // }
+
+    </script>
+
+
+</body>
+</html>

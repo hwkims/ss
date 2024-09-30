@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img { width: 300px; height: 200px;}
+        
+    </style>
+
+    <script>
+        var images = ["images/cat.jpg","images/dog.jpg","images/img-1.jpg"];
+
+        var i = 0;
+
+        function change(){
+            i++;
+
+            if(i>=images.length){
+                i=0;
+            }
+            
+            var imgView = document.getElementById("animal");
+            imgView.src = images[i];
+
+        }
+
+    </script>
+
+</head>
+<body>
+    
+    <img src="images/cat.jpg" id="animal">
+    <p><input type="button" value="이미지변경" onclick="change();"></p>
+
+
+</body>
+</html>

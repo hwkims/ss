@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #wrap {
+            width: 90%;
+            height: 500px;
+            margin: 0 auto;
+            border: 4px solid #000;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap; /*기본값-한줄로배치 nowrap, 여러줄로배치 wrap*/
+        }
+
+        #wrap div {
+            width: 100%;
+            height: 500px;
+            
+        }
+        #wrap div:nth-child(1){
+            background: red;
+        }
+
+        #wrap div:nth-child(2){
+            background: blue;
+        }
+        #wrap div:nth-child(3){
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="wrap">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div> -->
+
+    <style>
+        * { padding: 0 ; margin: 0;}
+        li { list-style: none;}
+
+        #nav { width: 1200px; height: 40px; background: yellow; margin: 0 auto;}
+        #nav ul li {
+            width: 200px; height: 40px; line-height: 40px; background: #000; 
+            color:#fff; text-align: center;
+
+            float: left;
+        }
+        #nav ul li:hover {
+            background: red;
+        }
+
+        #main {
+            width: 1200px; height: 550px; margin: 0 auto;
+        }
+        #main img {
+            width: 100%;
+        }
+        /*태블릿버전*/
+        @media all and (max-width:1024px){
+            #nav { width: 100%; height: auto; }
+            #nav ul {
+                display: flex;
+                flex-direction: row; /*자식들 방향 가로*/
+                flex-wrap: wrap; 
+            }
+            #nav ul li {
+                width: 50%;
+            }
+
+            #main {
+                width: 100%;
+            }
+        }
+
+        /*모바일버전*/
+        @media all and (max-width:768px){
+            #nav ul {
+                flex-direction: column;
+            }
+            #nav ul li {
+                width: 100%;
+            }
+        }
+
+    </style>
+
+    
+
+
+    <div id="nav">
+        <ul>
+            <li>메뉴1</li>
+            <li>메뉴2</li>
+            <li>메뉴3</li>
+            <li>메뉴4</li>
+            <li>메뉴5</li>
+            <li>메뉴6</li>
+        </ul>
+    </div>
+
+    <div id="main">
+        <img src="images/main_banner2.jpg">
+    </div>
+
+</body>
+</html>

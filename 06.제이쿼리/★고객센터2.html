@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * { padding: 0; margin: 0;}
+        a { text-decoration: none;}
+        li {list-style: none;}
+
+        ul li { width: 1000px; cursor: pointer;}
+        ul li p { display: inline-block; vertical-align: middle;}
+
+        ul li.up { height: 50px; background: #ddd; }
+        ul li.down { height: 100px; background: cyan; 
+                    border: 2px solid #000; box-sizing: border-box;
+                    border-top:0; display: none;
+                }
+    </style>
+</head>
+<body>
+
+    <script>
+        $(function(){
+
+            $("ul li.up").click(function(){
+
+                $(this).next().slideToggle().siblings(".down").hide();
+
+                var Value = $(this).find("i").attr("class");
+                console.log(Value);
+
+                if(Value == "fa-solid fa-angle-down"){
+                    $(this).find("i").attr("class",Value.replace("down","up"));
+                }else {
+                    $(this).find("i").attr("class",Value.replace("up","down"));
+                }
+
+                $(this).siblings().find("i").attr("class",Value.replace("up","down"));
+
+
+            });
+
+
+        });
+    </script>
+
+    <ul>
+        <li class="up">
+            <p>질문내용</p>
+            <p><i class="fa-solid fa-angle-down"></i></p>
+        </li>
+
+        <li class="down">
+           <p>답변!!!!</p>
+        </li>
+
+        <li class="up">
+            <p>질문내용</p>
+            <p><i class="fa-solid fa-angle-down"></i></p>
+        </li>
+
+        <li class="down">
+           <p>답변!!!!</p>
+        </li>
+
+        <li class="up">
+            <p>질문내용</p>
+            <p><i class="fa-solid fa-angle-down"></i></p>
+        </li>
+
+        <li class="down">
+           <p>답변!!!!</p>
+        </li>
+
+        <li class="up">
+            <p>질문내용</p>
+            <p><i class="fa-solid fa-angle-down"></i></p>
+        </li>
+
+        <li class="down">
+           <p>답변!!!!</p>
+        </li>
+    </ul>
+</body>
+</html>

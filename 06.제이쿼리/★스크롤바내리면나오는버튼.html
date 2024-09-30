@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <script>
+        $(function(){
+
+            $(window).scroll(function(){
+
+                if($(this).scrollTop()>500){
+                    $(".top").fadeIn(500);
+                }else{
+                    $(".top").fadeOut('slow');
+                }
+
+            });
+
+        });
+    </script>
+
+    <style>
+        * { padding: 0; margin: 0; scroll-behavior: smooth;}
+        a { text-decoration: none;}
+
+        div { padding: 20px 20px 1500px 20px;}
+
+        .top {
+            position: fixed;
+            right: 30px;
+            bottom: 50px;
+
+            display: block;
+            width: 50px; height: 50px;
+            background: #000;
+            color:#fff;
+
+            text-align: center;
+            line-height: 50px;
+
+            display: none;
+        }
+
+        .top:hover {
+            background:red;
+            transition: 0.6s;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div>
+        <p>스크롤 아내로 내리면 버튼이 나타납니다.</p>
+        <p>버튼을 클릭하면 상단으로 이동됩니다.</p>
+    </div>
+
+    <a href="#" class="top">TOP</a>
+</body>
+</html>

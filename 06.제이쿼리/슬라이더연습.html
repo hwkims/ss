@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<!--bx슬라이더 관련 CSS-->	
+<link rel="stylesheet" href="bxslider-4-4.2.17/dist/jquery.bxslider.css">
+
+<!--제이쿼리 실행을 위한 파일 ★기존에 있으면 생략 가능★-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!--bx슬라이더 실행을 위한 파일-->
+<script src="bxslider-4-4.2.17/dist/jquery.bxslider.js"></script>    
+
+</head>
+<body>
+
+    <style>
+        ul.slider li { position: relative;}
+        ul.slider li p { position: absolute; right:100px; top:0;}
+        ul.slider li p.txt1 { top:100px; font-size: 34px; font-weight: bold; letter-spacing: -2px; color:#fff;}
+        ul.slider li p.txt2 { right:60px; top:160px; font-size: 24px; font-weight: bold; letter-spacing: -2px; color:#fff;}
+        ul.slider li p.btn { right:100px; top:220px;}
+        ul.slider li p.btn a { display:block; width: 130px; height: 40px; background: #000; color:#fff; text-align: center; line-height: 40px; text-decoration: none;}
+    </style>
+    
+    <ul class="slider">
+        <li><img src="images/01.jpg">
+            <p class="txt1">8월 이벤트</p>
+            <p class="txt2">공지사항을 참조하세요</p>
+            <p class="btn"><a href="http://naver.com">바로가기</a></p>
+        </li>
+        <li><img src="images/02.jpg"></li>
+        <li><img src="images/03.jpg">
+            
+           
+
+        </li>
+    </ul>
+
+    <script>
+        $(document).ready(function(){
+          $('ul.slider').bxSlider({
+              auto:true, //자동실행
+              touchEnabled:false, //링크 버튼 눌리게 설정 
+              slideWidth: 700,
+              keyboardEnabled:true,
+                 
+          });
+        });
+    </script>
+
+
+    <script>
+        $(function(){
+
+            $('ul.down').bxSlider({
+                minSlides: 3,
+                maxSlides: 4,
+                slideWidth: 170,
+                slideMargin: 10,
+                pager:false
+            });
+
+
+        });
+    </script>
+
+
+    <ul class="down">
+        <li><img src="images/01.jpg"></li>
+        <li><img src="images/02.jpg"></li>
+        <li><img src="images/03.jpg"></li>
+        <li><img src="images/04.jpg"></li>
+        <li><img src="images/05.jpg"></li>
+        <li><img src="images/06.jpg"></li>
+        <li><img src="images/07.jpg"></li>
+    </ul>
+
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <script>
+        $(function(){
+            /*
+            $("").val(); // 선택한 폼 요소의 value 속성값을 가져옵니다.
+            $("").val("새 값"); // 요소를 선택하여 value 속성에 새 값을 적용합니다.
+            */
+
+            var result1 = $("#user_name").val(); //용대리
+            console.log(result1);
+
+            $("#user_id").val("javascript");
+
+        });
+    </script>
+
+</head>
+<body>
+
+    <script>
+        $(function(){
+
+            var result_1 = $("#chk1").prop("checked");
+            console.log(result_1); //false
+
+            var result_2 = $("#chk2").prop("checked");
+            console.log(result_2); //true
+
+            var result_2 = $("#chk3").prop("checked",true);
+
+            var result_3 = $("#se_1").prop("selectedIndex");
+            console.log(result_3);
+
+        });
+    </script>
+
+    <h1>
+        <strong>객체 조작 및 생성</strong>
+    </h1>
+
+    <form>
+        <p>
+            <input type="checkbox" id="chk1"> <label for="chk1">chk1</label>
+            <input type="checkbox" id="chk2" checked> <label for="chk2">chk2</label>
+            <input type="checkbox" id="chk3"> <label for="chk3">chk3</label>
+        </p>
+
+        <p>
+            <select id="se_1">
+                <option>opt1</option>
+                <option>opt2</option>
+                <option selected>opt3</option>
+            </select>
+        </p>
+    </form>
+
+
+    <!-- <form>
+        <p>
+            <label>이름</label>
+            <input type="text" id="user_name" value="용대리">
+        </p>
+
+        <p>
+            <label>아이디</label>
+            <input type="text" id="user_id" value="hello">
+        </p>
+    </form> -->
+</body>
+</html>

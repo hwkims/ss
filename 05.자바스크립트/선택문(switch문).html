@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    // var 변수 = 초기값;
+
+    // switch(변수){
+    //     case 값1 : 코드1;
+    //     break;
+
+    //     case 값2 : 코드2;
+    //     break;
+
+    //     case 값3 : 코드3;
+    //     break;
+
+    //     default : 코드5;
+    // }
+
+
+    // var result;
+    // result = prompt("좋아하는 과일을 입력하세요(사과, 배, 수박 중 입력)","");
+
+    // if(result=="사과"){
+    //     document.write(500,"<br>");
+    // }else if(result=="배"){
+    //     document.write(1500,"<br>");
+    // }else if(result=="수박"){
+    //     document.write(2500,"<br>");
+    // }else{
+    //     alert("보기 중에 없는 과일입니다.");
+    //     location.reload();
+    // }
+
+    // switch(result){
+    //     case "사과" : document.write(500,"<br>");
+    //     break;
+
+    //     case "배" : document.write(1500,"<br>");
+    //     break;
+
+    //     case "수박" : document.write(2500,"<br>");
+    //     break;
+
+    //     default: alert("보기 중에 없는 과일입니다.");
+    //     location.reload(); //새로고침
+    // }
+
+    // var site = prompt("네이버, 다음, 네이트, 구글 중 즐겨 찾는 사이트는?","네이버");
+
+    // var url;
+
+    // switch(site){
+    //     case "구글" : url = "www.google.com";
+    //     break;
+
+    //     case "다음" : url = "www.daum.net";
+    //     break;
+
+    //     case "네이버" : url = "www.naver.com";
+    //     break;
+
+    //     case "네이트" : url = "www.nate.com";
+    //     break;
+
+    //     default : alert("보기 중에 없는 사이트 입니다.");
+    //     location.reload();
+    // }
+    //     if(url){
+    //         location.href="http://"+url;
+    //     }
+
+    // var a = 90; //국어
+    // var b = 80; //영어
+    // var c = 70; // 수학
+
+    // var avg = (a+b+c)/3; //평균
+
+    // switch(true){
+    //     case avg>=90 : document.write("A");
+    //     break;
+
+    //     case avg>=80 : document.write("B");
+    //     break;
+
+    //     case avg>=70 : document.write("C");
+    //     break;
+
+    //     case avg>=60 : document.write("D");
+    //     break;
+        
+    //     default : document.write("F");
+    // }
+    // document.write("<br>",avg);
+
+    // if(avg>=90){
+    //     document.write("A");
+    // }else if(avg>=80){
+    //     document.write("B");
+    // }else if(avg>=70){
+    //     document.write("C");
+    // }else if(avg>=60){
+    //     document.write("D");
+    // }else{
+    //     document.write("F");
+    // }
+
+    // document.write("<br>",avg);
+
+    var choice = prompt("좋아하는 과일은? 사과, 배, 참외, 포도 중 선택","사과");
+    var num = prompt("먹은 갯수는?","1");
+
+    var total;
+    /*사과500, 배1000, 참외1500, 포도2000*/
+
+    // switch(choice){
+    //     case "사과" : total = 500*num;
+    //     break;
+
+    //     case "배" : total = 1000*num;
+    //     break;
+
+    //     case "참외" : total = 1500*num;
+    //     break;
+
+    //     case "포도" : total = 2000*num;
+    //     break;
+
+    //     default : alert('보기 중에 없습니다.');
+    //     location.reload();
+    // }
+
+    if(choice=="사과"){
+        total = 500*num;
+    }else if(choice=="배"){
+        total = 1000*num;
+    }else if(choice=="참외"){
+        total = 1500*num;
+    }else if(choice=="포도"){
+        total = 2000*num;
+    }else{
+        alert('보기 중에 없습니다.');
+        location.reload();
+    }
+
+    document.write("선택한 과일:"+choice,"<br>");
+    document.write("먹은갯수:"+num,"<br>");
+    document.write(total,"<br>");
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // var num = 2.7234;
+
+        // var maxNum = Math.max(10, 5, 8 ,30); //최대값
+        // document.write(maxNum,"<br>");
+
+        // var minNum = Math.min(10, 5, 8 ,30); //최소값
+        // document.write(minNum,"<br>");
+
+        // var roundNum = Math.round(num); //소수 첫째 자리 반올림
+        // document.write(roundNum,"<br>");
+
+        // var ceilNum = Math.ceil(num); //소수 첫째 자리 올림
+        // document.write(ceilNum,"<br>");
+
+        // var floorNum = Math.floor(num); //소수 첫째 자리 내림
+        // document.write(floorNum,"<br>");
+
+        // var rndNum = Math.random(); //0과 1사이의 난수 발생
+        // document.write(rndNum,"<br>");
+
+        // var rndNum = Math.floor(Math.random()*31); //0~30사이의 난수 발생
+        // document.write(rndNum,"<br>");
+
+        // var rndNum = Math.floor(Math.random()*31)+120; //120~150사이의 난수 발생
+        // document.write(rndNum,"<br>");
+
+        // document.write("<h1>컴퓨터 가위, 바위, 보 맞추기</h1>");
+
+        // var game = prompt("가위, 바위, 보 중 선택하세요","가위");
+        // var gameNum;
+
+        // if(game=="가위"){
+        //     gameNum=1;
+        // }else if(game=="바위"){
+        //     gameNum=2;
+        // }else if(game=="보"){
+        //     gameNum=3;
+        // }else{
+        //     alert("잘못입력했습니다.");
+        //     location.reload();
+        // }
+
+        // var com = Math.ceil(Math.random()*3); //1~3 사이에 난수가 발생
+
+        // document.write(gameNum,"<br>");
+        // document.write("<img src=\"images/math_img_"+com+".jpg\">");
+
+        // if(gameNum==com){
+        //     document.write("<img src=\"images/game_1.jpg\">","<br>");
+        // }else {
+        //     document.write("<img src=\"images/game_2.jpg\">","<br>");
+        // }
+
+        var randomNum = Math.ceil(Math.random()*3); //1~3;
+
+         document.write("<img src=\"images/img-"+randomNum+".jpg\" id='photo'>" )
+    
+
+    </script>
+
+
+</head>
+<body>
+    <br>
+    
+    <button onclick="document.getElementById('photo').src='images/img-1.jpg'">1번</button>
+    <button onclick="document.getElementById('photo').src='images/img-2.jpg'">2번</button>
+    <button onclick="document.getElementById('photo').src='images/img-3.jpg'">3번</button>
+    
+</body>
+</html>

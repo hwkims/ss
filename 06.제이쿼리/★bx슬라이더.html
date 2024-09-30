@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- bx슬라이더 관련CSS -->
+    <link rel="stylesheet" href="bxslider/dist/jquery.bxslider.min.css">
+
+    <!-- 제이쿼리 실행을 위한 파일 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- bx슬라이더 관련 JS파일 -->
+    <script src="bxslider/dist/jquery.bxslider.min.js"></script>
+
+
+</head>
+<body>
+    
+    <div class="main">
+        <div><img src="images/main_img1.jpg" title="이미지1"></div>
+        <div><img src="images/main_img2.jpg" title="이미지2"></div>
+        <div><img src="images/main_img3.jpg" title="이미지3"></div>
+    </div>
+
+</body>
+
+<script>
+    $(document).ready(function(){
+      $(".main").bxSlider({
+        auto: true, //자동실행
+        mode: 'horizontal',
+        slideWidth: 700,
+        pager: true //원형단추모양
+      });
+    });
+  </script>
+
+
+</html>

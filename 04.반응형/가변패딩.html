@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0 ; padding: 0;}
+
+        /*가변크기 공식*/
+        /*가변 크기로 만들 박스의 가로 너비 / 가변크기로 만들 박스를 감싸고 있는 박스 가로 너비 ) x 100 = 가변 크기의 % 값*/
+
+
+        #wrap {
+            width: 90%; /*960*/
+            height: 500px;
+            margin: 0 auto;
+            border: 4px solid #000;
+            background: #f7e041;
+        }
+       
+        /* #wrap p {
+           width: 52.08333333333333%;
+           background: cyan;
+           margin: 0 auto;
+           padding: 5.208333333333333%;
+        } */
+
+        /* #wrap div {
+            width: calc(100%-100px);
+            height: 200px;
+            margin: 50px;
+            background: cyan;
+        } */
+        #wrap div {
+            width: 31.25%;
+            float: left;
+            
+        }
+        #wrap div:first-child {
+            padding: 5.208333333333333%; /*50px*/
+            background: red;
+        }
+
+        #wrap div:first-child + div {
+            padding: 13.54166666666667%; /*130px*/
+            background: blue;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="wrap">
+       <div></div>
+       <div></div>
+    </div>
+
+</body>
+</html>

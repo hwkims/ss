@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <script>
+        // $("요소 선택").attr("속성명"); //선택한 요소의 지정한 속성값을 가져옵니다.
+        // $("요소 선택").attr("속성명","새 값"); //요소를 선택하여 지정한 속성값을 적용
+        // $("요소 선택").attr({"속성명":"값1", "속성명":"값2", "속성명":"값3"}); //요소를 선택하여 지정한 속성값을 적용
+    </script>
+
+    <script>
+        $(function(){
+
+            var srcVal = $("#sec_1 img").attr("src");
+            console.log(srcVal);
+
+            $("#sec_1 img").attr({
+                "width":"200",
+                "src":srcVal.replace("1.jpg","2.jpg"),
+                "title":"바위"
+            }).removeAttr("border");
+
+        });
+    </script>
+
+</head>
+<body>
+    <h1>
+        <strong>객체 조작 및 생성</strong>
+    </h1>
+
+    <section id="sec_1">
+        <h2>이미지 속성</h2>
+        <p><img src="images/math_img_1.jpg" title="가위" border="2"></p>
+    </section>
+
+</body>
+</html>

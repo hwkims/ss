@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * { padding: 0; margin: 0;}
+        a { text-decoration: none;}
+        li {list-style: none;}
+
+        ul li {width: 1200px; position: relative; cursor: pointer;}
+        ul li i { position: absolute; right: 30px; top:10px;}
+        ul li.que {height: 50px; background: pink;}
+        ul li.ans {height: 100px; background: yellow; display: none;}
+    </style>
+</head>
+<body>
+
+    <script>
+        $(function(){
+
+            $("ul li.que").click(function(){
+                $(this).next().slideToggle().siblings(".ans").hide();
+
+                var srcVal = $(this).find("i").attr("class");
+                console.log(srcVal);
+
+                if(srcVal == "fa-solid fa-plus"){
+                    $(this).find("i").attr({"class":srcVal.replace("plus","minus")})
+                }else{
+                    $(this).find("i").attr({"class":srcVal.replace("minus","plus")})
+                }
+
+                $(this).siblings().find("i").attr({"class":srcVal.replace("minus","plus")})
+
+            });
+
+        });
+    </script>
+
+    <div id="faq">
+
+        <ul class="box">
+            <li class="que">질문1 <i class="fa-solid fa-plus"></i></li>
+            <li class="ans">대답1</li>
+
+            <li class="que">질문2 <i class="fa-solid fa-plus"></i></li>
+            <li class="ans">대답2</li>
+
+            <li class="que">질문3 <i class="fa-solid fa-plus"></i></li>
+            <li class="ans">대답3</li>
+
+            <li class="que">질문4 <i class="fa-solid fa-plus"></i></li>
+            <li class="ans">대답4</li>
+        </ul>
+
+    </div>
+</body>
+</html>

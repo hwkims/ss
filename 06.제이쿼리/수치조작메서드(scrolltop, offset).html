@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <script>
+    //   $(function(){
+    //         // var w1 = $("#p1").width(); //가로값
+    //         // console.log(w1);
+
+    //         // var w2 = $("#p1").innerWidth(); //여백을 포함한 가로값
+    //         // console.log(w2);
+
+    //         // var w3 = $("#p1").outerWidth(); //선+여백을 포함한 가로값
+    //         // console.log(w3);
+
+    //         // $("#p2").outerWidth(100).outerHeight(100);
+
+
+            
+
+
+    //   });
+    </script>
+
+    <style>
+         * { padding: 0; margin: 0;}
+
+         #box_wrap { width: 300px; height: 200px; margin: 50px auto 0; position: relative; background: #ccc;}
+         .box { width: 50px; height: 50px; position: absolute; left:100px; top:50px; background: #f00;}
+
+
+         /* #p1, #p2 {
+            width: 100px; height: 50px;
+            padding: 20px;
+            border:5px solid #000;
+            background: #ff0; */
+         
+    </style>
+</head>
+<body>
+
+    <!-- <h1>수치 조작 메서드</h1>
+    <p id="p1">내용1</p>
+    <p id="p2">내용2</p> -->
+
+    <!-- <h1>위치 조작 메서드</h1> -->
+
+    <script>
+        $(function(){
+
+            var $txt1 = $(".txt_1 span"),
+                $txt2 = $(".txt_2 span"),
+                $box = $(".box");  
+
+            var off_t = $box.offset().top; //100
+            var pos_t = $box.position().top; //50
+
+            $txt1.text(off_t);
+            $txt2.text(pos_t);
+
+
+        });
+    </script>
+
+
+    <div id="box_wrap">
+        <p class="box">박스</p>
+    </div>
+
+    <p class="txt_1">절대 top위치값 : <span></span></p>
+    <p class="txt_2">상대 top위치값 : <span></span></p>
+
+
+
+</body>
+</html>

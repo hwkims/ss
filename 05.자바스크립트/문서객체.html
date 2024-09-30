@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // 객체.메서드();
+        // document.write();
+
+        // 객체.속성
+        // 객체.속성=값;
+
+        // function btn01(){
+        //     document.getElementById('id1').style.color="red";
+        //     document.getElementById('id1').style.fontSize="50px";
+        //     document.getElementById('id1').innerHTML="빨강색";
+        // }
+
+        // function btn02(){
+        //     document.getElementById('id1').style.color="blue";
+        //     document.getElementById('id1').style.fontSize="16px";
+        //     document.getElementById('id1').innerHTML="파랑색";
+        // }
+
+        function on(){
+            document.getElementById('myImg').src="images/icon02.jpg";
+        }
+        function off(){
+            document.getElementById('myImg').src="images/icon01.jpg";
+        }
+    </script>
+
+    <!-- <h1 id="id1">레드</h1>
+
+    <button onclick="btn01()">빨강색</button>
+    <button onclick="btn02()">파랑색</button> -->
+
+    <img src="images/icon01.jpg" id="myImg">
+
+    <br>
+
+    <button onclick="on()">켜기(on)</button>
+    <button onclick="off()">끄기(off)</button>
+
+    
+</body>
+</html>

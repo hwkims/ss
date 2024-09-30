@@ -1,0 +1,110 @@
+크로스 플랫폼 (리엑트 네이티브, EXPO)
+하나의 언어로 여러 플랫폼 개발
+---------------------------------
+1. node.js 설치 (실행환경 설정-JavaScript를 서버에서도 사용할 수 있도록 만든 프로그램)
+https://nodejs.org/en
+
+https://study-melody.tistory.com/25
+
+2. git설치 (64-bit 윈도우-버전 관리 시스템) 
+깃(Git)은 분산형 버전 관리 시스템(Version Control System)의 한 종류라고 보면 됩니다.
+버전 관리는 파일들을 복사, 백업, 저장 등을 해서 관리하는 것을 의미합니다
+https://git-scm.com/
+
+3. expo 홈페이지 회원가입, 어플설치 (핸드폰에 expo어플 검색해서 설치)
+https://expo.dev/
+
+4. 설치순서 참조 (https://docs.expo.dev/build/setup/)
+
+엑스포설치
+1. npm install -g expo-cli 
+(Expo는 JavaScript 및 React를 사용하여 Android, iOS 및 웹용 범용 네이티브 앱을 만들기 위한 오픈 소스 플랫폼이다.)
+
+엑스포 프로젝트 설치
+2. npx create-expo-app my-app (신버전)
+   npx create-expo-app my-new-project --template blank
+
+EAS 설치
+3. npm install -g eas-cli
+(Expo Application Services(EAS)는 Expo 및 React Native 프로젝트에서 사용할 수 있는 호스팅 서비스 모음으로 다음과 같은 기능을 제공한다: 앱 빌드, 제출 및 업데이트 이러한 모든 프로세스에 대한 자동화 설정 팀과의 협업)
+
+로그인
+4. eas login
+
+5. 비쥬얼스튜디오에서 cd my-app(폴더명)로 이동
+
+expo 폴더에 eas config파일 생성
+6. eas build:configure
+
+------------------------------------------------------------------
+https://docs.expo.dev/build-reference/apk/ 내용 참조
+
+7. 비쥬얼스튜디오에서 eas.json 파일 열어서 내용 고치기
+
+
+
+{
+  "cli": {
+    "version": ">= 12.5.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "preview": {
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "preview2": {
+      "android": {
+        "gradleCommand": ":app:assembleRelease"
+      }
+    },
+    "preview3": {
+      "developmentClient": true
+    },
+    "preview4": {
+      "distribution": "internal"
+    },
+    "production": {}
+  }
+}
+
+ 
+
+------------------------------------------------------------------
+https://docs.expo.dev/versions/latest/sdk/webview/ 참조
+
+(리액트 네이티브 웹뷰는 웹 화면을 띄우는데 사용하는 라이브러리)
+8. npx expo install react-native-webview
+
+------------------------------------------------------------------
+9. app.js 파일 교체하기 (url부분 홈페이지 주소 변경)
+   app.json파일에서 name(이름) , adaptive-icon.png(앱아이콘사진)
+
+import * as React from 'react';
+import { WebView } from 'react-native-webview';
+import { StyleSheet } from 'react-native';
+import Constants from 'expo-constants';
+
+export default function App() {
+  return (
+    <WebView
+      style={styles.container}
+      source={{ uri: 'https://expo.dev' }}
+    />
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    marginTop: Constants.statusBarHeight,
+  },
+});
+
+------------------------------------------------------------------
+10. eas build -p android --profile preview (마지막 실행 파일 만들기)
+
+
+
+

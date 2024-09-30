@@ -1,0 +1,283 @@
+★반응형 html다운로드
+https://html5up.net/
+https://startbootstrap.com/themes
+----------------------------------------------------------------
+★목업 다운로드
+https://www.graphberry.com/category/mock-ups
+https://www.freepik.com/free-photos-vectors/mockup
+----------------------------------------------------------------
+
+★스크롤 애니메이션 적용
+http://michalsnik.github.io/aos/
+스크롤 애니메이션 사용을 위해 하단 주소를 <title>아래 붙여넣기
+
+CDN으로 사용하기
+(CSS소스)
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+(JS소스)
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</body>아래쪽에 밑에 소스 붙여넣기
+
+<!--AOS실행을 위한 코드-->
+<script>
+  AOS.init();
+</script>
+
+스크롤 애니메이션 적용하려는 div에 data-aos="zoom-in-right" 값 넣기
+홈페이지 참조해서 방향 옵션값 변형
+ 
+----------------------------------------------------------------
+
+★Bx슬라이더 적용방법
+1. bx슬라이더 다운로드 후 본인 폴더에 압축해제
+https://bxslider.com/install/
+
+2. 압축 해제 후 폴더 이름 bxslider로 변경후 
+아래 소스를 html파일에 넣는다.
+★href="" 경로를 확인 후 본인 폴더안에 파일로 맞추기
+
+<!--bx슬라이더 관련 CSS-->	
+<link rel="stylesheet" href="bxslider/dist/jquery.bxslider.css">
+
+<!--제이쿼리 실행을 위한 파일 ★기존에 있으면 생략 가능★-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!--bx슬라이더 실행을 위한 파일-->
+<script src="bxslider/dist/jquery.bxslider.min.js"></script>
+
+3. bx슬라이더실행을 위한 명령어를 html </body>위에 추가한다.
+아래 .slider 선택자만 본인이 설정한 클래스로 불러온다.
+
+<!--BX슬라이더 실행을 위한 코드-->
+<script>
+    $(document).ready(function(){
+      $('.slider').bxSlider({
+          auto:true, //자동실행
+          touchEnabled:false, //링크 버튼 눌리게 설정          
+      });
+    });
+  </script>
+
+4. html 태그에 아래 소스를 추가 후 
+클래스명 일치하는지 확인 및 수정
+
+<ul class="slider">
+      <li><img src="images/01.jpg"></li>
+      <li><img src="images/02.jpg"></li>
+      <li><img src="images/03.jpg"></li>
+</ul>
+
+5. bx슬라이더 폴더안에 jquery.bxslider.css 파일 불러와서
+그림자 및 테두리 삭제하기 / 버튼 색상, 위치 변경 가능
+기존 웹페이지에서 마우스 오른쪽 검사로 위치 확인
+
+**옵션은 홈페이지에서 확인 및 적용
+  $(function(){
+    $('.클래스명').bxSlider({
+      mode: 'fade', //화면효과
+      auto: true,   //자동실행
+      slideWidth: 600 //슬라이드 가로크기
+    });
+  });
+
+----------------------------------------
+
+★제이쿼리 사용을 위한 CDN
+https://releases.jquery.com/ 
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.slim.js"></script>
+
+
+★이전버전
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+
+    <script>
+       $(function(){
+           코드
+       });
+    </script>
+----------------------------------------
+
+카페24 로그인
+https://eclogin.cafe24.com/Shop/
+
+픽사베이(무료사진)
+https://pixabay.com/
+
+사이트참조
+https://www.dbcut.com/
+----------------------------------------
+★반응형 flex 참조
+https://studiomeal.com/archives/197
+----------------------------------------
+클릭시 나왔다 사라졌다 하는 함수
+<script>
+      function slideMenu(){
+        let menu = document.querySelector("#nav");
+        menu.classList.toggle("show");
+      }
+ </script>
+
+소스 복사 후 아이디명 바꾸기
+
+css추가하기(아이디명 수정, 기존 상자 display:none;)
+#nav.show { display:block;}
+
+클릭할 버튼에 추가
+<a href="#a" onclick="slideMenu()">
+----------------------------------------
+
+
+CSS이용해서 삼각형 만들기
+
+        /*정삼각형*/
+        p.triangle {
+            width: 0; height: 0;
+            border-bottom: 50px solid #666;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+        }
+        
+         /*직각삼각형*/
+        p.triangle1 {
+            width: 0; height: 0;
+            border-bottom: 50px solid #666;
+            border-left: 0px solid transparent;
+            border-right: 25px solid transparent;
+        }
+
+----------------------------------------
+
+★애니메이션적용 사이트
+https://animista.net/
+
+----------------------------------------
+※폰트어썸 사용방법
+
+★폰트어썸 적용 사이트
+1. 폰트어썸 사이트에서 다운로드 후 
+본인 폴더에 압축 풀기
+https://fontawesome.com/download
+
+2. 본인 폴더에 fontawesome폴더로 존재하게 파일복사
+
+3. html 위쪽에 아래 태그 붙여넣기
+<link rel="stylesheet" href="fontawesome/css/all.css">
+
+예>href="폴더이름/css/all.css(파일경로 맞추기)"
+
+4. https://fontawesome.com/v6/search?o=r&m=free
+아이콘 영어 이름으로 검색후 넣기
+----------------------------------------
+★★다운로드 말고 CDN으로 직접 불러 오기
+ https://fontawesome.com/v6/search?o=r&m=free
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+----------------------------------------
+
+★웹폰트 변환주소
+https://noonnu.cc/
+
+웹폰트소스 복사 후 CSS 제일 위쪽에 붙여넣기
+복사 후 URL 부분 체크하기
+
+----------------------------------------
+★메뉴 클릭시 그림만 변경시
+
+<img src="" name="이름">
+버튼에 onclick="안에 오른쪽 태그 복사"   ->   document.이름.src=''
+
+예시>
+<p class="btn1" onclick="document.이름.src='images/event_banner_img1.jpg'">
+----------------------------------------
+
+★메뉴 클릭시 <div id=""> 창으로 변경 - 링크가 있을경우 
+
+클릭하려는 태그 옆에 onclick="" 태그를 추가후 아래 소스 붙여넣기
+
+document.getElementById('아이디명').style.display='none'
+
+적용예시) 
+<a href="#a" onclick="document.getElementById('아이디명').style.display='none'">
+
+적용예시) 여러개일경우 (예시5개)
+document.getElementById('box1').style.display='block', 
+document.getElementById('box2').style.display='none',
+document.getElementById('box3').style.display='none',
+document.getElementById('box4').style.display='none',
+document.getElementById('box5').style.display='none' 
+-----------------------------------------------------------------
+
+★박스 안에 박스
+div안에 가장 위에 만든 박스들은
+display: inline-block; 으로 속성변경한 후에
+margin-top으로 여백
+----------------------------------------
+★이미지맵 만들기
+<img src="" usemap="#이름">
+
+<map name="이름">
+  <area shape="rect" coords="좌표(포토샵파일열어서확인)" href="#a">
+</map>
+-----------------------------------------------------------------
+★롤오버하는법
+
+<img src=""> 태그 뒤에 소스 붙여넣고 수정
+
+onmouseover="this.src='images/live_btn_arrow_r.jpg'" onmouseout="this.src='images/live_btn_arrow.jpg'"
+-----------------------------------------------------------------
+★포트폴리오 파비콘 적용 방법 (코딩사이트)
+30x30 크기로 로고 작게 만들어서 png파일로 저장
+본인 html 파일에 <title> 아래 넣기
+
+<link rel="SHORTCUT ICON" href="images/파일명.png">
+-----------------------------------------------------------------
+★CSS 글자 그라데이션 적용
+
+직선 : 
+background: linear-gradient(to right, #f56622, #f9a626);
+
+-webkit-background-clip: text;
+-webkit-text-fill-color:transparent;
+
+
+원형 : 
+background: radial-gradient(circle, #121d2f, #000 70%); 
+
+-webkit-background-clip: text;
+-webkit-text-fill-color:transparent;
+
+
+-----------------------------------------------------------------
+★그림자css
+
+text-shadow: 3px 3px 1px #231f20;
+/*x방향 y방향 그림자흐림정도 색상*/
+-----------------------------------------------------------------
+★폰트 변환기 - 변환후 다운로드
+https://transfonter.org/
+
+컴퓨터에 있는 폰트 추가 후
+woff,woff2 체크후  convert누르기
+다운로드 후 폴더 압축 해제
+
+작업 폴더 font폴더 안에 폰트 넣기
+css소스 url에 ../font/ 추가하기
+-----------------------------------------------------------------
+
+
+예>src: url('../font/MoebiusKorea-Bold.woff');
+
+-----------------------------------------------------------------
+★앵커(책갈피) 누르면 위치 이동
+
+이동을 원하는 위치에 id설정
+
+링크값 #아이디명으로 설정
+예> 원하는 위치  <div id="아이디명">
+
+예> <a href="#아이디명">

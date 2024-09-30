@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <style>
+        * { padding: 0; margin: 0;}
+        a { text-decoration: none;}
+        li { list-style: none;}
+
+        #content { width: 1200px; height: 200px; background: #ccc;}
+
+        #content section { float: left;}
+
+        #content section.con1 { width: 40%; height: 200px; background: yellow; position: relative;}
+        #content section.con2 { width: 30%; height: 200px; background: pink;}
+        #content section.con3 { width: 30%; height: 200px; background: cyan;}
+
+        /*버튼*/
+        #content section.con1 h2 {
+            width: 100px; height: 30px; background: #888;
+            line-height: 30px; text-align: center;
+            color:#fff; font-size: 16px; letter-spacing: -1px;
+            border-radius: 10px 10px 0 0;
+
+            position: absolute; left:0; top:0; cursor: pointer;
+        }
+
+        #content section.con1 h2.gal { left: 100px;}
+
+        #content section.con1 h2.on { background: red;}
+
+        /*내용*/
+        #content section.con1 ul {
+            position: absolute; left:0; top:30px;
+            border:1px solid red;
+
+            display: none;
+        }
+
+        #content section.con1 ul.on {
+            display: block;
+        }
+
+        /*모달팝업*/
+        .modal {position: fixed; width: 100%; height: 100%; background: rgba(0,0,0,0.6); 
+                z-index: 99999; display: flex; justify-content: center; align-items: center;
+                
+                display: none;
+            }
+        .modal_inner {
+            width: 600px; height: 400px; background: #fff;
+            border: 1px solid red; 
+            position: absolute; left:50%; top:50%; transform: translate(-50%,-50%); 
+            text-align: center;
+        }
+        button { width: 80px; height: 50px; font-size: 30px; cursor: pointer;} 
+    </style>
+</head>
+<body>
+
+    <!-- 모달팝업 -->
+     <div class="modal">
+        <div class="modal_inner">
+
+            <h2>공지사항입니다.</h2>
+            <button>닫기</button>
+
+        </div>
+
+     </div>
+    
+
+
+
+    <script>
+        $(function(){
+
+            /*모달팝업-클릭시*/
+            // $("#content section.con1 ul.notice li").eq(0).click(function(){
+            //     $(".modal").fadeIn();
+            // });
+
+             /*모달팝업-바로실행*/
+             $(window).load(function(){
+                 $(".modal").fadeIn();
+             });
+
+            $("button").click(function(){
+                $(".modal").fadeOut();
+            });
+
+
+            /*탭메뉴*/
+            $("#content section.con1 h2").click(function(){
+                $("#content section.con1 h2").removeClass("on");
+                $(this).addClass("on");
+
+                $("#content section.con1 ul").removeClass("on");
+                $(this).next("ul").addClass("on");
+
+
+            });
+
+        });
+    </script>
+
+    <div id="content">
+
+        <section class="con1">
+            <h2 class="on">공지사항</h2>
+
+            <ul class="notice on">
+                <li><a href="#a">공지사항 내용</a></li>
+                <li><a href="#a">공지사항 내용</a></li>
+                <li><a href="#a">공지사항 내용</a></li>
+            </ul>
+
+            <h2 class="gal">갤러리</h2>
+
+
+            <ul class="photo">
+                <li><a href="#a">사진1</a></li>
+                <li><a href="#a">사진2</a></li>
+                <li><a href="#a">사진3</a></li>
+            </ul>
+
+        </section>
+        <section class="con2"></section>
+        <section class="con3"></section>
+
+    </div>
+
+
+</body>
+</html>

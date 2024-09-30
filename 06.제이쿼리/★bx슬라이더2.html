@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!--bx슬라이더 관련 CSS-->	
+<link rel="stylesheet" href="bxslider/dist/jquery.bxslider.min.css">
+
+<!--제이쿼리 실행을 위한 파일 ★기존에 있으면 생략 가능★-->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<!--bx슬라이더 실행을 위한 파일-->
+<script src="bxslider/dist/jquery.bxslider.min.js"></script>
+
+</head>
+<body>
+
+    <ul class="mainslide">
+        <li><img src="images/01.jpg"></li>
+        <li><img src="images/02.jpg"></li>
+        <li><img src="images/03.jpg"></li>
+  </ul>
+  
+</body>
+
+<!--BX슬라이더 실행을 위한 코드-->
+<script>
+    $(document).ready(function(){
+      $('.mainslide').bxSlider({
+          auto:true, //자동실행
+          touchEnabled:false, //링크 걸리게 설정
+          slideWidth: 1500 //슬라이드 가로크기
+          
+      });
+    });
+  </script>
+
+</html>

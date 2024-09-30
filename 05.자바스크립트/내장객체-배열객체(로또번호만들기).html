@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<body>
+    
+    <script>
+        var lotto = new Array(6); //배열로 6칸의 공간을 생성함
+        var count = 0; //카운트 초기화
+        var mFlag = true; // 중복확인
+
+        while(count<6){ //총6회 반복
+            var number;
+            number = parseInt(Math.random()*45)+1;
+            //0~45까지 공을 랜덤으로 추첨
+            
+            //중복확인하기
+            for(var i=0; i<count; i++){ //랜덤숫자 6개 가져올때 반복
+                if(lotto[i]==number){
+                    mFlag = false; //중복이면 값을 false로 변경
+                 }
+            }
+
+            //중복이 없으면
+            if(mFlag==true){
+                lotto[count]=number; // 뽑은 숫자를 lotto[]넣어줌
+                count++; // 카운트 1 증가
+            }
+            
+            mFlag = true;
+        }
+
+        document.write(
+            lotto[0]+" , "+
+            lotto[1]+" , "+
+            lotto[2]+" , "+
+            lotto[3]+" , "+
+            lotto[4]+" , "+
+            lotto[5]
+        );
+    
+    </script>
+
+</body>
+</html>
